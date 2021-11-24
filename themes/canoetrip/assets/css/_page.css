@@ -119,3 +119,82 @@
 	background: #3C6C54;
 	color: #fff;
 }
+
+/*start-sec-entry-hdr*/
+
+.sec-entry-hdr{
+	padding-bottom: 40px;
+}
+.sec-entry-hdr-title{
+	margin-bottom: 32px;
+	text-align: center;
+}
+
+
+/*start-cmmn-ul-li*/
+
+.default-page-con ul,
+ul{
+	margin: 0;
+	list-style-type: none;
+	padding-left: 30px;
+}
+.default-page-con ul li,
+ul li{
+	padding-bottom: 22px;
+	padding-left: 22px;
+	position: relative;
+	line-height: 1;
+	color: #444440;
+}
+.default-page-con ul li:before,
+ul li:before{
+	content: '';
+	position: absolute;
+	background: #46c791;
+	height: 8px;
+	width: 8px;
+	left: 0;
+	top: 0;
+	margin-top: 5px;
+	background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 100%;
+}
+
+.default-page-con ol,
+ol{
+    margin: 0;
+	list-style-type: none;
+	padding-left: 30px;
+    counter-reset: my-awesome-counter;
+    -ms-counter-reset: my-awesome-counter;
+    -webkit-counter-reset: my-awesome-counter;
+}
+.default-page-con ol li,
+ol li{
+    padding-bottom: 22px;
+	padding-left: 22px;
+	position: relative;
+	line-height: 1;
+    counter-increment: my-awesome-counter;
+    -ms-counter-increment: my-awesome-counter;
+    -webkit-counter-increment: my-awesome-counter;
+}
+.default-page-con ol li:before,
+ol li:before{
+    content: counter(my-awesome-counter) "."!important;
+    position: absolute;
+    margin-top: 0px;
+    font-weight: 700;
+    content: '';
+	position: absolute;
+	color: #46c791;
+	font-size: 16px;
+	left: 0;
+	top: 0;
+	margin-top: 1px;
+	background-repeat: no-repeat;
+    background-size: 100%;
+
+}
