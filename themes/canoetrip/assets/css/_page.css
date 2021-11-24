@@ -174,7 +174,7 @@ ul li:before{
 ol{
     margin: 0;
 	list-style-type: none;
-	padding-left: 30px;
+	padding-left: 28px;
 	padding-bottom: 15px;
     counter-reset: my-awesome-counter;
     -ms-counter-reset: my-awesome-counter;
@@ -184,7 +184,7 @@ ol{
 ol li{
     padding-bottom: 10px;
 	padding-top: 4px;
-	padding-left: 22px;
+	padding-left: 24px;
 	position: relative;
 	line-height: 25px;
     counter-increment: my-awesome-counter;
@@ -194,9 +194,8 @@ ol li{
 .default-page-con ol li:before,
 ol li:before{
     content: counter(my-awesome-counter) "."!important;
-    margin-top: 0px;
     font-weight: 700;
-    content: '';
+	position: absolute;
 	color: #46c791;
 	font-size: 16px;
 	left: 0;
