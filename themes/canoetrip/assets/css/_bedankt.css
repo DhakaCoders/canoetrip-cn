@@ -20,11 +20,15 @@
 }
 .page-bedankt-con-title{
 	color: #4F7F35;
-	margin-bottom: 18px;
+	margin-bottom: 25px;
 }
 .page-bedankt-con-img i{
 	display: inline-block;
 	vertical-align: baseline;
+}
+.page-bedankt-con-img i img{
+	height: 300px;
+	width: auto;
 }
 .page-bedankt-con-menu-cntlr ul{
 	display: flex;
