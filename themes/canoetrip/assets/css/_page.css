@@ -148,6 +148,7 @@ ul li{
 	position: relative;
 	line-height: 1;
 	color: #444440;
+	font-size: 18px;
 }
 .default-page-con ul li:before,
 ul li:before{
