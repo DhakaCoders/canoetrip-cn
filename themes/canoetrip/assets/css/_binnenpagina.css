@@ -487,7 +487,9 @@ Gallery design
 	width: 21%;
 }
 
-
+.dfp-full-width-img-module{
+	padding-bottom: 65px;
+}
 .dfp-full-img-module{
 	padding-bottom: 100px;
 }
