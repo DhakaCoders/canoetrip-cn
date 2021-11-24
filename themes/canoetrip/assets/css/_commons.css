@@ -16,15 +16,38 @@ a, a:hover, a:focus, button:hover, button:focus{
 }
 
 body {
-    background: #f8f8f8;
-    color: #000000;
+    background: #ffffff;
+    color: #444440;
     font-size: 18px;
     line-height: 24px;
-     font-family: 'Candara';
+    font-weight: 400;
+    font-family: 'Titillium Web', sans-serif;
 }
+
+/*font-family: 'Work Sans', sans-serif;*/
+/*font-family: 'Source Sans Pro', sans-serif;*/
 p{
 	line-height: 1.2;
 	margin-bottom: 15px;
+}
+
+a{
+	text-decoration: underline;
+	color: #46C691;
+}
+a:hover{
+	text-decoration: none;
+}
+
+strong,b{
+	font-weight: 700;
+}
+
+i,em{
+	font-style: italic;
+}
+u{
+	text-decoration: underline;
 }
 
 input[type=text],
