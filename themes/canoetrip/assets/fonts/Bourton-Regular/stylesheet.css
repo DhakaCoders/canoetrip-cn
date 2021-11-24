@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Bourton';
+    src: url('Bourton-Regular.eot');
+    src: url('Bourton-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Bourton-Regular.woff2') format('woff2'),
+        url('Bourton-Regular.woff') format('woff'),
+        url('Bourton-Regular.ttf') format('truetype'),
+        url('Bourton-Regular.svg#Bourton-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
