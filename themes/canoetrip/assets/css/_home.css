@@ -104,3 +104,9 @@
 	text-align: center;
 	color: #fff;
 }
+
+.hm-grd-item-des span{
+	display: inline-block;
+	vertical-align: baseline;
+	margin-bottom: 6px;
+}
