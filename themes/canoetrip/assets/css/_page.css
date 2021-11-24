@@ -175,18 +175,18 @@ ol{
     margin: 0;
 	list-style-type: none;
 	padding-left: 30px;
-	padding-bottom: 10px;
-	padding-top: 15px;
+	padding-bottom: 15px;
     counter-reset: my-awesome-counter;
     -ms-counter-reset: my-awesome-counter;
     -webkit-counter-reset: my-awesome-counter;
 }
 .default-page-con ol li,
 ol li{
-    padding-bottom: 22px;
+    padding-bottom: 10px;
+	padding-top: 4px;
 	padding-left: 22px;
 	position: relative;
-	line-height: 1;
+	line-height: 25px;
     counter-increment: my-awesome-counter;
     -ms-counter-increment: my-awesome-counter;
     -webkit-counter-increment: my-awesome-counter;
@@ -203,7 +203,7 @@ ol li:before{
 	font-size: 16px;
 	left: 0;
 	top: 0;
-	margin-top: 1px;
+	margin-top: 13px;
 	background-repeat: no-repeat;
     background-size: 100%;
 
