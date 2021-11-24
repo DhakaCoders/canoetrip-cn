@@ -4,17 +4,16 @@
 	padding: 0 20px!important;
 }
 .slick-slider .slick-dots li{
-	width: 16px!important;
-	height: 16px!important;
+	width: 58px!important;
+	height: 4px!important;
 	position: static;
-	background: #E1E1E1!important;
-	border-radius: 100% 100%!important;
+	background: #F8F8F8!important;
 	margin: 0 8px;
 	padding: 0!important;
 }
 .slick-slider .slick-dots li.slick-active,
 .slick-slider .slick-dots li:hover{
-	background: #F3BA4B!important;
+	background: #46C691!important;
 }
 .slick-slider .slick-dots li:before,
 .slick-slider .slick-dots li button:before{
@@ -44,4 +43,79 @@
 
 .sitemap ol li a:focus{
 	text-decoration: underline;
+}
+
+
+
+/* common button */
+
+.fl-tc-btn{
+	display: inline-block;
+    vertical-align: baseline;
+    min-width: 170px;
+    color: #fff;
+    background: #46C691;
+    font-size: 17px;
+    line-height: 1.1;
+    text-align: center;
+    padding: 13px 20px;
+    font-weight: 600;
+    border: 2px solid #46C691;
+    text-transform: capitalize;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.fl-tc-btn:hover{
+	background: transparent;
+	color: #46C691;
+}
+
+.fl-tc-btn.tc-transparent-btn{
+	background: transparent;
+	color: #46C691;
+}
+.fl-tc-btn.tc-transparent-btn:hover{
+	background: #46C691;
+	color: #fff;
+}
+
+.fl-text-btn{
+	padding-right: 25px;
+    position: relative;
+    display: inline-block;
+    vertical-align: baseline;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #46C691;
+}
+
+.fl-text-btn i{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.fl-text-btn:hover i{
+	margin-right: -5px;
+}
+
+.fl-tc-btn.tc-green-btn{
+	border-color: #3C6C54;
+	background: #3C6C54;
+}
+.fl-tc-btn.tc-green-btn:hover{
+	background: transparent;
+	color: #3C6C54;
+}
+
+.fl-tc-btn.tc-green-btn.tc-green-transparen-btn{
+	background: transparent;
+	color: #3C6C54;
+}
+.fl-tc-btn.tc-green-btn.tc-green-transparen-btn:hover{
+	background: #3C6C54;
+	color: #fff;
 }

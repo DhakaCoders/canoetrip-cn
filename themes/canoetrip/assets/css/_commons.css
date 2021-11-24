@@ -36,6 +36,7 @@ a{
 	color: #46C691;
 }
 a:hover{
+	color: #46C691;
 	text-decoration: none;
 }
 
@@ -322,3 +323,4 @@ body.login-register.hide-account-title .select2-container--open .select2-dropdow
 .hmProdctGrdsSlider.slick-initialized .hmProdctGrdsSlideItme{
 	display: block;
 }
+
