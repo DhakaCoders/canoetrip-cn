@@ -34,3 +34,58 @@
 .overons-intro-desc-cntlr ul{
 	padding-left: 0;
 }
+
+.team-grid-item-img-cntlr{
+	position: relative;
+}
+.team-grid-item-img{
+	height: 360px;
+	border-radius: 5px;
+}
+.team-grid-items{
+	display: flex;
+	margin: 0 -12px;
+}
+.team-grids-item-col{
+	padding: 0 12px;
+	max-width: 25%;
+	width: 100%;
+}
+.team-grid-item-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #3C6C54;;
+    color: #DEEDE6;
+    padding: 20px 31px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+ }
+ .team-grid-item-bg p{
+ 	margin-bottom: 30px;
+ }
+  .team-grid-item-bg p:last-of-type{
+  	margin-bottom: 0;
+  }
+ .team-grid-item-small-img {
+    position: absolute;
+    bottom: -20px;
+    left: 11px;
+    z-index: 2;
+}
+.team-grid-item-desc{
+
+}
+.team-grid-func{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 16px;
+	color: #46C691;
+	font-weight: 600;
+}
