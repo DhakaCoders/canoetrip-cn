@@ -119,3 +119,11 @@
 	background: #3C6C54;
 	color: #fff;
 }
+
+.sec-entry-hdr{
+	padding-bottom: 40px;
+}
+.sec-entry-hdr-title{
+	margin-bottom: 32px;
+	text-align: center;
+}
