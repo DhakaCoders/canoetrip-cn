@@ -1,0 +1,48 @@
+.hm-banner{
+	position: relative;
+	overflow: hidden;
+}
+
+.hm-banner-bg{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.hm-banner-des-cntlr{
+	height: 765px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+	padding: 50px 0;
+}
+
+.hm-banner-des{
+	max-width: 700px;
+	color: #fff;
+}
+
+.hm-bnr-title{
+	color: #fff;
+	margin-bottom: 40px;
+}
+
+.hm-bnr-btn ul{
+	display: flex;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.hm-bnr-btn ul li{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.hm-bnr-btn ul li a.fl-tc-btn.tc-transparent-btn{
+	color: #fff;
+}
+.hm-bnr-btn ul li a.fl-tc-btn:hover{
+	color: #fff;
+}
