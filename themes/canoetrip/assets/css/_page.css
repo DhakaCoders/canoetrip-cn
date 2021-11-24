@@ -132,6 +132,7 @@
 }
 .sec-entry-hdr-title{
 	margin-bottom: 20px;
+	text-transform: uppercase;
 }
 
 
@@ -141,16 +142,16 @@
 ul{
 	margin: 0;
 	list-style-type: none;
-	padding-top: 15px;
 	padding-left: 30px;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 }
 .default-page-con ul li,
 ul li{
-	padding-bottom: 22px;
+	padding-bottom: 10px;
+	padding-top: 4px;
 	padding-left: 22px;
 	position: relative;
-	line-height: 1;
+	line-height: 25px;
 	color: #444440;
 	font-size: 18px;
 }
@@ -163,7 +164,7 @@ ul li:before{
 	width: 8px;
 	left: 0;
 	top: 0;
-	margin-top: 5px;
+	margin-top: 13px;
 	background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 100%;
