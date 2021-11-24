@@ -124,10 +124,14 @@
 
 .sec-entry-hdr{
 	padding-bottom: 20px;
+	max-width: 800px;
+	width: 100%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 .sec-entry-hdr-title{
 	margin-bottom: 20px;
-	text-align: center;
 }
 
 

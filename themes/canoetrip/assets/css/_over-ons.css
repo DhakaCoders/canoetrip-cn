@@ -1,3 +1,6 @@
+.over-ons-intro-sec{
+	padding-bottom: 50px;
+}
 .over-ons-intro-sec-cntlr{
 	display: flex;
 	align-items: center;
@@ -20,7 +23,7 @@
 	padding-bottom: 24px;
 }
 .overons-intro-desc-title{
-	margin-bottom: 30	px;
+	margin-bottom: 30px;
 }
 .xs-overons-intro-desc-title{
 	display: none;
