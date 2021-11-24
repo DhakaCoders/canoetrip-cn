@@ -194,11 +194,9 @@ ol li{
 .default-page-con ol li:before,
 ol li:before{
     content: counter(my-awesome-counter) "."!important;
-    position: absolute;
     margin-top: 0px;
     font-weight: 700;
     content: '';
-	position: absolute;
 	color: #46c791;
 	font-size: 16px;
 	left: 0;
