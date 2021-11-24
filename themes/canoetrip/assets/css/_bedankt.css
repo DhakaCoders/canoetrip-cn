@@ -27,8 +27,8 @@
 	vertical-align: baseline;
 }
 .page-bedankt-con-img i img{
-	height: 300px;
-	width: auto;
+	width: 300px;
+	height: auto;
 }
 .page-bedankt-con-menu-cntlr ul{
 	display: flex;
