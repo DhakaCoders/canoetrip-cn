@@ -1,6 +1,9 @@
 
 
 @media(max-width: 1199px){
+	/*.container-lg{
+		max-width: 1330px;
+	}*/
 	.hide-lg{
 		display: none!important;
 	}
