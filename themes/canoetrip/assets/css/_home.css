@@ -108,6 +108,7 @@
 
 .hm-grd-sec{
 	padding: 50px 0;
+	overflow: hidden;
 }
 
 .hm-grd-sec-inr{
@@ -416,4 +417,26 @@
 	-webkit-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	transform: scale(1.1);
+}
+
+
+
+
+@media(max-width: 1199px){
+	.hm-grd-sec-inr {
+	    padding-left: 10px;
+	    margin-right: -10px;
+	}
+	.hm-grd-item{
+		width: 33.3333%;
+	}
+	.hm-grd-item-img{
+		height: 400px;
+	}
+	.destination-grd-item-img{
+		height: 470px;
+	}
+	.destination-sec {
+	    padding: 50px 0 110px;
+	}
 }

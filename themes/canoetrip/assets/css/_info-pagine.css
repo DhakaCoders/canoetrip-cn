@@ -1,0 +1,20 @@
+.info-page-lft-img-rgt-des-cntlr {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.info-page-lft-img-rgt-des-rgt, 
+.info-page-lft-img-rgt-des-lft {
+    width: 50%;
+}
+
+.info-page-feature-img.has-inline-bg img{
+	display: none;
+}
+.info-page-feature-img.has-inline-bg{
+	height: 750px;
+}
+.info-page-feature-img.has-inline-bg div{
+	height: 100%;
+	width: 100%;
+}
