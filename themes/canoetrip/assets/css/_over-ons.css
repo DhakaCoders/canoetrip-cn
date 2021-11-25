@@ -52,15 +52,8 @@
 .team-grid-sec{
 	padding-top: 50px;
 	padding-bottom: 70px;
-	position: relative;
 }
-.team-grid-rgt-btm-img{
-	position: absolute;
-  right: 0;
-  width: 322px;
-  height: 388px;
-  bottom: -180px;
-}
+
 .team-grid-col-innr{
 	position: relative;
 }
@@ -145,9 +138,17 @@
 	padding-bottom: 45px;
 	position: relative;
 }
+.team-grid-rgt-btm-img{
+	position: absolute;
+  right: 0;
+  top: 0;
+  width: 322px;
+  height: 388px;
+}
 .ov-ons-des-btn{
 	padding-top: 5px;
 }
+
 .working-grid-sec .sec-entry-hdr{
 	max-width: initial;
 	text-align: left;
@@ -203,6 +204,7 @@
 	width: 66%;
 	padding-left: 20px;
 	padding-right: 10px;
+	padding-bottom: 1px;
 }
 .wgd-title{
 	margin-bottom: 10px;
@@ -220,3 +222,6 @@
 .wgd-desc{
 	padding-bottom: 1px;
 }
+
+
+/*start-responsive*/
