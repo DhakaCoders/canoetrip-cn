@@ -14,19 +14,19 @@
 		font-size: 85px;
 	}
 	h2,.fl-h2{
-		font-size: 45px;
+		font-size: 42px;
 	}
 	h3,.fl-h3{
-		font-size: 34px;
+		font-size: 32px;
 	}
 	h4,.fl-h4{
-		font-size: 30px;
+		font-size: 28px;
 	}
 	h5,.fl-h5{
-		font-size: 23px;
+		font-size: 22px;
 	}
 	h6,.fl-h6{
-		font-size: 19px;
+		font-size: 18px;
 	}
 
 }
@@ -42,13 +42,16 @@
 		font-size: 70px;
 	}
 	h2,.fl-h2{
-		font-size: 40px;
+		font-size: 39px;
 	}
 	h3,.fl-h3{
-		font-size: 33px;
+		font-size: 30px;
 	}
 	h4,.fl-h4{
-		font-size: 28px;
+		font-size: 26px;
+	}
+	h5,.fl-h5{
+		font-size: 21px;
 	}
 	
 }
