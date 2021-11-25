@@ -42,6 +42,7 @@
 }
 
 
+
 .team-grid-sec .sec-entry-hdr{
 	padding-bottom: 25px;
 }
@@ -51,6 +52,14 @@
 .team-grid-sec{
 	padding-top: 50px;
 	padding-bottom: 70px;
+	position: relative;
+}
+.team-grid-rgt-btm-img{
+	position: absolute;
+  right: 0;
+  width: 322px;
+  height: 388px;
+  bottom: -180px;
 }
 .team-grid-col-innr{
 	position: relative;
@@ -72,23 +81,23 @@
 	width: 100%;
 }
 .team-grd-bg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: #3C6C54;;
-    color: #DEEDE6;
-    padding: 20px 31px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    opacity: 0;
-    transition: 0.5s cubic-bezier(1, 1.54, 1, 1.79);
-    overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #3C6C54;;
+  color: #DEEDE6;
+  padding: 20px 31px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s cubic-bezier(1, 1.54, 1, 1.79);
+  overflow-y: scroll;
  }
 
 .team-grd-bg::-webkit-scrollbar {
@@ -131,7 +140,14 @@
 }
 
 
-
+.over-ons-bears-sec{
+	padding-top: 70px;
+	padding-bottom: 45px;
+	position: relative;
+}
+.ov-ons-des-btn{
+	padding-top: 5px;
+}
 .working-grid-sec .sec-entry-hdr{
 	max-width: initial;
 	text-align: left;
