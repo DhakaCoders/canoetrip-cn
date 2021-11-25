@@ -41,7 +41,9 @@
 	margin-bottom: 20px;
 	line-height: 1.1;
 }
-
+.innerpage-con-wrap .default-page-con h3{
+	color: #444440;
+}
 .dfp-promo-module-title{
 	color: #4C5D5B;
 	margin-bottom: 40px;
