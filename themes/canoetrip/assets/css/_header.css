@@ -16,28 +16,32 @@ header.header{
 	display: inline-block;
 	vertical-align: baseline;
 }
+.logo a{
+	display: inline-block;
+	vertical-align: baseline;
+}
 
 
 nav.main-nav > ul{
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	margin-right: -24px;
-	margin-left: -24px;
+	margin-right: -20px;
+	margin-left: -20px;
 }
 nav.main-nav > ul > li{
-	padding: 0 24px;
+	padding: 0 20px;
 	position: relative;
 }
 nav.main-nav > ul > li > a{
 	display: inline-block;
 	vertical-align: baseline;
-	font-size: 20px;
+	font-size: 19px;
 	color: #3C6C54;
 	letter-spacing: -0.02em;
 	text-decoration: none;
     padding-bottom: 10px;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 nav.main-nav > ul > li.current-menu-item > a,
@@ -192,7 +196,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 	padding-left: 13px;
 }
 .fl-lang ul li a{
-	font-size: 20px;
+	font-size: 19px;
 	line-height: 1;
 	letter-spacing: -0.02em;
 	text-transform: uppercase;
@@ -259,4 +263,86 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 }
 .hdr-btns ul li{
 	padding: 0 5px;
+}
+
+
+
+
+/*responsive*/
+
+
+@media(max-width: 1199px){
+	.hdr-menu{
+		padding-right: 20px;
+	}
+	nav.main-nav > ul{
+		margin-right: -12px;
+    	margin-left: -12px;
+	}
+	nav.main-nav > ul > li {
+	    padding: 0 12px;
+	}
+	nav.main-nav > ul > li > a{
+		font-size: 17px;
+	}
+	nav.main-nav > ul > li.menu-item-has-children > a:before{
+		font-size: 17px;
+	}
+	.hdr-lang-cntlr {
+	    padding-right: 12px;
+	}
+	.fl-lang-cntlr{
+		min-width: 55px;
+	}
+	.fl-lang-cntlr ul{
+		padding-top: 0;
+	}
+	.fl-lang ul li{
+		padding-left: 7px;
+	}
+	.fl-lang ul li a{
+		font-size: 17px;
+	}
+	.hdr-btns .fl-tc-btn{
+		min-width: 110px;
+	    font-size: 16px;
+	    padding: 10px 15px;
+	}
+}
+
+@media(max-width: 991px){
+	.logo a{
+		max-width: 90px;
+	}
+	nav.main-nav > ul {
+	    margin-right: -6px;
+	    margin-left: -6px;
+	}
+	nav.main-nav > ul > li {
+	    padding: 0 6px;
+	}
+	nav.main-nav > ul > li > a {
+	    font-size: 14px;
+	}
+	nav.main-nav > ul > li.menu-item-has-children > a:before {
+	    font-size: 14px;
+	}
+	.hdr-menu {
+	    padding-right: 15px;
+	}
+	.fl-lang-cntlr {
+	    min-width: 50px;
+	    padding-left: 0;
+	}
+	.fl-lang ul li a {
+	    font-size: 14px;
+	}
+	.hdr-lang-cntlr {
+	    padding-right: 7px;
+	}
+	.hdr-btns .fl-tc-btn {
+	    min-width: 100px;
+	    font-size: 13px;
+	    padding: 10px 10px;
+	}
 }
