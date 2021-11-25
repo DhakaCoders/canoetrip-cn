@@ -135,7 +135,50 @@
 	text-transform: uppercase;
 }
 
-
+.breadcrumb-sec{
+	padding-bottom: 70px;
+}
+.breadcrumb-cntlr{
+	padding-top: 20px;
+}
+.breadcrumb-cntlr ul{
+	display: flex;
+	align-items: center;
+	margin: 0 -24px;
+}
+.breadcrumb-cntlr ul li{
+	padding: 0 24px;
+	position: relative;
+}
+.breadcrumb-cntlr ul li:not(:last-child):after{
+	position: absolute;
+	background-image: url('../images/brd-right-arrow.svg');
+	content: '';
+	top: 50%;
+	right: 0;
+	transform: translate(50% ,-50%);
+	/*transform: matrix(-1, 0, 0, 1, 0, 0);*/
+	width: 10px;
+	height: 8.5px;
+}
+.breadcrumb-cntlr ul li a,
+.breadcrumb-cntlr ul li span,
+.breadcrumb-cntlr ul li a span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-weight: 600;
+	color: #3C6C54;
+	line-height: 1;
+	transition: .5s;
+	-ms-transition: .5s;
+	-webkit-transition: .5s;
+}
+.breadcrumb-cntlr ul li.active span{
+	color: #46C691;
+}
+.breadcrumb-cntlr ul li a span:hover{
+	color: #46C691;
+}
 /*start-cmmn-ul-li*/
 
 .default-page-con ul,
@@ -205,3 +248,4 @@ ol li:before{
     background-size: 100%;
 
 }
+
