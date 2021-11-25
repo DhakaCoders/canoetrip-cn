@@ -23,6 +23,9 @@
 .over-ons-intro-sec .page-entry-hdr{
 	padding-bottom: 30px;
 }
+.overons-intro-desc-title{
+	margin-bottom: 25px;
+}
 .overons-intro-desc-title span{
 	display: inline-block;
 	vertical-align: baseline;
@@ -48,14 +51,14 @@
 .team-grid-sec{
 	padding-top: 50px;
 	padding-bottom: 70px;
-
 }
-.team-grid-item-cntlr{
-}
-.team-grid-item-img-cntlr{
+.team-grid-col-innr{
 	position: relative;
 }
-.team-grid-item-img{
+.team-grd-img-cntlr{
+	position: relative;
+}
+.team-grd-img{
 	height: 360px;
 	border-radius: 5px;
 }
@@ -63,12 +66,12 @@
 	display: flex;
 	margin: 0 -12px;
 }
-.team-grids-item-col{
+.team-grid-col{
 	padding: 0 12px;
 	max-width: 25%;
 	width: 100%;
 }
-.team-grid-item-bg {
+.team-grd-bg {
     position: absolute;
     top: 0;
     right: 0;
@@ -86,32 +89,33 @@
     opacity: 0;
     transition: 0.5s cubic-bezier(1, 1.54, 1, 1.79);
  }
- .team-grid-item-cntlr:hover .team-grid-item-bg{
+ .team-grid-col-innr:hover .team-grd-img-cntlr{
  	opacity: 1;
  }
- .team-grid-item-bg p{
+ .team-grd-bg p{
  	margin-bottom: 30px;
  }
-  .team-grid-item-bg p:last-of-type{
+  .team-grd-bg p:last-of-type{
   	margin-bottom: 0;
   }
- .team-grid-item-small-img {
+ .team-grd-sml-img {
     position: absolute;
     bottom: -20px;
     left: 11px;
     z-index: 2;
 }
-.team-grid-item-desc{
+.team-grd-desc{
 	text-align: center;
 	padding-top: 26px;
 }
-.team-grid-func{
+.team-grd-designation{
 	display: inline-block;
 	vertical-align: baseline;
 	font-size: 16px;
 	color: #46C691;
 	font-weight: 600;
 }
+
 
 
 .working-grid-sec .sec-entry-hdr{
