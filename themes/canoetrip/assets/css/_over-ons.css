@@ -23,10 +23,12 @@
 .over-ons-intro-sec .page-entry-hdr{
 	padding-bottom: 30px;
 }
-.overons-intro-desc-title{
-	margin-bottom: 30px;
+.overons-intro-desc-title span{
+	display: inline-block;
+	vertical-align: baseline;
 }
-.xs-overons-intro-desc-title{
+.overons-intro-desc-title strong{
+	font-weight: normal;
 	display: none;
 }
 .overons-intro-desc-cntlr p{
@@ -35,6 +37,7 @@
 .overons-intro-desc-cntlr ul{
 	padding-left: 0;
 }
+
 
 .team-grid-sec .sec-entry-hdr{
 	padding-bottom: 25px;

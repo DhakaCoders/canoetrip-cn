@@ -122,7 +122,10 @@
 /*page entry-hdr*/
 
 .page-entry-hdr{
-	padding-bottom: 40px;
+	padding-bottom: 25px;
+	max-width: 848px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .page-entry-hdr-title{
 	margin-bottom: 25px;
