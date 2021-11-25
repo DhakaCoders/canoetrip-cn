@@ -88,6 +88,19 @@
 
 
 
+.hm-over-ons-sec{
+	padding-top: 70px;
+	position: relative;
+}
+
+.hm-over-ons-pos-img{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
 
 .hm-grd-sec{
 	padding: 50px 0;
