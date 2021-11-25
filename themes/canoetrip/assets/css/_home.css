@@ -483,6 +483,12 @@
 
 
 @media(max-width: 767px){
+	.hm-banner-des-cntlr{
+		height: 600px;
+	}
+	.hm-bnr-title{
+		text-align: center;
+	}
 	.hm-grds {
 	    margin-left: -5px;
 	    margin-right: -5px;
@@ -510,5 +516,44 @@
 	}
 	.client-grd-item {
 	    padding: 0 20px 25px;
+	}
+	.hm-grd-sec-inr {
+	    padding-left: 0;
+	    margin-right: 0;
+	}
+}
+
+
+@media(max-width: 639px){
+	.hm-grds {
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+	.hm-grd-item {
+	    padding-left: 0;
+	    padding-right: 0;
+	    padding-bottom: 15px;
+	    width: 100%;
+	}
+	.hm-grd-item-img {
+	    height: 320px;
+	}
+	.destination-grds {
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+	.destination-grd-item {
+	    padding-left: 0;
+	    padding-right: 0;
+	    padding-bottom: 15px;
+	    width: 100%;
+	}
+	.testimonial-grds {
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+	.testimonial-grd-item-ctlr {
+	    width: 100%;
+	    padding: 0 0 15px;
 	}
 }
