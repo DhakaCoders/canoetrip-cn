@@ -89,7 +89,7 @@
     opacity: 0;
     transition: 0.5s cubic-bezier(1, 1.54, 1, 1.79);
  }
- .team-grid-col-innr:hover .team-grd-img-cntlr{
+ .team-grid-col-innr:hover .team-grd-bg{
  	opacity: 1;
  }
  .team-grd-bg p{
