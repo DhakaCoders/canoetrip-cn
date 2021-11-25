@@ -287,6 +287,20 @@ $(".dft-fl-btn" ).each(function( index ) {
 
 /* start of Shariful */
 
+    function bannerheight(){
+      var windowWidth = $(window).width();
+      var windowHeight = $(window).height();
+      var headerHight = $('.header').height();
+      var bnrHeight = (windowHeight - headerHight);
+      if (windowWidth > 767){
+        $('.hm-banner-des-cntlr').css('height', bnrHeight);
+      }
+    }
+    bannerheight();
+    $(window).resize(function(){
+      bannerheight();
+    });
+
 
 
 
