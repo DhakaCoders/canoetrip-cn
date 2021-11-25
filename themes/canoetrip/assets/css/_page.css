@@ -97,6 +97,7 @@
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
+	margin-top: -2px;
 }
 .fl-text-btn:hover i{
 	margin-right: -5px;
