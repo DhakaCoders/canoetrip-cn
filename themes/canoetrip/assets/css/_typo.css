@@ -7,6 +7,7 @@ h1,h2,h3,h4,h5,h6{
 	margin-bottom: 20px;
 	letter-spacing: -0.02em;
 	text-transform: uppercase;
+	color: #3C6C54;
 	/*font-family: 'Bourton-Regular';*/
 }
 h1,.fl-h1{
@@ -17,6 +18,7 @@ h2,.fl-h2{
 }
 h3,.fl-h3{
 	font-size: 34px;
+	color: #444440;
 }
 h4,.fl-h4{
 	font-size: 30px;
