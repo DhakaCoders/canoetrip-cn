@@ -187,11 +187,19 @@
 	position: absolute;
 	left: 20px;
 	bottom: 30px;
+	z-index: 11;
 }
 
 .destination-grd-item-des-title{
-	color: #fff;
+	color: #DEEDE6;
 	margin-bottom: 12px;
+}
+.destination-grd-item-des-title a{
+	color: #DEEDE6;
+	text-decoration: none;
+}
+.destination-grd-item-des-title a:hover{
+	color: #46C691;
 }
 
 .destination-date-price{
