@@ -1,0 +1,45 @@
+
+
+.varmland-sec{
+	padding-bottom: 130px;
+}
+
+
+.varmland-sec-inr{
+	display: flex;
+	align-items: center;
+}
+.varmland-lft{
+	width: 50%;
+}
+
+.varmland-rgt{
+	width: 50%;
+	padding-left: 50px;
+}
+
+.varmland-img-ctlr{
+	position: relative;
+}
+
+.varmland-img{
+	height: 750px;
+}
+.varmland-img img{
+	display: none;
+}
+
+.varmland-img-des{
+	position: absolute;
+	right: 30px;
+	bottom: 20px;
+}
+
+.varmland-img-des-title{
+	color: #DEEDE6;
+}
+
+.varmland-des-title{
+	margin-bottom: 32px;
+	color: #3C6C54;
+}
