@@ -166,6 +166,7 @@
 .working-grid-item{
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .working-grid-item:hover .working-grd-img{
 	transform: scale(1.1);
@@ -197,9 +198,9 @@
 .wgd-title a:hover{
 	color: #3C6C54;
 }
-.word-grd-btn .fl-tc-btn{
+.work-grd-btn .fl-tc-btn{
 	min-width: 250px;
 }
-.working-grid-desc p{
-	margin-bottom: 18px;
+.wgd-desc{
+	padding-bottom: 1px;
 }
