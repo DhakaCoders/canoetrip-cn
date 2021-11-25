@@ -248,6 +248,9 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 
 /* hdr button */
 
+.hdr-btns{
+	margin-top: -7px;
+}
 .hdr-btns ul{
 	display: flex;
 	align-items: center;
@@ -256,8 +259,4 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 }
 .hdr-btns ul li{
 	padding: 0 5px;
-}
-
-.hdr-btns ul li a.fl-tc-btn{
-	padding: 19px 20px;
 }
