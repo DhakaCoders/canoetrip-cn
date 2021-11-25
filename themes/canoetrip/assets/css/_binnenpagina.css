@@ -11,7 +11,12 @@
 	margin-right: auto;
 }
 .dfp-plate-one-img-bx{
+	box-shadow: -10px 10px 30px rgba(68, 68, 65, 0.25);
+	-ms-box-shadow: -10px 10px 30px rgba(68, 68, 65, 0.25);
+	-webkit-box-shadow: -10px 10px 30px rgba(68, 68, 65, 0.25);
+	border-radius: 4px;
 	margin-bottom: 35px;
+	overflow: hidden;
 }
 .dfp-plate-one-img-bx img{
 	width: 100%;
@@ -84,12 +89,17 @@ Gallery design
 	padding: 0 12px;
 	margin-bottom: 36px;
 }
-
+.gallery-columns-3 .gallery-item{
+	margin-bottom: 25px;
+}
 .has-inline-bg .gallery-icon-img{
 	height: 264px;
 	display: block;
 }
-
+.gallery-icon {
+    border-radius: 3px;
+    overflow: hidden;
+}
 .has-inline-bg .gallery-item img{
 	display: none;
 }
@@ -190,12 +200,12 @@ Gallery design
 
 .fl-dft-lftimg-rgtdes {
 	margin: 0 0;
-	padding-bottom: 65px;
+	padding-bottom: 50px;
 	display: flex;
 	align-items: center;
 }
 .fl-dft-lftimg-rgtdes-lft{
-	height: 350px;
+	height: 443px;
 }
 .fl-dft-lftimg-rgtdes-lft div{
 	height: 100%;
@@ -214,9 +224,16 @@ Gallery design
 .fl-dft-lftimg-rgtdes-rgt {
 	width: 50%;
 	position: relative;
+    overflow: hidden;
+}
+.fl-dft-lftimg-rgtdes-lft{
+    border-radius: 3px;
+    box-shadow: -4px 4px 30px rgba(68, 68, 65, 0.25);
+	-ms-box-shadow: -4px 4px 30px rgba(68, 68, 65, 0.25);
+	-webkit-box-shadow: -4px 4px 30px rgba(68, 68, 65, 0.25);
 }
 .fl-dft-lftimg-rgtdes-rgt {
-	padding-left: 60px;
+	padding-left: 70px;
 	padding-bottom: 5px;
 	padding-top: 0;
 }
@@ -251,7 +268,7 @@ Gallery design
 /*table*/
 
 .dfp-tbl-wrap{
-	padding-top: 70px;
+	padding-top: 50px;
 }
 
 .dfp-tbl-wrap h6{
@@ -286,7 +303,7 @@ Gallery design
 
 .table-dsc table tbody tr td:first-child,
 .table-dsc table tbody tr td:last-child{
-	color: #777F84;
+	color: #444440;
 }
 
 .table-dsc table{
@@ -323,11 +340,11 @@ Gallery design
 
 .table-dsc table tr th {
 	border: none;
-	color: #777F84;
+	color: #4C5D5B;
 	font-weight: 700;
 	padding: 15px 0 14px;
 	font-size: 16px;
-	line-height: 18px;
+	line-height: 22px;
 }
 .table-dsc table tr th span{
 	display: block;
@@ -335,8 +352,8 @@ Gallery design
 .table-dsc table thead th span{
 	font-weight: 700;
 	font-size: 16px;
-	line-height: 18px;
-	color: #777F84;
+	line-height: 22px;
+	color: #444440;
 }
 .table-dsc table thead tr th,
 .table-dsc table tbody tr td{
@@ -358,8 +375,12 @@ Gallery design
 	margin: 0 3px;
 }
 .table-dsc table tbody tr td span{
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 19.6px;
+	color: #444440;
 }
 .table-dsc table span{
 	display: block;
@@ -467,11 +488,11 @@ Gallery design
 }
 
 .half-item-gallery.has-inline-bg .gallery-icon-img{
-	height: 185px;
+	height: 264px;
 }
 
 .dfp-btn-module{
-	padding-top: 60px;
+	padding-top: 50px;
 }
 .dfp-btn-module .dfp-btn-module-ctlr ul{
 	padding-left: 0;
@@ -486,7 +507,9 @@ Gallery design
 	padding-right: 12px;
 	width: 21%;
 }
-
+.dfp-btn-module-ctlr ul li a{
+	min-width: 194px;
+}
 .dfp-full-width-img-module{
 	padding-bottom: 65px;
 }
