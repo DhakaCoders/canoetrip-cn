@@ -569,6 +569,27 @@ Gallery design
 .dfp-team-grid-wrap {
     padding-bottom: 60px;
 }
+.dfp-included-sec-module .included-grds ul,
+.dfp-info-pagine-fea-cntlr .info-pagine-fea ul{
+	padding: 0!important;
+	margin: 0!important;
+}
+.dfp-included-sec-module .included-grds ul li,
+.dfp-info-pagine-fea-cntlr .info-pagine-fea ul li{
+	padding-top: 0!important;
+	padding-left: 0!important;
+}
+.dfp-info-pagine-fea-cntlr {
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+.dfp-phasellus-grd-cntlr .phasellus-grd-item{
+	width: 25%;
+}
+.dfp-phasellus-grd-cntlr {
+    padding-top: 27px;
+    padding-bottom: 25px;
+}
 /*responsive*/
 
 @media(max-width: 1699px){
