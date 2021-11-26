@@ -283,7 +283,30 @@ $(".dft-fl-btn" ).each(function( index ) {
 
 /* start of Momin */
 
-
+if(windowWidth <= 767){
+    $('.teamGridSlider').slick({
+      dots: true,
+      infinite: true,
+      autoplay: false,
+      arrows: false,
+      autoplaySpeed: 1000,
+      speed: 700,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
 
 /* start of Shariful */
 
