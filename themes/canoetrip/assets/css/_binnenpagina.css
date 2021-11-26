@@ -572,10 +572,25 @@ Gallery design
 }
 
 
-
-
-
-
+/*extra*/
+.dfp-destination-grid-module-cntlr {
+    padding-bottom: 55px;
+}
+.dfp-blog-sec-cntlr .sec-entry-hdr{
+	padding-bottom: 0;
+}
+.dfp-blog-grid-cntlr .blog-grd-item-des{
+	text-align: center;
+}
+.dfp-blog-grid-cntlr .blog-grd-item-inr{
+	height: 100%;
+}
+.dfp-blog-grid-cntlr .blog-grd-des-title{
+	margin-bottom: 25px!important;
+}
+.dfp-blog-grid-cntlr .blog-grd-item-img-des-inr {
+	flex-direction: column;
+}
 
 /*responsive*/
 
