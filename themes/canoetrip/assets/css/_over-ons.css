@@ -51,7 +51,7 @@
 }
 .team-grid-sec{
 	padding-top: 50px;
-	padding-bottom: 70px;
+	padding-bottom: 30px;
 }
 
 .team-grid-col-innr{
@@ -67,11 +67,11 @@
 .team-grid-items{
 	display: flex;
 	margin: 0 -12px;
+	flex-wrap: wrap;
 }
 .team-grid-col{
-	padding: 0 12px;
-	max-width: 25%;
-	width: 100%;
+	padding: 0 12px 40px;
+	width: 25%;
 }
 .team-grd-bg {
   position: absolute;
@@ -248,10 +248,14 @@
 		margin: 0 -10px;
 	}
 	.team-grid-col{
-		padding: 0 10px;
+		padding: 0 10px 40px;
 	}
 	.team-grd-img{
-		height: 340px;
+		height: 320px;
+	}
+	.team-grd-sml-img i img{
+		width: 45px;
+		height: auto;
 	}
 	.overons-intro-featured-img{
 		/*height: 650px;*/
@@ -286,14 +290,21 @@
 }
 
 @media(max-width: 991px){
+	.team-grid-sec .sec-entry-hdr{
+		max-width: 580px;;
+		margin: 0 auto;
+	}
+	.team-grid-sec-cntlr{
+		max-width: 610px;
+		width: 100%;
+		margin: 0 auto;
+	}
 	.team-grid-items{
-		margin: 0 -8px;
+		margin: 0 -12px;
 	}
 	.team-grid-col{
-		padding: 0 8px;
-	}
-	.team-grd-img{
-		height: 300px;
+		padding: 0 12px 40px;
+		width: 50%;
 	}
 	.team-grd-sml-img i img{
 		width: 40px;
@@ -312,7 +323,7 @@
   	width: 38%;
   }
   .working-grd-img{
-  	height: 160px;
+  	height: 170px;
   }
   .working-grid-desc{
   	width: 62%;
