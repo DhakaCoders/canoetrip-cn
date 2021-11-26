@@ -613,6 +613,10 @@ Gallery design
 	.dfp-full-img-module{
 		padding-bottom: 65px;
 	}
+	.dfp-tbl-wrap {
+	    padding-top: 40px;
+	}
+
 
 }
 
@@ -625,7 +629,7 @@ Gallery design
 	    margin-bottom: 30px;
 	}
 	.default-page-con{
-		padding-bottom: 80px;
+		padding-bottom: 50px;
 	}
 	.dfp-destination-grid-module-cntlr {
 	    padding-bottom: 30px;
@@ -649,12 +653,6 @@ Gallery design
 	}
 	.glry-col-3 .gallery-icon-img {
 	    height: 240px;
-	}
-	.dfp-tbl-wrap {
-	    margin-bottom: 50px;
-	}
-	.default-page-con {
-	    padding-bottom: 50px;
 	}
 	.default-page-con ol, 
 	.default-page-con ul, 
@@ -687,7 +685,9 @@ Gallery design
 	.half-item-gallery.has-inline-bg .gallery-icon-img {
 	    height: 220px;
 	}
-	
+	.dfp-tbl-wrap {
+	    padding-top: 30px;
+	}
 
 }
 
