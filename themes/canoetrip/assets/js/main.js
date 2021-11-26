@@ -291,7 +291,7 @@ if(windowWidth <= 767){
       arrows: false,
       autoplaySpeed: 1000,
       speed: 700,
-      slidesToShow: 2,
+      slidesToShow: 1,
       slidesToScroll: 1,
       responsive: [
         {
