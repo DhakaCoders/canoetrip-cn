@@ -502,6 +502,7 @@ Gallery design
 	align-items: center;
 	margin-left: -12px;
 	margin-right: -12px;
+    flex-wrap: wrap;
 }
 
 .dfp-btn-module-ctlr ul li{
@@ -626,6 +627,26 @@ Gallery design
 	.default-page-con{
 		padding-bottom: 80px;
 	}
+	.dfp-destination-grid-module-cntlr {
+	    padding-bottom: 30px;
+	}
+	.dfp-blog-sec-cntlr {
+	    padding-bottom: 35px;
+	}
+	.fl-video-play-cntlr i svg {
+	    width: 60px;
+	    height: 60px;
+	}
+	.dfp-testimonial-grid-cntlr {
+	    padding-top: 20px;
+	    padding-bottom: 40px;
+	}
+	.dfp-team-grid-wrap {
+	    padding-bottom: 30px;
+	}
+	.dfp-full-img-module {
+	    padding-bottom: 50px;
+	}
 	.glry-col-3 .gallery-icon-img {
 	    height: 240px;
 	}
@@ -641,58 +662,13 @@ Gallery design
 	ul{
 		padding-left: 24px;
 	}
-	.dfp-lft-hr-border {
-	    padding-top: 50px;
-	}
-	.dfp-rgt-hr-border {
-	    padding-top: 50px;
-	}
-	.dfp-blockqoute blockquote {
-	    padding: 80px 40px 80px 150px;
-	}
-	.dfp-blockqoute blockquote i img{
-		max-width: 50px;
-		width: 100%;
-	}
-	.dfp-blockqoute blockquote p{
-		font-size: 25px;
-	}
-	.dfp-full-img-module {
-	    padding-bottom: 70px;
-	}
 	.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-rgt {
-	    padding-right: 30px;
+	    padding-right: 35px;
 	}
 	.fl-dft-lftimg-rgtdes-rgt {
-	    padding-left: 30px;
+	    padding-left: 35px;
 	}
-	.dfp-partners-module {
-	    padding-top: 50px;
-	    padding-bottom: 35px;
-	}
-	.dfp-large-text-module {
-    	padding-bottom: 5px;
-	}
-	.dfp-large-text-module p {
-    	font-size: 24px;
-	}
-	.dfp-nieuws-details-grds-module{
-		flex-wrap: wrap;
-	}
-	.dfp-nieuws-details-lft{
-		width: 100%;
-		padding-right: 0;
-	}
-	.dfp-nieuws-details-grds-ctlr{
-		width: 100%;
-	}
-	.dfp-nieuws-details-lft .nieuws-details-lft-title {
-    	font-size: 35px;
-	}
-	.dfp-date-module {
-    	padding-bottom: 25px;
-	}
-	.block-850{
+	.block-848{
 		max-width: 100%;
 		width: 100%;
 		padding-left: 0;
@@ -705,19 +681,11 @@ Gallery design
 	.gallery-item{
 		padding: 0 10px;
 	}
-	#nieuws-details .cta-module-lft {
-	    padding-right: 0;
-	    width: 100%;
-	    padding-bottom: 7px;
+	.dfp-btn-module-ctlr ul li{
+		width: 33.333%;
 	}
-	#nieuws-details .cta-module-mid {
-	    padding-right: 0;
-	    width: 100%;
-	    padding-bottom: 23px;
-	}
-	#nieuws-details .cta-module-rgt {
-	    width: 100%;
-	    text-align: left;
+	.half-item-gallery.has-inline-bg .gallery-icon-img {
+	    height: 220px;
 	}
 	
 
