@@ -342,3 +342,26 @@
 	}
 
 }
+
+@media(max-width: 639px){
+	.team-grid-col{
+		padding: 0 10px 40px;
+	}
+	.team-grid-items{
+		margin: 0 -10px;
+	}
+	.team-grd-bg{
+		padding: 20px 25px;
+	}
+	.team-grd-img{
+		height: 300px;
+	}
+}
+
+@media(max-width: 575px){
+	.team-grid-col-innr {
+	  width: 100%;
+	  max-width: 300px;
+	  margin: 0 auto;
+	}
+}
