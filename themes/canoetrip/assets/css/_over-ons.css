@@ -17,7 +17,7 @@
 }
 .overons-intro-desc-cntlr{
 	width: 49%;
-	padding-left: 60px;
+	padding-left: 70px;
 	padding-top: 30px;
 }
 .over-ons-intro-sec .page-entry-hdr{
@@ -144,6 +144,7 @@
   top: 0;
   width: 322px;
   height: 388px;
+  margin-top: -204px;
 }
 .ov-ons-des-btn{
 	padding-top: 5px;
