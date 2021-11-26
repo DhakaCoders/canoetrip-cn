@@ -218,6 +218,15 @@
 	.blog-grd-item-img{
 		height: 200px;
 	}
+	.blogGrdSlider .blog-grd-item{
+		display: none;
+	}
+	.blogGrdSlider .blog-grd-item:first-child{
+		display: block;
+	}
+	.blogGrdSlider.slick-initialized .blog-grd-item{
+		display: block;
+	}
 }
 
 @media(max-width: 575px){
