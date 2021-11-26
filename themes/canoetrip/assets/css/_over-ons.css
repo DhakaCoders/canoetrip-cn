@@ -18,7 +18,7 @@
 .overons-intro-desc-cntlr{
 	width: 49%;
 	padding-left: 70px;
-	padding-top: 30px;
+	padding-top: 40px;
 }
 .over-ons-intro-sec .page-entry-hdr{
 	padding-bottom: 30px;
@@ -113,12 +113,16 @@
  }
   .team-grd-bg p:last-of-type{
   	margin-bottom: 0;
-  }
+ }
  .team-grd-sml-img {
     position: absolute;
     bottom: -20px;
     left: 11px;
     z-index: 2;
+}
+.team-grd-sml-img i{
+	display: inline-block;
+	vertical-align: baseline;
 }
 .team-grd-desc{
 	text-align: center;
@@ -170,6 +174,7 @@
 	z-index: 2;
 	width: 159px;
 	height: 193px;
+	margin-top: 12px;
 
 }
 .working-grids-cntlr ul{
@@ -223,6 +228,103 @@
 .wgd-desc{
 	padding-bottom: 1px;
 }
-
+.wgd-desc p{
+	font-size: 17px;
+	margin-bottom: 18px;
+}
 
 /*start-responsive*/
+
+@media(max-width: 1199px){
+	.overons-intro-desc-cntlr{
+		padding-top: 10px;
+		padding-left: 60px;
+	}
+	.team-grid-items{
+		margin: 0 -10px;
+	}
+	.team-grid-col{
+		padding: 0 10px;
+	}
+	.team-grd-img{
+		height: 340px;
+	}
+	.overons-intro-featured-img{
+		/*height: 650px;*/
+	}
+	.working-grids-cntlr ul{
+		margin: 0 -10px;
+	}
+	.working-grids-cntlr ul li{
+		padding: 0 10px;
+	}
+	.working-grid-img-ctlr{
+		width: 36%;
+		max-width: 169px;
+	}
+	.working-grid-desc{
+		width: 64%;
+		padding-left: 18px;
+	}
+	.wgd-desc p{
+		margin-bottom: 15px;
+	}
+	.wgd-title{
+		margin-bottom: 8px;
+	}
+	.working-grd-img{
+		height: 180px;
+	}
+	.work-grd-btn .fl-tc-btn {
+    min-width: 230px;
+	}
+
+}
+
+@media(max-width: 991px){
+	.team-grid-items{
+		margin: 0 -8px;
+	}
+	.team-grid-col{
+		padding: 0 8px;
+	}
+	.team-grd-img{
+		height: 300px;
+	}
+	.team-grd-sml-img i img{
+		width: 40px;
+		height: auto;
+	}
+	.tgd-title{
+		margin-bottom: 15px;
+	}
+	.working-grids-cntlr ul{
+		margin: 0 -8px;
+	}
+	.working-grids-cntlr ul li{
+		padding: 0 8px;
+	}
+  .working-grid-img-ctlr{
+  	width: 38%;
+  }
+  .working-grd-img{
+  	height: 164px;
+  }
+  .working-grid-desc{
+  	width: 62%;
+  	padding-left: 14px;
+		padding-right: 0;
+  }
+	.wgd-title{
+		margin-bottom: 5px;
+	}
+	.wgd-desc p{
+		margin-bottom: 12px;
+		line-height: 1.2;
+	}
+	.work-grd-btn .fl-tc-btn{
+		min-width: 205px;
+		font-size: 16px;
+	}
+
+}
