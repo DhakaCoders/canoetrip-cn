@@ -565,6 +565,9 @@ Gallery design
     padding-top: 50px;
     padding-bottom: 75px;
 }
+.dfp-team-grid-wrap {
+    padding-bottom: 60px;
+}
 /*responsive*/
 
 @media(max-width: 1699px){
