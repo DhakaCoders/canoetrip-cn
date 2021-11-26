@@ -1,0 +1,33 @@
+.fag-overzicht-btn{
+	padding-bottom: 20px;
+	margin-bottom: 65px;
+	border-bottom: 2px solid #F8F8F8;
+}
+.fag-overzicht-btn ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 -25px;
+}
+.fag-overzicht-btn ul li{
+	padding: 0 25px;
+	display: block;
+	line-height: 1;
+	margin-bottom: 20px;
+}
+
+.fag-overzicht-btn ul li a{
+	text-transform: uppercase;
+	display: inline-block;
+	font-family: Bourton;
+	font-size: 16px;
+	line-height: 1;
+	letter-spacing: -0.02em;
+	color: #444440;
+	text-decoration: none;
+}
+.fag-overzicht-btn ul li a:hover,
+.fag-overzicht-btn ul li.active a{
+	color: #46C691;
+}
