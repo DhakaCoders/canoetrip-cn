@@ -264,3 +264,14 @@ ol li:before{
 
 }
 
+
+
+
+
+@media(max-width: 767px){
+	.fl-tc-btn{
+		min-width: 144px;
+		font-size: 16px;
+	}
+}
+

@@ -288,7 +288,7 @@ $('.cntrp-faq-accordion-hdr').on('click', function(){
 
 /* start of Momin */
 
-if(windowWidth <= 767){
+if(windowWidth <= 639){
     $('.teamGridSlider').slick({
       dots: true,
       infinite: true,
@@ -296,7 +296,7 @@ if(windowWidth <= 767){
       arrows: false,
       autoplaySpeed: 1000,
       speed: 700,
-      slidesToShow: 1,
+      slidesToShow: 2,
       slidesToScroll: 1,
       responsive: [
         {
@@ -328,6 +328,55 @@ if(windowWidth <= 767){
     $(window).resize(function(){
       bannerheight();
     });
+
+    if(windowWidth <= 639){
+      $('.hmGrdsSlider').slick({
+        dots: true,
+        infinite: true,
+        autoplay: false,
+        arrows: false,
+        autoplaySpeed: 1000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+    if(windowWidth <= 639){
+      $('.destinationSlider').slick({
+        dots: true,
+        infinite: true,
+        autoplay: false,
+        arrows: false,
+        autoplaySpeed: 1000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+    if(windowWidth <= 639){
+      $('.testimonialSlider').slick({
+        dots: true,
+        infinite: true,
+        autoplay: false,
+        arrows: false,
+        autoplaySpeed: 1000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+    if(windowWidth <= 639){
+      $('.blogGrdSlider').slick({
+        dots: true,
+        infinite: true,
+        autoplay: false,
+        arrows: false,
+        autoplaySpeed: 1000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
 
 
     

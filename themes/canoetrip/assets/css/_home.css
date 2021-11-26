@@ -534,6 +534,7 @@
 	.hm-grds {
 	    margin-left: 0;
 	    margin-right: 0;
+	    display: block;
 	}
 	.hm-grd-item {
 	    padding-left: 0;
@@ -541,12 +542,28 @@
 	    padding-bottom: 15px;
 	    width: 100%;
 	}
+	.hmGrdsSlider .hm-grd-item,
+	.destinationSlider .destination-grd-item,
+	.testimonialSlider .testimonial-grd-item-ctlr{
+		display: none;
+	}
+	.hmGrdsSlider .hm-grd-item:first-child,
+	.destinationSlider .destination-grd-item:first-child,
+	.testimonialSlider .testimonial-grd-item-ctlr:first-child,{
+		display: block;
+	}
+	.hmGrdsSlider.slick-initialized .hm-grd-item,
+	.destinationSlider.slick-initialized .destination-grd-item,
+	.testimonialSlider.slick-initialized .testimonial-grd-item-ctlr{
+		display: block;
+	}
 	.hm-grd-item-img {
 	    height: 320px;
 	}
 	.destination-grds {
 	    margin-left: 0;
 	    margin-right: 0;
+	    display: block;
 	}
 	.destination-grd-item {
 	    padding-left: 0;
@@ -557,6 +574,7 @@
 	.testimonial-grds {
 	    margin-left: 0;
 	    margin-right: 0;
+	    display: block;
 	}
 	.testimonial-grd-item-ctlr {
 	    width: 100%;
