@@ -26,9 +26,9 @@
 	width: 100%;
 }
 
-.destination-date span, 
-.destination-from span, 
-.destination-price span{
+.info-page-intro-sec .destination-date span, 
+.info-page-intro-sec .destination-from span, 
+.info-page-intro-sec .destination-price span{
 	color: #444440;
 }
 

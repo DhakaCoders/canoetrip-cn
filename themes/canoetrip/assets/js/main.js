@@ -324,6 +324,55 @@ if(windowWidth <= 639){
       bannerheight();
     });
 
+    if(windowWidth <= 639){
+      $('.hmGrdsSlider').slick({
+        dots: true,
+        infinite: true,
+        autoplay: false,
+        arrows: false,
+        autoplaySpeed: 1000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+    if(windowWidth <= 639){
+      $('.destinationSlider').slick({
+        dots: true,
+        infinite: true,
+        autoplay: false,
+        arrows: false,
+        autoplaySpeed: 1000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+    if(windowWidth <= 639){
+      $('.testimonialSlider').slick({
+        dots: true,
+        infinite: true,
+        autoplay: false,
+        arrows: false,
+        autoplaySpeed: 1000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+    if(windowWidth <= 639){
+      $('.blogGrdSlider').slick({
+        dots: true,
+        infinite: true,
+        autoplay: false,
+        arrows: false,
+        autoplaySpeed: 1000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+
 
     
     
