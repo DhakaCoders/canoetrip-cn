@@ -283,7 +283,7 @@ $(".dft-fl-btn" ).each(function( index ) {
 
 /* start of Momin */
 
-if(windowWidth <= 767){
+if(windowWidth <= 639){
     $('.teamGridSlider').slick({
       dots: true,
       infinite: true,
@@ -291,7 +291,7 @@ if(windowWidth <= 767){
       arrows: false,
       autoplaySpeed: 1000,
       speed: 700,
-      slidesToShow: 1,
+      slidesToShow: 2,
       slidesToScroll: 1,
       responsive: [
         {
