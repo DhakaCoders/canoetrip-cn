@@ -550,4 +550,21 @@ body.allWork {
 	nav.main-nav > ul > li.menu-item-has-children > a:before {
 	    font-size: 18px;
 	}
+	.xs-hdr-social-media{
+		padding-top: 30px;
+		text-align: right;
+	}
+	.hdr-social-media ul{
+		display: flex;
+		justify-content: flex-end;
+	}
+	.hdr-social-media ul li{
+		padding-left: 35px;
+	}
+	.hdr-social-media ul li a{
+		display: inline-block;
+		vertical-align: baseline;
+		color: #444441;
+		font-size: 22px;
+	}
 }
