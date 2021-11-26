@@ -275,7 +275,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 	height: 115px;
 	background: url('../images/humbergar-bg.png');
 	background-repeat: no-repeat!important;
-	z-index: 99;
+	z-index: 999;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -329,7 +329,7 @@ body.allWork .hamburger-icon span:nth-child(2){
 }
 
 .allWork .bdoverlay {
-    z-index: 9999;
+    z-index: 98;
     opacity: 1;
 }
 .bdoverlay {
@@ -351,7 +351,7 @@ body.allWork {
 .allWork .xs-mobile-menu {
     right: 0;
     opacity: 1;
-    z-index: 99999;
+    z-index: 99;
     width: 100%;
 }
 .xs-mobile-menu {
@@ -361,16 +361,18 @@ body.allWork {
     bottom: 0;
     background: #fff;
     width: 0;
-    z-index: 99999;
+    z-index: 99;
     opacity: 0;
     -ms-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    padding: 30px 0;
+    padding: 20px 0 40px;
     height: 100%;
     max-width: 375px;
     width: 100%;
 }
+
+
 
 
 
@@ -460,5 +462,92 @@ body.allWork {
 	}
 	.hdr-lft{
 		text-align: center;
+	}
+	.xs-pop-up-menu-top {
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    left: 0;
+	    z-index: 5;
+	   	text-align: center;
+	    padding: 30px 20px;
+	    background: #fff;
+	}
+
+	.xs-menu {
+	    height: 100%;
+	    width: 100%;
+	    overflow-y: auto;
+	    padding-bottom: 5px;
+	    padding-top: 100px;
+	    padding-left: 35px;
+	    padding-right: 35px;
+	}
+	.hdr-menu {
+	    padding-right: 0;
+	}
+	nav.main-nav > ul {
+	    margin-right: 0;
+	    margin-left: 0;
+	    display: block;
+	    text-align: center;
+	}
+	nav.main-nav > ul > li {
+	    padding: 15px 0;
+	}
+	nav.main-nav > ul > li > a{
+		padding-bottom: 0;
+	}
+	.hdr-rgt{
+		display: block;
+		text-align: center;
+	}
+	.fl-lang{
+		padding-bottom: 30px;
+	}
+	.fl-lang-cntlr{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.fl-lang ul li a {
+	    font-size: 20px;
+	}
+	.hdr-btns {
+	    margin-top: 0;
+	}
+	.hdr-btns ul {
+	    display: block;
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+	.hdr-btns ul li {
+	    padding: 0 0;
+	    padding-bottom: 12px;
+	}
+	.hdr-btns .fl-tc-btn {
+	    min-width: 100%;
+	    font-size: 18px;
+	    padding: 10px 10px;
+	}
+	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu {
+        position: static;
+        z-index: 15;
+        width: 100%;
+        padding: 0;
+        transition: initial;
+        transform: initial;
+        opacity: 1;
+        box-shadow: none;
+        display: none;
+        background: transparent!important;
+    }
+    nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li{
+    	border-bottom: none;
+    }
+    nav.main-nav > ul > li > a {
+	    font-size: 20px;
+	}
+	nav.main-nav > ul > li.menu-item-has-children > a:before {
+	    font-size: 18px;
 	}
 }

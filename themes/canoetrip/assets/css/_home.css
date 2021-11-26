@@ -521,6 +521,12 @@
 	    padding-left: 0;
 	    margin-right: 0;
 	}
+	.hm-bnr-btn ul{
+		justify-content: center;
+	}
+	.hm-bnr-btn .fl-tc-btn{
+		min-width: 144px;
+	}
 }
 
 
