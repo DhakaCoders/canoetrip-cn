@@ -590,6 +590,9 @@ Gallery design
     padding-top: 27px;
     padding-bottom: 25px;
 }
+.dfp-included-sec-module .included-sec{
+	margin-bottom: 80px;
+}
 /*responsive*/
 
 @media(max-width: 1699px){
