@@ -15,16 +15,15 @@
     width: 50%;
 }
 
-.info-page-feature-img.has-inline-bg img{
+.info-page-feature-img img{
 	display: none;
 }
-.info-page-feature-img.has-inline-bg{
+.has-inline-bg .info-page-feature-img{
 	height: 750px;
-}
-.info-page-feature-img.has-inline-bg div{
-	height: 100%;
-	width: 100%;
 	border-radius: 4px;
+}
+.has-inline-bg .info-pagine-fea-img{
+	display: none;
 }
 
 .info-page-intro-sec .destination-date span, 
@@ -44,7 +43,8 @@
 }
 
 .info-pagine-fea-item{
-	padding-left: 50px;
+	padding-left: 60px;
+	height: 50px;
 	position: relative;
 }
 
@@ -94,6 +94,7 @@
 .phasellus-grd-item-img-ctlr{
 	position: relative;
 	overflow: hidden;
+	border-radius: 4px 4px 0 0;
 }
 
 .phasellus-grd-item-img{
