@@ -517,7 +517,7 @@ Gallery design
 	padding-bottom: 65px;
 }
 .dfp-full-img-module{
-	padding-bottom: 80px;
+	padding-bottom: 70px;
 }
 .dfp-grd-module-ctlr{
 	padding-bottom: 40px;
@@ -569,6 +569,7 @@ Gallery design
 .dfp-team-grid-wrap {
     padding-bottom: 60px;
 }
+.dfp-canoetrip-fag-wrap .cntrp-fag ul,
 .dfp-included-sec-module .included-grds ul,
 .dfp-info-pagine-fea-cntlr .info-pagine-fea ul{
 	padding: 0!important;
@@ -578,6 +579,9 @@ Gallery design
 .dfp-info-pagine-fea-cntlr .info-pagine-fea ul li{
 	padding-top: 0!important;
 	padding-left: 0!important;
+}
+.dfp-canoetrip-fag-wrap .cntrp-fag ul li{
+	padding: 0!important;
 }
 .dfp-info-pagine-fea-cntlr {
     padding-top: 30px;
@@ -592,6 +596,11 @@ Gallery design
 }
 .dfp-included-sec-module .included-sec{
 	margin-bottom: 80px;
+}
+.dfp-canoetrip-fag-wrap .cntrp-fag-title{
+	margin-bottom: 45px!important;
+	color: #3C6C54;
+	text-align: left;
 }
 /*responsive*/
 
@@ -635,7 +644,7 @@ Gallery design
 	    padding-bottom: 45px;
 	}
 	.dfp-full-img-module{
-		padding-bottom: 65px;
+		padding-bottom: 60px;
 	}
 	.dfp-tbl-wrap {
 	    padding-top: 40px;
