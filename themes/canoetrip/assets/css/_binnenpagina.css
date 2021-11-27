@@ -545,7 +545,14 @@ hr {
     border-top: none;
     border-bottom: 2px solid #F8F8F8;
 }
-
+.dfp-full-width-img-module .full-img {
+    border-radius: 4px 4px 0px 0px;
+    overflow: hidden;
+}
+.full-img {
+    border-radius: 4px;
+    overflow: hidden;
+}
 
 /*extra*/
 .dfp-destination-grid-module-cntlr {
