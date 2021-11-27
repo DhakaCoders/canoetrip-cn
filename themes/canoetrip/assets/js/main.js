@@ -377,6 +377,18 @@ if(windowWidth <= 639){
         slidesToScroll: 1
       });
     }
+    if(windowWidth <= 575){
+      $('.phasellusSlider').slick({
+        dots: true,
+        infinite: true,
+        autoplay: false,
+        arrows: false,
+        autoplaySpeed: 1000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
 
 
     
