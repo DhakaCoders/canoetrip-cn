@@ -1,11 +1,6 @@
 .cta-module-sec{
 	position: relative;
 	overflow: hidden;
-	background-color: rgba(60, 108, 84, 1);
-	background-repeat: no-repeat!important;
-	background-size: cover!important;
-	background-position: center center!important;
-	background-attachment: fixed!important;
 }
 .cta-module-bg{
 	position: absolute;
@@ -14,6 +9,7 @@
 	left: 0;
 	bottom: 0;
 	z-index: 3;
+	background-attachment: fixed;
 }
 .cta-video-cntlr{
 	position: absolute;
@@ -41,10 +37,10 @@
 	display: block;
 }
 
-.has-vdo.cta-module-sec{
-	background: transparent!important;
+.has-vdo .cta-module-bg{
+	display: none;
 }
-/*.cta-module-overlay{
+.cta-module-overlay{
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -52,7 +48,7 @@
 	bottom: 0;
 	z-index: 2;
 	background: rgba(60, 108, 84, 1);
-}*/
+}
 .cta-module-cntlr{
 	position: relative;
 	z-index: 5;
