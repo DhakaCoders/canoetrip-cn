@@ -614,6 +614,9 @@ hr {
 .dfp-canoetrip-fag-wrap {
     padding-bottom: 40px;
 }
+.dfp-cta-module-cntlr {
+    margin-bottom: 45px;
+}
 /*responsive*/
 
 @media(max-width: 1699px){
