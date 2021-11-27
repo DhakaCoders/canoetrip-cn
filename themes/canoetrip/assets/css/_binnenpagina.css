@@ -527,7 +527,13 @@ Gallery design
 }
 
 
-
+hr {
+    margin-top: 0;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    border-top: none;
+    border-bottom: 2px solid #F8F8F8;
+}
 
 
 /*extra*/
@@ -601,6 +607,15 @@ Gallery design
 	margin-bottom: 45px!important;
 	color: #3C6C54;
 	text-align: left;
+}
+.dfp-canoetrip-fag-wrap .canoetrip-fag-cntlr {
+    padding-bottom: 40px;
+}
+.dfp-canoetrip-fag-wrap {
+    padding-bottom: 40px;
+}
+.dfp-cta-module-cntlr {
+    margin-bottom: 45px;
 }
 /*responsive*/
 
