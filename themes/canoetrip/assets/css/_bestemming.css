@@ -52,6 +52,15 @@
 	margin-bottom: 32px;
 	color: #3C6C54;
 }
+.varmland-accordion{
+	padding-top: 40px;
+}
+.varmland-accordion .cntrp-fag ul{
+	display: block;
+}
+.varmland-accordion .cntrp-fag ul li {
+    width: 100%;
+}
 
 
 
@@ -213,7 +222,7 @@
 	}
 	.blog-grd-item {
 	    width: 100%;
-	    padding: 0 0 25px;
+	    padding: 0 0 40px;
 	}
 	.blog-grd-item-img{
 		height: 200px;
@@ -226,6 +235,15 @@
 	}
 	.blogGrdSlider.slick-initialized .blog-grd-item{
 		display: block;
+	}
+	.blog-grd-item-inr{
+		max-width: 375px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.blog-sec {
+	    padding-bottom: 35px;
 	}
 }
 

@@ -365,7 +365,7 @@ if(windowWidth <= 639){
         slidesToScroll: 1
       });
     }
-    if(windowWidth <= 639){
+    if(windowWidth <= 767){
       $('.blogGrdSlider').slick({
         dots: true,
         infinite: true,
