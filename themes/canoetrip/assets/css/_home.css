@@ -419,6 +419,10 @@
 	transform: scale(1.1);
 }
 
+.testimonial-icon{
+	display: none;
+}
+
 
 
 
@@ -479,6 +483,9 @@
 	.testimonial-grd-item-ctlr{
 		width: 50%;
 	}
+	.destination-sec {
+	    padding: 50px 0 90px;
+	}
 }
 
 
@@ -527,6 +534,9 @@
 	.hm-bnr-btn .fl-tc-btn{
 		min-width: 144px;
 	}
+	.destination-sec {
+	    padding: 50px 0 70px;
+	}
 }
 
 
@@ -539,7 +549,7 @@
 	.hm-grd-item {
 	    padding-left: 0;
 	    padding-right: 0;
-	    padding-bottom: 15px;
+	    padding-bottom: 25px;
 	    width: 100%;
 	}
 	.hmGrdsSlider .hm-grd-item,
@@ -568,16 +578,64 @@
 	.destination-grd-item {
 	    padding-left: 0;
 	    padding-right: 0;
-	    padding-bottom: 15px;
+	    padding-bottom: 40px;
 	    width: 100%;
+	}
+	.destination-btm-btn{
+		padding-top: 15px;
 	}
 	.testimonial-grds {
 	    margin-left: 0;
 	    margin-right: 0;
 	    display: block;
+	    padding-bottom: 50px;
 	}
 	.testimonial-grd-item-ctlr {
 	    width: 100%;
-	    padding: 0 0 15px;
+	    padding: 0 0 28px;
+	}
+	.destination-grd-item-img {
+	    height: 515px;
+	}
+	.destination-grd-item-inr,
+	.testimonial-grd-item{
+		max-width: 375px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.testimonial-grd-item-inr{
+		display: block;
+	}
+	.testimonial-grd-item-img{
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 20px;
+	}
+	.testimonial-grd-item-des {
+	    padding-left: 0;
+	    text-align: center;
+	}
+	.testimonial-grd-item-rating{
+		justify-content: center;
+	}
+	.testimonial-grd-item{
+		position: relative;
+	}
+	.testimonial-icon{
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		display: block;
+	}
+	.testimonial-icon i{
+		display: inline-block;
+		vertical-align: baseline;
+	}
+}
+
+@media(max-width: 479px){
+	.hm-bnr-btn .fl-tc-btn {
+	    min-width: 130px;
 	}
 }
