@@ -284,8 +284,8 @@ $('.cntrp-faq-accordion-hdr').on('click', function(){
 
 /* start of Kashob*/
 if (windowWidth <= 767){
-  if( $('.btmGallerySlider').length ){
-    $('.btmGallerySlider').slick({
+  if( $('.BtmGallerySlider').length ){
+    $('.BtmGallerySlider').slick({
       dots: false,
       arrows: false,
       infinite: false,
