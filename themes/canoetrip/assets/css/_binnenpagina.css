@@ -899,17 +899,7 @@ hr {
 	    padding-bottom: 20px;
 	}
 	.dfp-btn-module {
-	    padding-top: 40px;
-	}
-	.dfp-grd-module-ctlr .dfp-grd-item{
-		margin-bottom: 40px;
-	}
-	.dfp-grd-module-ctlr {
-	    padding-bottom: 20px;
-	}
-	.btmGallerySlider .gallery-item .gallery-icon{
-		max-width: 100%;
-		width: 100%;
+	    padding-top: 50px;
 	}
 	.half-item-gallery .gallery{
 		margin: 0;
@@ -932,8 +922,12 @@ hr {
 	.dfp-testimonial-grid-cntlr .testimonial-grds{
 		padding-bottom: 25px;
 	}
+	.dfp-tbl-wrap {
+	    padding-top: 50px;
+	}
 
 }
+
 
 @media(max-width: 575px){
 	.default-page-con p, .dfp-text-module p{
@@ -1017,6 +1011,12 @@ hr {
 		height: 279px;
 		width: 100%;
 		display: block;
+	}
+	.dfp-btn-module-ctlr ul li a {
+	    min-width: 148px;
+	}
+	.dfp-btn-module-ctlr ul li {
+	    width: 50%;
 	}
 
 }

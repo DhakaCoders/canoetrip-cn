@@ -283,21 +283,21 @@ $('.cntrp-faq-accordion-hdr').on('click', function(){
 
 
 /* start of Kashob*/
-if (windowWidth <= 767){
-  if( $('.BtmGallerySlider').length ){
-    $('.BtmGallerySlider').slick({
-      dots: false,
-      arrows: false,
-      infinite: false,
-      autoplay: true,
-      autoplaySpeed: 4000,
-      speed: 700,
-      slidesToShow: 2,
-      slidesToScroll: 1,
+// if (windowWidth <= 767){
+//   if( $('.BtmGallerySlider').length ){
+//     $('.BtmGallerySlider').slick({
+//       dots: false,
+//       arrows: false,
+//       infinite: false,
+//       autoplay: true,
+//       autoplaySpeed: 4000,
+//       speed: 700,
+//       slidesToShow: 2,
+//       slidesToScroll: 1,
 
-    });
-  }
-}
+//     });
+//   }
+// }
 
 
 /* start of Momin */
