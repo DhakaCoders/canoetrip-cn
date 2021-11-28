@@ -551,6 +551,8 @@
 @media(max-width: 767px){
 	.hm-banner-des-cntlr{
 		height: 600px;
+		display: block;
+		padding-top: 200px;
 	}
 	.hm-bnr-title{
 		text-align: center;
@@ -703,5 +705,12 @@
 @media(max-width: 479px){
 	.hm-bnr-btn .fl-tc-btn {
 	    min-width: 130px;
+	}
+	.hm-bnr-btn ul li a.fl-tc-btn {
+	    min-width: 130px;
+	}
+	.hm-grd-sec-inr{
+		margin-left: -20px;
+		margin-right: -20px;
 	}
 }
