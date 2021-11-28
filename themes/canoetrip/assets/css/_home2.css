@@ -270,6 +270,10 @@
 	.cntrp-fag ul li{
 		width: 46%;
 	}
+	.tekening-img{
+		max-width: 250px;
+		height: 240px;
+	}
 }
 @media(max-width: 1199px){
 	.cta-module-cntlr{
@@ -294,8 +298,8 @@
 		padding-right: 26px;
 	}
 	.tekening-img{
-		max-width: 250px;
-		height: 240px;
+		max-width: 220px;
+		height: 210px;
 	}
 }
 @media(max-width: 991px){
