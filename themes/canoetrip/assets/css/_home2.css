@@ -164,10 +164,10 @@
 	margin-bottom: 28px;
 	padding-right: 50px;
 	color: #444440;
-	/*transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-webkit-transition: all 0.5s;*/
 	display: none;
+}
+.cntrp-faq-accordion-desc p{
+	font-size: 17px;
 }
 .cntrp-faq-accordion-desc p:last-of-type{
 	margin-bottom: 0;
@@ -264,6 +264,8 @@
 		max-width: 300px;
 		height: 290px;
 		bottom: -50px;
+		background-position: left -52px center!important;
+		overflow: hidden;
 	}
 }
 @media(max-width: 1299px){
@@ -334,7 +336,7 @@
 		margin-bottom: 28px;
 	}
 	.cntrp-faq-accordion-desc{
-		padding-right: 22px;
+		padding-right: 20px;
 	}
 }
 @media(max-width: 767px){
@@ -364,7 +366,7 @@
 		margin-bottom: 24px;
 	}
 	.cntrp-faq-accordion-desc{
-		padding-right: 15px;
+		padding-right: 0px;
 	}
 }
 @media(max-width: 639px){
