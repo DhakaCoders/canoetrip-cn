@@ -93,7 +93,7 @@
 
 </head>
 <body>
-<header class="header">
+<header class="header d-none">
   <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -154,98 +154,14 @@
 
 
 
-<section class="hm-banner">
-  <div class="hm-banner-bg inline-bg" style="background-image:url(assets/images/hm-page-bnr.jpg);"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="hm-banner-des-cntlr">
-          <div class="hm-banner-des">
-            <h1 class="hm-bnr-title fl-h1">Get Ready for your next ADVENTURE</h1>
-            <div class="hm-bnr-btn">
-              <ul class="reset-list">
-                <li><a class="fl-tc-btn" href="#">Get Started</a></li>
-                <li><a class="fl-tc-btn tc-transparent-btn" href="#">Button</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+
+<section class="cta-module-sec d-none">
+  <div class="cta-video-cntlr">
+      <video id="cta-vdo" autoplay muted loop>
+        <source src="assets/images/videos/placeholder-video.mp4" type="video/mp4">
+        <source src="assets/images/videos/placeholder-video.mp4" type="video/mp4">
+      </video>
     </div>
-  </div>
-</section>
-
-<section class="hm-over-ons-sec">
-  
-</section>
-
-<section class="hm-grd-sec">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="hm-grd-sec-inr">
-          <div class="hm-grds">
-            <div class="hm-grd-item">
-              <div class="hm-grd-item-inr">
-                <div class="hm-grd-item-img-ctlr">
-                  <div class="hm-grd-item-img inline-bg" style="background-image:url('assets/images/hm-grd-item-img-01.jpg');">
-                    <img src="assets/images/hm-grd-item-img-01.jpg">
-                  </div>
-                </div>
-                <div class="hm-grd-item-des">
-                  <span>Urna at nisl proin.</span>
-                  <h2 class="hm-grd-item-des-title fl-h4">Kanoën</h2>
-                </div>
-              </div>
-            </div>
-            <div class="hm-grd-item">
-              <div class="hm-grd-item-inr">
-                <div class="hm-grd-item-img-ctlr">
-                  <div class="hm-grd-item-img inline-bg" style="background-image:url('assets/images/hm-grd-item-img-02.jpg');">
-                    <img src="assets/images/hm-grd-item-img-02.jpg">
-                  </div>
-                </div>
-                <div class="hm-grd-item-des">
-                  <span>Proin sed nulla sed.</span>
-                  <h2 class="hm-grd-item-des-title fl-h4">Disconnect</h2>
-                </div>
-              </div>
-            </div>
-            <div class="hm-grd-item">
-              <div class="hm-grd-item-inr">
-                <div class="hm-grd-item-img-ctlr">
-                  <div class="hm-grd-item-img inline-bg" style="background-image:url('assets/images/hm-grd-item-img-03.jpg');">
-                    <img src="assets/images/hm-grd-item-img-03.jpg">
-                  </div>
-                </div>
-                <div class="hm-grd-item-des">
-                  <span>Convallis faucibus.</span>
-                  <h2 class="hm-grd-item-des-title fl-h4">Into the wild</h2>
-                </div>
-              </div>
-            </div>
-            <div class="hm-grd-item">
-              <div class="hm-grd-item-inr">
-                <div class="hm-grd-item-img-ctlr">
-                  <div class="hm-grd-item-img inline-bg" style="background-image:url('assets/images/hm-grd-item-img-04.jpg');">
-                    <img src="assets/images/hm-grd-item-img-04.jpg">
-                  </div>
-                </div>
-                <div class="hm-grd-item-des">
-                  <span>Facilisis posuere quis.</span>
-                  <h2 class="hm-grd-item-des-title fl-h4">Wildkamperen</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="cta-module-sec">
   <div class="cta-module-bg inline-bg" style="background-image: url('assets/images/cta-module-bg.png');"></div>
   <div class="cta-module-overlay"></div>
   <div class="container">
@@ -361,6 +277,9 @@
                   <img src="assets/images/ftr-logo.svg" alt="">
                 </a>
               </div>
+              <div class="ftr-col-travel show-md">
+                <p><strong>The Canoe Trip is a <a target="_blank" href="#">Travelbase</a> concept.</strong></p>
+              </div>
               <div class="ftr-socials">
                 <ul class="reset-list">
                   <li>
@@ -395,6 +314,14 @@
                   <li><a href="#">Over ons</a></li>
                 </ul>
               </div>
+              <div class="ftr-xs-btns show-md">
+                <div class="ftr-xs-btn">
+                  <a class="fl-tc-btn" href="#">Nu boeken</a>
+                </div>
+                <div class="ftr-xs-btn">
+                  <a class="fl-tc-btn tc-transparent-btn" href="#">Mijn boeking</a>
+                </div>
+              </div>
             </div>
             <div class="ftr-col ftr-col-03">
               <h6 class="ftr-col-title fl-h6">Contacteer ons</h6>
@@ -425,9 +352,9 @@
               </div>
             </div>
             <div class="ftr-col ftr-col-04">
-              <h6 class="ftr-col-title fl-h6">Over Ons</h6>
-              <div class="ftr-col-travel">
-                <p>The Canoe Trip is a <a target="_blank" href="#">Travelbase</a> concept.</p>
+              <h6 class="ftr-col-title fl-h6 hide-md">Over Ons</h6>
+              <div class="ftr-col-travel hide-md">
+                <p><strong>The Canoe Trip is a <a target="_blank" href="#">Travelbase</a> concept.</strong></p>
               </div>
               <div class="ftr-col-desc">
                 <p>Travelbase is lid van de United Federation of Travel Agents Associations (UFTAA) via het lidmaatschap bij de Vlaamse Vereniging voor Reisbureaus (VVR). Als reiziger ben je op die manier 100% beschermd tegen financiële insolvabiliteit via MS Amlin Verzekeringen.
@@ -467,7 +394,7 @@
             </div>
           </div>
           <div class="footer-mdl">
-            <span>Onze andere concepten</span>
+            <strong>Onze andere concepten</strong>
             <div class="ftr-concept-logo">
               <ul class="reset-list">
                 <li>

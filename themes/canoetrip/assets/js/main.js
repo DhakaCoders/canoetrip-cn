@@ -283,7 +283,21 @@ $('.cntrp-faq-accordion-hdr').on('click', function(){
 
 
 /* start of Kashob*/
+// if (windowWidth <= 767){
+//   if( $('.BtmGallerySlider').length ){
+//     $('.BtmGallerySlider').slick({
+//       dots: false,
+//       arrows: false,
+//       infinite: false,
+//       autoplay: true,
+//       autoplaySpeed: 4000,
+//       speed: 700,
+//       slidesToShow: 2,
+//       slidesToScroll: 1,
 
+//     });
+//   }
+// }
 
 
 /* start of Momin */
@@ -318,8 +332,9 @@ if(windowWidth <= 639){
     function bannerheight(){
       var windowWidth = $(window).width();
       var windowHeight = $(window).height();
-      var headerHight = $('.header').height();
-      var bnrHeight = (windowHeight - headerHight);
+      var headerHeight = $('.header').height();
+      var hdrHeight = (headerHeight + 40);
+      var bnrHeight = (windowHeight - hdrHeight);
       if (windowWidth > 767){
         $('.hm-banner-des-cntlr').css('height', bnrHeight);
       }
@@ -365,8 +380,20 @@ if(windowWidth <= 639){
         slidesToScroll: 1
       });
     }
-    if(windowWidth <= 639){
+    if(windowWidth <= 767){
       $('.blogGrdSlider').slick({
+        dots: true,
+        infinite: true,
+        autoplay: false,
+        arrows: false,
+        autoplaySpeed: 1000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+    if(windowWidth <= 575){
+      $('.phasellusSlider').slick({
         dots: true,
         infinite: true,
         autoplay: false,

@@ -26,11 +26,11 @@ nav.main-nav > ul{
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	margin-right: -20px;
-	margin-left: -20px;
+	margin-right: -15px;
+	margin-left: -15px;
 }
 nav.main-nav > ul > li{
-	padding: 0 20px;
+	padding: 0 15px;
 	position: relative;
 }
 nav.main-nav > ul > li > a{
@@ -263,6 +263,10 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 }
 .hdr-btns ul li{
 	padding: 0 5px;
+}
+
+.hdr-btns .fl-tc-btn{
+	min-width: 170px;
 }
 
 
@@ -566,5 +570,25 @@ body.allWork {
 		vertical-align: baseline;
 		color: #444441;
 		font-size: 22px;
+	}
+	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:after{
+		content: none;
+	}
+
+	.home .hm-banner {
+		position: relative;
+	}
+	.home .header{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 9;
+	}
+}
+
+@media(max-width: 400px){
+	.xs-mobile-menu{
+		max-width: 100%;
 	}
 }
