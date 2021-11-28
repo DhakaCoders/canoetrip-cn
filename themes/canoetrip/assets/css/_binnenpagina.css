@@ -679,6 +679,9 @@ hr {
 	font-size: 16px;
 	text-decoration: none;
 }
+.dfp-info-pagine-fea-cntlr .info-pagine-fea{
+	padding-top: 0;
+}
 /*responsive*/
 
 @media(max-width: 1699px){
