@@ -1,3 +1,17 @@
+.home-messege{
+	padding: 20px 0;
+	background: #3C6C54;
+}
+
+.home-messege-inr{
+	text-align: center;
+}
+
+.home-messege-inr p{
+	margin-bottom: 0;
+	color: #fff;
+}
+
 .hm-banner{
 	position: relative;
 	overflow: hidden;

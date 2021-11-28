@@ -332,8 +332,9 @@ if(windowWidth <= 639){
     function bannerheight(){
       var windowWidth = $(window).width();
       var windowHeight = $(window).height();
-      var headerHight = $('.header').height();
-      var bnrHeight = (windowHeight - headerHight);
+      var headerHeight = $('.header').height();
+      var hdrHeight = (headerHeight + 40);
+      var bnrHeight = (windowHeight - hdrHeight);
       if (windowWidth > 767){
         $('.hm-banner-des-cntlr').css('height', bnrHeight);
       }
