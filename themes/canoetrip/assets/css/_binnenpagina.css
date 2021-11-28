@@ -571,6 +571,7 @@ hr {
 .dfp-full-width-img-module .full-img {
     border-radius: 4px 4px 0px 0px;
     overflow: hidden;
+    margin: 0;
 }
 .full-img {
     border-radius: 4px;
@@ -670,7 +671,29 @@ hr {
 }
 .fl-dft-lftimg-rgtdes-lft.has-video{
 	display: block;
-
+}
+.dfp-testimonial-grid-cntlr .testimonial-grd-des-title {
+    margin-bottom: 7px!important;
+}
+.dfp-testimonial-grid-cntlr .testimonial-grd-des-inr p{
+	text-align: left;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 1.5;
+}
+.dfp-testimonial-grid-cntlr .testimonial-grd-des-inr {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #f8f8f8;
+}
+.testimonial-grd-btn-inr{
+	display: flex;
+	justify-content: space-between;
+}
+.testimonial-grd-btn-inr a{
+	font-weight: 600;
+	font-size: 16px;
+	text-decoration: none;
 }
 /*responsive*/
 
@@ -830,6 +853,15 @@ hr {
 	}
 	.dfp-btn-module {
 	    padding-top: 30px;
+	}
+	.dfp-canoetrip-fag-wrap .canoetrip-fag-cntlr{
+	    max-width: 550px;
+	    width: 100%;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	.fl-dft-lftimg-rgtdes-lft {
+	    height: 370px;
 	}
 
 }
@@ -1000,7 +1032,22 @@ hr {
 	    border-radius: 0;
 	    overflow: initial;
 	}
-
+	.dfp-canoetrip-fag-wrap hr{
+		display: none;
+	}
+	.dfp-canoetrip-fag-wrap .canoetrip-fag-cntlr {
+	    padding-bottom: 17px;
+	}
+	.dfp-canoetrip-fag-wrap {
+	    padding-bottom: 0;
+	    padding-top: 15px;
+	}
+	.full-img{
+		margin: 0 -20px;
+	}
+	.fl-dft-lftimg-rgtdes-lft {
+	    height: 330px;
+	}
 }
 
 
@@ -1079,28 +1126,41 @@ hr {
 	.half-item-gallery.has-inline-bg .gallery-icon-img {
 	    height: 220px;
 	}
+	.dfp-full-width-img-module .full-img img,
 	.dfp-full-img-module .full-img img{
 		display: none;
 	}
+	.dfp-full-width-img-module .full-img img,
 	.dfp-full-img-module .full-img div{
 		height: 279px;
 		width: 100%;
 		display: block;
 	}
 	.dfp-btn-module-ctlr ul li a {
-	    min-width: 148px;
+	    min-width: 144px;
 	}
 	.dfp-btn-module-ctlr ul li {
-	    width: 50%;
+	    width: initial;
 	}
 	.dfp-canoetrip-fag-wrap .cntrp-faq-accordion-title{
 		text-align: left!important;
+	}
+	.dfp-testimonial-grid-cntlr .testimonial-grd {
+	    padding: 22px 24px;
+	    padding-top: 35px;
+	    padding-bottom: 35px;
+	}
+	.fl-dft-lftimg-rgtdes-lft {
+	    height: 280px;
 	}
 
 }
 
 
 @media(max-width: 479px){
+	.fl-dft-lftimg-rgtdes-lft {
+	    height: 215px;
+	}
 	.has-inline-bg .gallery-icon-img{
 		height: 137px;
 	}
@@ -1114,11 +1174,24 @@ hr {
 	    height: 180px;
 	}
 	.dfp-btn-module-ctlr ul li {
-	    width: 50%;
+	    width: initial;
 	}
 	.half-item-gallery.has-inline-bg .gallery-icon-img {
 	    height: 180px;
 	}
 }
 
-
+@media(max-width: 359px){
+	.dfp-btn-module .dfp-btn-module-ctlr ul {
+		margin-left: -10px;
+    	margin-right: -10px;
+	}
+	.dfp-btn-module-ctlr ul li {
+	    width: 50%;
+	    padding-left: 10px;
+    	padding-right: 10px;
+	}
+	.dfp-btn-module-ctlr ul li a {
+	    min-width: 130px;
+	}
+}
