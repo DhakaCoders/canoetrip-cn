@@ -26,7 +26,7 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 2;
 }
 
 .hm-banner-des-cntlr{
@@ -34,7 +34,7 @@
 	display: flex;
 	align-items: center;
 	position: relative;
-	z-index: 2;
+	z-index: 3;
 	padding: 50px 0;
 }
 
@@ -75,6 +75,7 @@
 	left: 0;
 	bottom: 0;
 	background: #000;
+	z-index: 1;
 }
 
 .hm-video-cntlr{
@@ -84,6 +85,7 @@
 	bottom: 0;
 	left: 0;
 	display: none;
+	z-index: 2;
 }
 
 #bnr-vdo{
@@ -310,12 +312,13 @@
 .destination-date{
 	padding-right: 20px;
 }
-.destination-date span,
-.destination-from span,
-.destination-price span{
+.destination-date strong,
+.destination-from strong,
+.destination-price strong{
 	display: inline-block;
 	vertical-align: baseline;
 	color: #DEEDE6;
+	font-weight: 400;
 }
 
 .destination-from{
@@ -485,7 +488,7 @@
 @media(max-width: 1199px){
 	.hm-grd-sec-inr {
 	    padding-left: 10px;
-	    margin-right: -10px;
+	    margin-right: 0;
 	}
 	.hm-grd{
 		width: 33.3333%;
@@ -653,6 +656,7 @@
 	.has-inline-bg .destination-grd-img {
 	    height: 515px;
 	}
+	.hm-grd-inr,
 	.destination-grd-inr,
 	.testimonial-grd{
 		max-width: 375px;
@@ -687,6 +691,12 @@
 	.testimonial-icon i{
 		display: inline-block;
 		vertical-align: baseline;
+	}
+	.has-inline-bg .hm-grd-img{
+		height: 320px;
+	}
+	.hm-grd-sec{
+		padding-bottom: 35px;
 	}
 }
 

@@ -93,7 +93,7 @@ Gallery design
 	margin-bottom: 36px;
 }
 .gallery-columns-3 .gallery-item{
-	margin-bottom: 25px;
+	margin-bottom: 24px;
 }
 .has-inline-bg .gallery-icon-img{
 	height: 264px;
@@ -968,21 +968,38 @@ hr {
 	    overflow-y: hidden;
 	    white-space: nowrap;
 	    flex-wrap: nowrap;
+	    padding-bottom: 0;
 	}
 	.gallery.gallery-columns-3{
-		max-width: 850px;
-		width: 100%;
+		width: 300%;
 	}
-	.gallery.gallery-columns-3::-webkit-scrollbar {
-	  	height: 6px;
+	.gallery-wrap::-webkit-scrollbar-track {
+	  	background: #ffffff;
+	  	border-radius: 20px;
+	  	margin: 0 20px!important;
 	}
-	.gallery.gallery-columns-3::-webkit-scrollbar-thumb {
-	  	background: #F5F9F6;
-	  	border-radius: 4px;
+	.gallery-wrap::-webkit-scrollbar {
+	  	height: 4px;
+	  	border-radius: 20px;
 	}
-	/*.gallery-columns-3.gallery{
-		display: block;
-	}*/
+	.gallery-wrap::-webkit-scrollbar-thumb {
+	  	background: #46c791;
+	  	width: 50px!important;
+	  	border-radius: 20px;
+	}
+	.gallery-wrap.half-item-gallery{
+		overflow-y: hidden;
+	    margin: 0 -20px;
+	}
+	.btm-gallery{
+		background: #f8f8f8;
+		padding-top: 48px;
+		padding-bottom: 44px;
+	}
+	.gallery.gallery-columns-3 .gallery-icon {
+	    border-radius: 0;
+	    overflow: initial;
+	}
 
 }
 
