@@ -748,6 +748,9 @@ hr {
 	.dfp-btn-module {
 	    padding-top: 40px;
 	}
+	.dfp-included-sec-module .included-sec {
+	    margin-bottom: 60px;
+	}
 
 }
 
@@ -849,6 +852,9 @@ hr {
 	}
 	.fl-dft-lftimg-rgtdes-lft {
 	    height: 370px;
+	}
+	.dfp-included-sec-module .included-sec {
+	    margin-bottom: 50px;
 	}
 
 }
