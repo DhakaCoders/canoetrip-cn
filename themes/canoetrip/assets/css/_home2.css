@@ -89,6 +89,9 @@
 	max-width: 462px;
 	width: 100%;
 	height: 450px;
+	background-size: contain!important;
+	background-position: center center!important;
+	background-repeat: no-repeat!important;
 }
 .canoetrip-fag-cntlr{
 	position: relative;
@@ -233,15 +236,47 @@
 
 
 /*responsive*/
+@media(max-width: 1899px){
+	.tekening-img{
+		max-width: 400px;
+		height: 400px;
+	}
+}
+@media(max-width: 1699px){
+	.tekening-img{
+		max-width: 350px;
+		height: 350px;
+	}
+}
+@media(max-width: 1599px){
+	.tekening-img{
+		max-width: 320px;
+		height: 310px;
+		bottom: -80px;
+	}
+}
 @media(max-width: 1399px){
-
+	.tekening-img{
+		max-width: 300px;
+		height: 290px;
+		bottom: -50px;
+	}
 }
 @media(max-width: 1299px){
-	
+	.cntrp-fag ul li{
+		width: 46%;
+	}
 }
 @media(max-width: 1199px){
 	.cta-module-cntlr{
 		padding: 135px 0;
+	}
+	.cntrp-fag ul li{
+		width: 47.5%;
+	}
+	.cntrp-faq-accordion-title{
+		font-size: 21px!important;
+		padding-right: 35px;
 	}
 }
 @media(max-width: 991px){
