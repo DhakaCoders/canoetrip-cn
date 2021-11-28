@@ -418,6 +418,9 @@ ol li:before{
 	.fl-pagination-cntlr ul li{
 		padding: 0 15px;
 	}
+	.fl-pagination-cntlr{
+		padding-top: 35px;
+	}
 }
 @media(max-width: 575px){
 	.fl-tc-btn{
@@ -426,6 +429,10 @@ ol li:before{
 	}
 	.fl-pagination-cntlr ul li{
 		padding: 0 12px;
+	}
+	.slick-slider .slick-dots li{
+		width: 40px!important;
+		margin-bottom: 8px;
 	}
 }
 

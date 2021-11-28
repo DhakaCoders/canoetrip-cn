@@ -241,6 +241,7 @@ ul.ab-top-menu li,
 	margin: 0;
 	list-style: none;
 	margin: 0;
+	font-size: initial;
 }
 .reset-list li:before,
 ul.sub-menu li:before,

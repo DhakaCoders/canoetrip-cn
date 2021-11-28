@@ -269,6 +269,8 @@
 	width: 159px;
 	height: 193px;
 	margin-top: 12px;
+	background-size: contain;
+	background-repeat: no-repeat;
 
 }
 .working-grids-cntlr ul{
@@ -337,11 +339,34 @@
 
 
 /*start-responsive*/
+@media(max-width: 1699px){
+	.team-grid-rgt-btm-img{
+		width: 240px;
+    margin-top: -130px;
+	}
+	.working-grd-sec-lft-ab-img{
+		width: 135px;
+	}
+}
+@media(max-width: 1499px){
+	.working-grd-sec-lft-ab-img{
+		width: 120px;
+		margin-top: -60px;
+	}
+}
+
 
 @media(max-width: 1199px){
 	.overons-intro-desc-cntlr{
 		padding-top: 10px;
 		padding-left: 60px;
+	}
+	.ov-intro-featured-top-rgt-img-inr{
+		height: 500px;
+	}
+	.ov-intro-featured-btm-lft-img-inr{
+		max-width: 380px;
+		height: 280px;
 	}
 	.team-grid-items{
 		margin: 0 -10px;
