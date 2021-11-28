@@ -284,21 +284,7 @@ if( $('.cntrp-fag').length ){
 
 
 /* start of Kashob*/
-// if (windowWidth <= 767){
-//   if( $('.BtmGallerySlider').length ){
-//     $('.BtmGallerySlider').slick({
-//       dots: true,
-//       arrows: false,
-//       infinite: false,
-//       autoplay: true,
-//       autoplaySpeed: 4000,
-//       speed: 700,
-//       slidesToShow: 2,
-//       slidesToScroll: 1,
 
-//     });
-//   }
-// }
 
 
 /* start of Momin */
@@ -371,7 +357,7 @@ if(windowWidth <= 639){
         arrows: false,
         autoplaySpeed: 1000,
         speed: 700,
-        slidesToShow: 1,
+        slidesToShow: 1.02,
         slidesToScroll: 1
       });
     }

@@ -244,6 +244,23 @@
 	background: #3C6C54;
 	color: #fff;
 }
+.dft-fl-btn{
+	display: inline-block;
+    vertical-align: baseline;
+    min-width: 185px;
+    color: #fff;
+    background: transparent;
+    font-size: 17px;
+    line-height: 1.1;
+    text-align: center;
+    padding: 13px 20px;
+    font-weight: 600;
+    border: 2px solid #46C691;
+    text-transform: capitalize;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
 /*page entry-hdr*/
 
 .page-entry-hdr{
