@@ -329,6 +329,24 @@ if(windowWidth <= 639){
 
 /* start of Shariful */
 
+    if( $('.scrollto').length ){
+      $('.scrollto').on('click', function(e){
+        e.preventDefault();
+        var togo = $(this).data('to');
+        goToByScroll(togo, 0);
+      });
+    }
+    function goToByScroll(id, offset){
+      if(id){
+        // Remove "link" from the ID
+        id = id.replace("link", "");
+        // Scroll
+        $('html,body').animate(
+          {scrollTop: $(id).offset().top - offset},
+          500);
+      }
+    }
+
     function bannerheight(){
       var windowWidth = $(window).width();
       var windowHeight = $(window).height();
