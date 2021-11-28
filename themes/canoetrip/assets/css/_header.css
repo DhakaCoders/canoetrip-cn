@@ -570,7 +570,7 @@ body.allWork {
 		display: inline-block;
 		vertical-align: baseline;
 		color: #444441;
-		font-size: 22px;
+		font-size: 30px;
 	}
 	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:after{
 		content: none;
