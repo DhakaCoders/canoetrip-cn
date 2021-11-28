@@ -1,6 +1,9 @@
 .footer-wrp{
 
 }
+.ftr-top-bdr{
+	border-top: 6px solid rgba(68, 68, 65, 0.04);
+}
 .footer-cntlr{
 	padding-top: 65px;
 }
