@@ -278,6 +278,17 @@
 		font-size: 21px!important;
 		padding-right: 35px;
 	}
+	.cntrp-faq-accordion-title:after{
+		height: 26px;
+		width: 26px;
+		margin-top: 0;
+	}
+	.canoetrip-fag-sec{
+		padding-top: 90px;
+	}
+	.cntrp-faq-accordion-desc{
+		padding-right: 26px;
+	}
 }
 @media(max-width: 991px){
 	.cta-module-cntlr{
@@ -285,6 +296,33 @@
 	}
 	.hm-socials-glry-sub-title{
 		font-size: 17px;
+	}
+	.canoetrip-fag-sec{
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+	.cntrp-fag{
+		max-width: 550px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.cntrp-fag ul li{
+		width: 100%;
+	}
+	.cntrp-faq-accordion-title:after{
+		height: 24px;
+		width: 24px;
+		margin-top: 0;
+	}
+	.cntrp-faq-accordion{
+		margin-bottom: 34px;
+	}
+	.cntrp-faq-accordion-hdr{
+		margin-bottom: 28px;
+	}
+	.cntrp-faq-accordion-desc{
+		padding-right: 22px;
 	}
 }
 @media(max-width: 767px){
@@ -299,6 +337,22 @@
 	}
 	.hm-socials-glry-sub-title{
 		font-size: 16px;
+	}
+	.canoetrip-fag-sec{
+		padding-top: 75px;
+		padding-bottom: 73px;
+	}
+	.cntrp-faq-accordion-title{
+		font-size: 20px!important;
+	}
+	.cntrp-faq-accordion{
+		margin-bottom: 28px;
+	}
+	.cntrp-faq-accordion-hdr{
+		margin-bottom: 24px;
+	}
+	.cntrp-faq-accordion-desc{
+		padding-right: 15px;
 	}
 }
 @media(max-width: 639px){
