@@ -361,7 +361,7 @@ if(windowWidth <= 639){
         slidesToScroll: 1
       });
     }
-    if(windowWidth <= 639){
+    if(windowWidth <= 767){
       $('.destinationSlider').slick({
         dots: true,
         infinite: true,
