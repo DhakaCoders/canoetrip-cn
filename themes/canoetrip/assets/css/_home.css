@@ -310,12 +310,13 @@
 .destination-date{
 	padding-right: 20px;
 }
-.destination-date span,
-.destination-from span,
-.destination-price span{
+.destination-date strong,
+.destination-from strong,
+.destination-price strong{
 	display: inline-block;
 	vertical-align: baseline;
 	color: #DEEDE6;
+	font-weight: 400;
 }
 
 .destination-from{
