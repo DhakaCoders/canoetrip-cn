@@ -1,5 +1,9 @@
 .overzicht-fag-sec.canoetrip-fag-sec{
 	padding-top: 2px;
+	padding-bottom: 90px;
+}
+.overzicht-fag-sec.canoetrip-fag-sec .tekening-img{
+	bottom: 10px;
 }
 .fag-overzicht-btn{
 	padding-bottom: 20px;

@@ -9,7 +9,7 @@
 }
 .info-page-lft-img-rgt-des-rgt{
 	width: 50%;
-	padding-left: 70px;
+	padding-left: 85px;
 } 
 .info-page-lft-img-rgt-des-lft {
     width: 50%;
@@ -80,31 +80,35 @@
 	margin-right: -12px;
 }
 
-.phasellus-grd-item{
+.phasellus-grd{
 	width: 20%;
 	padding: 0 12px 25px;
 }
 
-.phasellus-grd-item-inr{
+.phasellus-grd-inr{
 	border-radius: 4px;
-    -webkit-box-shadow: 0px 6px 12px -2px #cfcfcf;
-    box-shadow: 0px 6px 12px -2px #cfcfcf;
+    -webkit-box-shadow: 0px 3px 20px 5px #cfcfcf;
+    box-shadow: 0px 3px 20px 5px #cfcfcf;
 }
 
-.phasellus-grd-item-img-ctlr{
+.phasellus-grd-img-ctlr{
 	position: relative;
 	overflow: hidden;
 	border-radius: 4px 4px 0 0;
 }
 
-.phasellus-grd-item-img{
+.has-inline-bg .phasellus-grd-img{
 	height: 255px;
 	-webkit-transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	transition: all 0.5s;
 	border-radius: 4px 4px 0 0;
 }
-.phasellus-grd-item-img img{
+.phasellus-grd-img img{
+	display: none;
+}
+
+.has-inline-bg .phasellus-grd-item-img{
 	display: none;
 }
 
@@ -126,7 +130,7 @@
 .phasellus-grd-des-title a:hover{
 	color: #46C691;
 }
-.phasellus-grd-item-inr:hover .phasellus-grd-item-img{
+.phasellus-grd-inr:hover .phasellus-grd-img{
 	-webkit-transform: scale(1.05);
 	-ms-transform: scale(1.05);
 	transform: scale(1.05);
@@ -179,6 +183,19 @@
 	padding-bottom: 110px;
 }
 
+.info-pagine-blog .blog-grd-des{
+	text-align: center;
+}
+.info-pagine-blog{
+	position: relative;
+}
+.info-pagine-blog-rgt-img{
+	position: absolute;
+	right: 0;
+	top: 0;
+	opacity: 0.3;
+}
+
 
 @media(max-width: 1199px){
 	.info-page-feature-img.has-inline-bg {
@@ -190,7 +207,7 @@
 	.info-page-intro-sec {
 	    padding-bottom: 80px;
 	}
-	.phasellus-grd-item{
+	.phasellus-grd{
 		width: 25%;
 	}
 	.phasellus-sec {
@@ -212,7 +229,7 @@
 	.info-pagine-fea-des strong{
 		font-size: 17px;
 	}
-	.phasellus-grd-item {
+	.phasellus-grd {
 	    width: 33.3333%;
 	}
 	.included-sec {
@@ -251,7 +268,7 @@
 	.destination-date-price{
 		justify-content: center;
 	}
-	.phasellus-grd-item {
+	.phasellus-grd {
 	    width: 50%;
 	}
 	.included-sec {
@@ -286,11 +303,11 @@
 	    margin-left: 0;
 	    margin-right: 0;
 	}
-	.phasellus-grd-item {
+	.phasellus-grd {
 	    width: 100%;
 	    padding: 0 0 30px;
 	}
-	.phasellus-grd-item-inr{
+	.phasellus-grd-inr{
 		max-width: 375px;
 		width: 100%;
 		margin-left: auto;
@@ -299,15 +316,15 @@
 	.phasellus-sec {
 	    padding-bottom: 30px;
 	}
-	.phasellusSlider .phasellus-grd-item{
+	.phasellusSlider .phasellus-grd{
 		display: none;
 	}
 
-	.phasellusSlider .phasellus-grd-item:first-child{
+	.phasellusSlider .phasellus-grd:first-child{
 		display: block;
 	}
 
-	.phasellusSlider.slick-initialized .phasellus-grd-item{
+	.phasellusSlider.slick-initialized .phasellus-grd{
 		display: block;
 	}
 }

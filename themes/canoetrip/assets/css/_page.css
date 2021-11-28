@@ -44,6 +44,128 @@
 .sitemap ol li a:focus{
 	text-decoration: underline;
 }
+/*pagination*/
+.fl-pagination-cntlr{
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+    position: relative;
+}
+.fl-pagination-cntlr ul{
+	position: relative;
+	width: 100%;
+	display: flex;
+	z-index: 10;
+}
+.fl-pagination-cntlr ul li::before{
+	content: none;
+}
+.fl-pagination-cntlr ul, .fl-pagination-cntlr ul li{
+    display: flex;
+    justify-content: center;
+    padding: 0 22px;
+}
+.fl-pagination-cntlr ul li span{
+    font-weight: 700;
+	font-size: 18px;
+	line-height: 1;
+	color: #444440;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fl-pagination-cntlr ul li a,
+.page-numbers.dots,
+.fl-pagination-cntlr ul li span{
+}
+.fl-pagination-cntlr ul li a.prev {
+    position: absolute;
+    left: 0;
+    height: 14px;
+    width: 14px;
+}
+.fl-pagination-cntlr ul li a.next{
+	position: absolute;
+	right: 0;
+	height: 14px;
+	width: 14px;
+}
+.fl-pagination-cntlr ul li a,
+.page-numbers.dots {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1;
+	color: #444440;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	text-decoration: none;
+}
+.fl-pagination-cntlr ul li{
+	position: initial;
+}
+.fl-pagination-cntlr ul li a.prev {
+    position: absolute;
+    left: 0;
+}
+.fl-pagination-cntlr ul li a.next {
+    position: absolute;
+    right: 0;
+}
+.fl-pagination-cntlr ul li a:hover,
+.fl-pagination-cntlr ul li span:hover{
+    color: #46C691;
+}
+.page-numbers.current{
+    color: #46C691;
+}
+.fl-pagination-cntlr .prev, .fl-pagination-cntlr .next{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px!important;
+}
+.fl-pagination-cntlr .prev:after {
+    position: absolute;
+    content: "";
+    background-image: url('../images/prev-icon.svg');
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    background-size: 100% auto;
+    transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+    left: 0;
+}
+.fl-pagination-cntlr .prev:hover:after{
+	background-image: url('../images/prev-icon-hover.svg');
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.fl-pagination-cntlr .next:after{
+    position: absolute;
+    content: "";
+    background-image: url('../images/next-icon.svg');
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    background-size: 100% auto;
+    right: 0;
+    transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.fl-pagination-cntlr .next:hover:after{
+	background-image: url('../images/next-icon-hover.svg');
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	
+}
 
 
 
