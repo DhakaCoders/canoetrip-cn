@@ -1,7 +1,15 @@
 
 
 .destination-fea-sec{
-	padding-bottom: 130px;
+	padding-bottom: 120px;
+	position: relative;
+}
+
+.destination-fea-rgt-img{
+	position: absolute;
+	bottom: -40px;
+	right: 0;
+	width: 15%;
 }
 
 

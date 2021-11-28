@@ -1,9 +1,11 @@
-
+@media(max-width: 1399px){
+	.container-lg{
+		max-width: 1430px;
+	}
+}
 
 @media(max-width: 1199px){
-	/*.container-lg{
-		max-width: 1330px;
-	}*/
+	
 	.hide-lg{
 		display: none!important;
 	}
