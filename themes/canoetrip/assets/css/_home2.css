@@ -128,11 +128,16 @@
 	cursor: pointer;
 }
 .cntrp-faq-accordion-title{
-	position: relative;
 	color: #444440;
 	margin-bottom: 0;
 	position: relative;
 	padding-right: 40px;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.cntrp-faq-accordion-title:hover{
+	color: #46C691;
 }
 .cntrp-faq-accordion-title:after{
 	position: absolute;
@@ -185,7 +190,7 @@
     padding: 13px 60px 13px 28px;
     font-weight: 600;
     border: 2px solid #46C691;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
     border-radius: 4px;
     text-decoration: none;
     position: relative;
@@ -368,6 +373,16 @@
 	}
 	.cntrp-faq-accordion-desc{
 		padding-right: 0px;
+	}
+	.cta-module-btn .fl-tc-btn{
+		min-width: 160px;
+	}
+	.cntrp-faq-accordion-title{
+		padding-right: 40px;
+	}
+	.cntrp-faq-accordion-title:after{
+		width: 30px;
+		height: 30px;
 	}
 }
 @media(max-width: 639px){
