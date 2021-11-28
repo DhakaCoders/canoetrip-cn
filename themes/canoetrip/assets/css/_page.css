@@ -420,6 +420,9 @@ ol li:before{
 	.fl-pagination-cntlr{
 		padding-top: 35px;
 	}
+	.page-entry-hdr-title{
+		margin-bottom: 15px;
+	}
 }
 @media(max-width: 575px){
 	.fl-tc-btn{
@@ -432,6 +435,12 @@ ol li:before{
 	.slick-slider .slick-dots li{
 		width: 40px!important;
 		margin-bottom: 8px;
+	}
+	.page-entry-hdr-title{
+		margin-bottom: 0;
+	}
+	.page-entry-hdr{
+		padding-bottom: 30px;
 	}
 }
 
