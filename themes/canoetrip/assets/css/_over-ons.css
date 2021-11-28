@@ -357,8 +357,11 @@
 
 
 @media(max-width: 1199px){
+	.over-ons-intro-sec{
+		padding-bottom: 70px;
+	}
 	.overons-intro-desc-cntlr{
-		padding-top: 10px;
+		padding-top: 50px;
 		padding-left: 60px;
 	}
 	.ov-intro-featured-top-rgt-img-inr{
@@ -367,6 +370,9 @@
 	.ov-intro-featured-btm-lft-img-inr{
 		max-width: 380px;
 		height: 280px;
+	}
+	.team-grid-sec{
+		padding-bottom: 20px;
 	}
 	.team-grid-items{
 		margin: 0 -10px;
@@ -381,8 +387,16 @@
 		width: 43px;
 		height: auto;
 	}
-	.overons-intro-featured-img{
-		/*height: 650px;*/
+	.over-ons-bears-sec{
+		padding-top: 60px;
+		padding-bottom: 30px;
+	}
+	.cta-module-grid-cntlr{
+		padding: 35px 0;
+	}
+	.working-grid-sec{
+		padding-top: 70px;
+		padding-bottom: 60px;
 	}
 	.working-grids-cntlr ul{
 		margin: 0 -10px;
@@ -414,6 +428,20 @@
 }
 
 @media(max-width: 991px){
+	.ov-intro-featured-top-rgt-img-inr{
+		height: 420px;
+		padding-left: 85px;
+	}
+	.ov-intro-featured-btm-lft-img-inr{
+		max-width: 300px;
+		height: 280px;
+	}
+	.overons-intro-desc-cntlr{
+		padding-left: 50px;
+	}
+	.over-ons-line-img-ctlr{
+		right: -15px;
+	}
 	.team-grid-sec .sec-entry-hdr{
 		max-width: 580px;;
 		margin: 0 auto;
