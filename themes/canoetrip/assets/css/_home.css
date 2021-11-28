@@ -152,6 +152,8 @@
 
 .hm-grd-inr{
 	position: relative;
+	box-shadow: 0px 8px 25px 0px #cfcfcf;
+	-webkit-box-shadow: 0px 8px 25px 0px #cfcfcf;
 }
 .hm-grd-img-ctlr{
 	position: relative;
@@ -261,6 +263,8 @@
 
 .destination-grd-inr{
 	position: relative;
+	box-shadow: 0px 8px 25px 0px #cfcfcf;
+	-webkit-box-shadow: 0px 8px 25px 0px #cfcfcf;
 }
 
 .destination-grd-img-ctlr{
