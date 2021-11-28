@@ -70,6 +70,7 @@
 	letter-spacing: -0.02em;
 	color: #444440;
 	word-spacing: 0.2em;
+	text-transform: uppercase;
 }
 
 .info-page-intro-sec .destination-date-price{
@@ -95,8 +96,8 @@
 
 .phasellus-grd-inr{
 	border-radius: 4px;
-    -webkit-box-shadow: 0px 8px 15px 0px #cfcfcf;
-    box-shadow: 0px 8px 15px 0px #cfcfcf;
+    -webkit-box-shadow: 0px 8px 25px 0px #cfcfcf;
+    box-shadow: 0px 8px 25px 0px #cfcfcf;
 }
 
 .phasellus-grd-img-ctlr{
@@ -173,7 +174,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	margin-top: -2px;
+	margin-top: -5px;
 }
 
 .included-des-title{
@@ -230,7 +231,7 @@
 
 @media(max-width: 991px){
 	.info-page-lft-img-rgt-des-rgt {
-	    padding-left: 20px;
+	    padding-left: 30px;
 	}
 	.info-pagine-fea ul li{
 		padding-right: 15px;
@@ -244,6 +245,9 @@
 	.included-sec {
 	    padding: 65px 0 30px;
 	    margin-bottom: 60px;
+	}
+	.included-grd-item-des{
+		padding-left: 65px;
 	}
 }
 
@@ -302,11 +306,11 @@
 	    height: 550px;
 	    border-radius: 4px;
 	}
-	.info-page-feature-img-ctlr{
-		max-width: 400px;
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
+	.info-pagine-rgt-des-btn .fl-tc-btn{
+		min-width: 185px;
+	}
+	.iplm-title{
+		margin-bottom: 12px;
 	}
 }
 
