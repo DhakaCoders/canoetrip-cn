@@ -635,7 +635,7 @@ hr {
     padding-top: 30px;
     padding-bottom: 45px;
 }
-.dfp-phasellus-grd-cntlr .phasellus-grd-item{
+.dfp-phasellus-grd-cntlr .phasellus-grd{
 	width: 25%;
 }
 .dfp-phasellus-grd-cntlr {
@@ -835,7 +835,7 @@ hr {
 	.dfp-tbl-wrap {
 	    padding-top: 30px;
 	}
-	.dfp-phasellus-grd-cntlr .phasellus-grd-item {
+	.dfp-phasellus-grd-cntlr .phasellus-grd {
 	    width: 33.333%;
 	}
 	.dfp-phasellus-grd-cntlr{
