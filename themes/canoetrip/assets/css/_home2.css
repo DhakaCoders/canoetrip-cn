@@ -55,16 +55,19 @@
 	padding: 150px 0;
 }
 .cta-module-desc{
-	max-width: 835px;
+	max-width: 790px;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	color: #fff;
+	color: #DEEDE6;
 }
 .cta-module-title{
-	color: #fff;
+	color: #DEEDE6;
 	margin-bottom: 23px;
+}
+.cta-module-desc p{
+	line-height: 1.42;
 }
 .cta-module-desc p:last-of-type{
 	margin-bottom: 22px;
@@ -81,6 +84,7 @@
 	padding-top: 110px;
 	padding-bottom: 108px;
 }
+
 .tekening-img{
 	position: absolute;
 	left: 0;
@@ -266,6 +270,10 @@
 	.cntrp-fag ul li{
 		width: 46%;
 	}
+	.tekening-img{
+		max-width: 250px;
+		height: 240px;
+	}
 }
 @media(max-width: 1199px){
 	.cta-module-cntlr{
@@ -288,6 +296,10 @@
 	}
 	.cntrp-faq-accordion-desc{
 		padding-right: 26px;
+	}
+	.tekening-img{
+		max-width: 220px;
+		height: 210px;
 	}
 }
 @media(max-width: 991px){

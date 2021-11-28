@@ -19,19 +19,22 @@
 	display: none;
 }
 .has-inline-bg .info-page-feature-img{
-	height: 750px;
+	height: 700px;
 	border-radius: 4px;
 }
 .has-inline-bg .info-pagine-fea-img{
 	display: none;
 }
 
-.info-page-intro-sec .destination-date span, 
-.info-page-intro-sec .destination-from span, 
-.info-page-intro-sec .destination-price span{
+.info-page-intro-sec .destination-date strong, 
+.info-page-intro-sec .destination-from strong, 
+.info-page-intro-sec .destination-price strong{
 	color: #444440;
 }
 
+.info-pagine-fea{
+	padding-top: 20px;
+}
 .info-pagine-fea ul{
 	display: flex;
 	flex-wrap: wrap;
@@ -66,6 +69,11 @@
 	display: block;
 	letter-spacing: -0.02em;
 	color: #444440;
+	word-spacing: 0.2em;
+}
+
+.info-page-intro-sec .destination-date-price{
+	padding-bottom: 30px;
 }
 
 
@@ -87,8 +95,8 @@
 
 .phasellus-grd-inr{
 	border-radius: 4px;
-    -webkit-box-shadow: 0px 3px 20px 5px #cfcfcf;
-    box-shadow: 0px 3px 20px 5px #cfcfcf;
+    -webkit-box-shadow: 0px 10px 20px 5px #cfcfcf;
+    box-shadow: 0px 10px 20px 5px #cfcfcf;
 }
 
 .phasellus-grd-img-ctlr{
@@ -98,7 +106,7 @@
 }
 
 .has-inline-bg .phasellus-grd-img{
-	height: 255px;
+	height: 220px;
 	-webkit-transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	transition: all 0.5s;
@@ -165,6 +173,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	margin-top: -2px;
 }
 
 .included-des-title{
