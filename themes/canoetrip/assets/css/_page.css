@@ -467,15 +467,22 @@ ol li:before{
 }
 
 @media(max-width: 1199px){
+	.breadcrumb-sec{
+		padding-bottom: 50px;
+	}
 	.breadcrumb-cntlr ul{
 		margin: 0 -25px;
 	}
 	.breadcrumb-cntlr ul li{
 		padding: 0 25px;
 	}
+	
 }
 
 @media(max-width: 991px){
+	.breadcrumb-sec{
+		padding-bottom: 30px;
+	}
 	.breadcrumb-cntlr ul{
 		margin: 0 -20px;
 	}
