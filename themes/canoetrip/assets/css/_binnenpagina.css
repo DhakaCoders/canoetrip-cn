@@ -1046,7 +1046,7 @@ hr {
 		margin: 0 -20px;
 	}
 	.fl-dft-lftimg-rgtdes-lft {
-	    height: 330px;
+	    height: 350px;
 	}
 	.dfp-testimonial-grid-cntlr .testimonial-grd-des-inr {
 	    padding-bottom: 30px;
@@ -1172,7 +1172,7 @@ hr {
 	    padding-bottom: 35px;
 	}
 	.fl-dft-lftimg-rgtdes-lft {
-	    height: 280px;
+	    height: 290px;
 	}
 
 }
@@ -1204,15 +1204,15 @@ hr {
 
 @media(max-width: 359px){
 	.dfp-btn-module .dfp-btn-module-ctlr ul {
-		margin-left: -10px;
-    	margin-right: -10px;
+		margin-left: -6px;
+    	margin-right: -6px;
 	}
 	.dfp-btn-module-ctlr ul li {
 	    width: 50%;
-	    padding-left: 10px;
-    	padding-right: 10px;
+	    padding-left: 6px;
+    	padding-right: 6px;
 	}
 	.dfp-btn-module-ctlr ul li a {
-	    min-width: 130px;
+	    min-width: 135px;
 	}
 }
