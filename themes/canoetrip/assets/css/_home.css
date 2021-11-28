@@ -532,6 +532,9 @@
 	.client-sec {
 	    padding-bottom: 85px;
 	}
+	.destination-ctlr .destination-sec {
+	    padding-bottom: 70px;
+	}
 }
 
 
@@ -573,6 +576,9 @@
 	.destination-sec {
 	    padding: 50px 0 90px;
 	}
+	.destination-ctlr .destination-sec {
+	    padding-bottom: 50px;
+	}
 }
 
 
@@ -590,12 +596,20 @@
 	    height: 350px;
 	}
 	.destination-grds {
-	    margin-left: -7px;
-	    margin-right: -7px;
+		display: block;
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+	.destination-grd-inr{
+		max-width: 375px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.destination-grd{
-		padding-left: 7px;
-	    padding-right: 7px;
+		width: 100%;
+		padding-left: 0;
+	    padding-right: 0;
 	    padding-bottom: 15px;
 	}
 	.client-grds{
@@ -617,6 +631,9 @@
 	}
 	.destination-sec {
 	    padding: 50px 0 70px;
+	}
+	.destination-ctlr .destination-sec {
+	    padding-bottom: 30px;
 	}
 }
 
@@ -735,5 +752,8 @@
 	}
 	.hm-grd{
 		padding-right: 10px;
+	}
+	.destination-ctlr .destination-sec {
+	    padding-bottom: 20px;
 	}
 }
