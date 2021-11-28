@@ -60,6 +60,9 @@
 .hm-bnr-btn ul li a.fl-tc-btn.tc-transparent-btn{
 	color: #fff;
 }
+.hm-bnr-btn ul li a.fl-tc-btn{
+	min-width: 170px;
+}
 .hm-bnr-btn ul li a.fl-tc-btn:hover{
 	color: #fff;
 }
