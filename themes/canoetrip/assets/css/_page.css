@@ -291,6 +291,7 @@
 
 .breadcrumb-sec{
 	padding-bottom: 70px;
+	overflow: hidden;
 }
 .breadcrumb-cntlr{
 	padding-top: 20px;
@@ -407,8 +408,23 @@ ol li:before{
 
 
 
+@media(max-width: 1199px){
+	.breadcrumb-cntlr ul{
+		margin: 0 -25px;
+	}
+	.breadcrumb-cntlr ul li{
+		padding: 0 25px;
+	}
+}
 
-
+@media(max-width: 991px){
+	.breadcrumb-cntlr ul{
+		margin: 0 -20px;
+	}
+	.breadcrumb-cntlr ul li{
+		padding: 0 20px;
+	}
+}
 @media(max-width: 767px){
 	.fl-tc-btn{
 		min-width: 144px;
@@ -422,6 +438,9 @@ ol li:before{
 	}
 	.page-entry-hdr-title{
 		margin-bottom: 15px;
+	}
+	.sec-entry-hdr{
+		padding-bottom: 10px;
 	}
 }
 @media(max-width: 575px){
@@ -441,6 +460,12 @@ ol li:before{
 	}
 	.page-entry-hdr{
 		padding-bottom: 30px;
+	}
+ 	.sec-entry-hdr{
+ 		padding-bottom: 5px;
+	}
+	.sec-entry-hdr-title{
+		margin-bottom: 15px;
 	}
 }
 

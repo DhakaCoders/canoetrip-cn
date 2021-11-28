@@ -537,6 +537,9 @@
 	.team-grid-sec{
 		padding-top: 25px;
 	}
+	.team-grid-sec .sec-entry-hdr{
+		padding-bottom: 15px;
+	}
 	.over-ons-bears-sec{
 		padding-top: 15px;
 	}
