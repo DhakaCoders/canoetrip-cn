@@ -963,9 +963,26 @@ hr {
 	.dfp-tbl-wrap {
 	    padding-top: 50px;
 	}
-	.gallery-columns-3.gallery{
-		display: block;
+	.gallery.gallery-columns-3 {
+	    overflow-x: scroll;
+	    overflow-y: hidden;
+	    white-space: nowrap;
+	    flex-wrap: nowrap;
 	}
+	.gallery.gallery-columns-3{
+		max-width: 850px;
+		width: 100%;
+	}
+	.gallery.gallery-columns-3::-webkit-scrollbar {
+	  	height: 6px;
+	}
+	.gallery.gallery-columns-3::-webkit-scrollbar-thumb {
+	  	background: #F5F9F6;
+	  	border-radius: 4px;
+	}
+	/*.gallery-columns-3.gallery{
+		display: block;
+	}*/
 
 }
 
