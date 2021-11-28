@@ -86,7 +86,8 @@
 	left: 0;
 	bottom: -100px;
 	z-index: 1;
-	width: 462px;
+	max-width: 462px;
+	width: 100%;
 	height: 450px;
 }
 .canoetrip-fag-cntlr{
@@ -213,6 +214,7 @@
 	margin-bottom: 12px;
 	display: block;
 	font-size: 18px;
+	font-weight: 400;
 	width: 100%;
 	line-height: 1;
 	text-align: center;
@@ -226,4 +228,47 @@
 }
 .hm-socials-gallery{
 
+}
+
+
+
+/*responsive*/
+@media(max-width: 1399px){
+
+}
+@media(max-width: 1299px){
+	
+}
+@media(max-width: 1199px){
+	.cta-module-cntlr{
+		padding: 135px 0;
+	}
+}
+@media(max-width: 991px){
+	.cta-module-cntlr{
+		padding: 120px 0;
+	}
+	.hm-socials-glry-sub-title{
+		font-size: 17px;
+	}
+}
+@media(max-width: 767px){
+	.cta-module-cntlr{
+		padding: 110px 0;
+	}
+	.cta-module-desc p:last-of-type{
+		margin-bottom: 16px;
+	}
+	.hm-socials-glry-title{
+		margin-bottom: 30px;
+	}
+	.hm-socials-glry-sub-title{
+		font-size: 16px;
+	}
+}
+@media(max-width: 639px){
+	
+}
+@media(max-width: 575px){
+	
 }
