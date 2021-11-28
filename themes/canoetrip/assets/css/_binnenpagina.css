@@ -963,6 +963,9 @@ hr {
 	.dfp-tbl-wrap {
 	    padding-top: 50px;
 	}
+	.gallery-columns-3.gallery{
+		display: block;
+	}
 
 }
 
