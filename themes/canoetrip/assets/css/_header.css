@@ -265,6 +265,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 
 .hdr-btns .fl-tc-btn{
 	min-width: 170px;
+	text-transform: uppercase;
 }
 
 
@@ -419,6 +420,10 @@ body.allWork {
 	    font-size: 16px;
 	    padding: 10px 15px;
 	}
+	.fl-lang-cntlr:after{
+		top: 12px;
+		right: 12px;
+	}
 }
 
 @media(max-width: 991px){
@@ -456,9 +461,6 @@ body.allWork {
 	    font-size: 13px;
 	    padding: 10px 10px;
 	}
-}
-
-@media(max-width: 767px){
 	.header-inr{
 		display: block;
 	}
@@ -583,6 +585,14 @@ body.allWork {
 		right: 0;
 		z-index: 9;
 	}
+	.fl-lang-cntlr:after{
+		top: 9px;
+		right: 4px;
+	}
+}
+
+@media(max-width: 767px){
+	
 }
 
 @media(max-width: 400px){
