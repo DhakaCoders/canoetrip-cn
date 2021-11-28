@@ -273,13 +273,14 @@ $(".dft-fl-btn" ).each(function( index ) {
 
 
 /* start of Noyon */
-$('.cntrp-faq-accordion-hdr').on('click', function(){
-  $(this).toggleClass('active');
-  $(this).parents('.cntrp-fag ul li').siblings().find('.cntrp-faq-accordion-hdr').removeClass('active');
-  $(this).parents('.cntrp-fag ul li').find('.cntrp-faq-accordion-desc').slideToggle(300);
-  $(this).parents('.cntrp-fag ul li').siblings().find('.cntrp-faq-accordion-desc').slideUp(300);
-});
-
+if( $('.cntrp-fag').length ){
+  $('.cntrp-faq-accordion-hdr').on('click', function(){
+    $(this).toggleClass('active');
+    $(this).parents('.cntrp-fag ul li').siblings().find('.cntrp-faq-accordion-hdr').removeClass('active');
+    $(this).parents('.cntrp-fag ul li').find('.cntrp-faq-accordion-desc').slideToggle(300);
+    $(this).parents('.cntrp-fag ul li').siblings().find('.cntrp-faq-accordion-desc').slideUp(300);
+  });
+}
 
 
 /* start of Kashob*/
