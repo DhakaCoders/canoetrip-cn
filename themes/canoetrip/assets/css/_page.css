@@ -430,5 +430,9 @@ ol li:before{
 	.fl-pagination-cntlr ul li{
 		padding: 0 12px;
 	}
+	.slick-slider .slick-dots li{
+		width: 40px!important;
+		margin-bottom: 8px;
+	}
 }
 
