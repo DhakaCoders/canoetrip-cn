@@ -260,6 +260,7 @@
     border-radius: 4px;
     text-decoration: none;
 }
+
 /*page entry-hdr*/
 
 .page-entry-hdr{
@@ -416,6 +417,9 @@ ol li:before{
 	}
 	.fl-pagination-cntlr ul li{
 		padding: 0 15px;
+	}
+	.fl-pagination-cntlr{
+		padding-top: 35px;
 	}
 }
 @media(max-width: 575px){
