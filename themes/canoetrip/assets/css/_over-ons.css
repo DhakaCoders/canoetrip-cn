@@ -528,6 +528,12 @@
 	.overons-intro-desc-cntlr p{
 		margin-bottom: 20px;
 	}
+	.overons-intro-desc-title strong{
+		display: block;
+	}
+	.overons-intro-desc-title span{
+		display: none;
+	}
 	.team-grid-sec{
 		padding-top: 25px;
 	}

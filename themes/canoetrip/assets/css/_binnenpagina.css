@@ -224,9 +224,13 @@ Gallery design
 	width: 100%;
 	height: 100%;
 }
-.fl-dft-lftimg-rgtdes-lft,
+.fl-dft-lftimg-rgtdes-lft{
+	width: 49%;
+	position: relative;
+    overflow: hidden;
+}
 .fl-dft-lftimg-rgtdes-rgt {
-	width: 50%;
+	width: 51%;
 	position: relative;
     overflow: hidden;
 }
@@ -237,7 +241,7 @@ Gallery design
 	-webkit-box-shadow: -4px 4px 30px rgba(68, 68, 65, 0.25);
 }
 .fl-dft-lftimg-rgtdes-rgt {
-	padding-left: 70px;
+	padding-left: 95px;
 	padding-bottom: 5px;
 	padding-top: 0;
 }
@@ -290,7 +294,7 @@ Gallery design
 .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-rgt{
 	float: left;
 	padding-left: 0;
-	padding-right: 70px;
+	padding-right: 95px;
 }
 
 
@@ -592,10 +596,10 @@ hr {
 .dfp-blog-sec-cntlr .blog-grd-img-des-inr {
 	flex-direction: column;
 }
-.dfp-blog-grid-cntlr .blog-grd-item-des p{
+.dfp-blog-grid-cntlr .blog-grd-des p{
 	margin-bottom: 15px!important;
 }
-.dfp-blog-grid-cntlr .blog-grd-item-des p:last-child{
+.dfp-blog-grid-cntlr .blog-grd-des p:last-child{
 	margin-bottom: 0!important;
 }
 .dfp-blog-sec-cntlr .sec-entry-hdr-title{
@@ -606,7 +610,7 @@ hr {
 }
 .dfp-testimonial-grid-cntlr {
     padding-top: 50px;
-    padding-bottom: 75px;
+    padding-bottom: 50px;
 }
 .dfp-team-grid-wrap {
     padding-bottom: 60px;
@@ -708,17 +712,17 @@ hr {
 	    padding-bottom: 45px;
 	}
 	.fl-dft-lftimg-rgtdes-rgt{
-    	padding-left: 50px;
+    	padding-left: 70px;
 	}
 	.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-rgt{
-		padding-right: 50px;
+		padding-right: 70px;
 	}
 	.fl-dft-lftimg-rgtdes-lft {
 	    height: 410px;
 	}
 	.dfp-testimonial-grid-cntlr {
 	    padding-top: 30px;
-	    padding-bottom: 55px;
+	    padding-bottom: 30px;
 	}
 	.dfp-team-grid-wrap {
 	    padding-bottom: 45px;
@@ -784,7 +788,7 @@ hr {
 	}
 	.dfp-testimonial-grid-cntlr {
 	    padding-top: 20px;
-	    padding-bottom: 40px;
+	    padding-bottom: 20px;
 	}
 	.dfp-team-grid-wrap {
 	    padding-bottom: 30px;
@@ -802,10 +806,10 @@ hr {
 		padding-left: 24px;
 	}
 	.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-rgt {
-	    padding-right: 35px;
+	    padding-right: 45px;
 	}
 	.fl-dft-lftimg-rgtdes-rgt {
-	    padding-left: 35px;
+	    padding-left: 45px;
 	}
 	.block-848{
 		max-width: 100%;
