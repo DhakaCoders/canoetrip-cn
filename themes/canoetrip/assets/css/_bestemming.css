@@ -75,24 +75,24 @@
 	margin-left: -12px;
 	margin-right: -12px;
 }
-.blog-grd-item{
+.blog-grd{
 	width: 33.3333%;
 	padding: 0 12px 25px;
 }
 
-.blog-grd-item-inr{
+.blog-grd-inr{
 	border-radius: 4px;
 	-webkit-box-shadow: 0px 6px 12px -2px #cfcfcf; 
 	box-shadow: 0px 6px 12px -2px #cfcfcf;
 }
 
-.blog-grd-item-img-ctlr{
+.blog-grd-img-ctlr{
 	position: relative;
 	overflow: hidden;
 	border-radius: 4px 4px 0 0;
 }
 
-.blog-grd-item-img{
+.blog-grd-img{
 	height: 244px;
 	border-radius: 4px 4px 0 0;
 	-webkit-transition: all 0.5s;
@@ -100,17 +100,17 @@
 	transition: all 0.5s;
 }
 
-.blog-grd-item-img img{
+.blog-grd-img img{
 	display: none;
 }
 
-.blog-grd-item-img-des{
+.blog-grd-img-des{
 	position: absolute;
 	left: 20px;
 	bottom: 18px;
 }
 
-.blog-grd-item-img-des-inr{
+.blog-grd-img-des-inr{
 	height: 54px;
 	width: 54px;
 	border-radius: 100%;
@@ -120,7 +120,7 @@
 	justify-content: center;
 	text-align: center;
 }
-.blog-grd-item-img-des-inr span{
+.blog-grd-img-des-inr span{
 	color: #DEEDE6;
 	letter-spacing: -0.02em;
 	line-height: 18px;
@@ -128,7 +128,7 @@
 }
 
 
-.blog-grd-item-des{
+.blog-grd-des{
 	background: rgba(255, 255, 255, 0.42);
 	border-radius: 0 0 4px 4px;
 	padding: 28px 20px 25px;
@@ -145,7 +145,7 @@
 	color: #46C691;
 }
 
-.blog-grd-item-inr:hover .blog-grd-item-img{
+.blog-grd-inr:hover .blog-grd-img{
 	-webkit-transform: scale(1.05);
 	-ms-transform: scale(1.05);
 	transform: scale(1.05);
@@ -178,7 +178,7 @@
 	.destination-fea-sec {
 	    padding-bottom: 80px;
 	}
-	.blog-grd-item {
+	.blog-grd {
 	    width:	50%;
 	    padding: 0 12px 25px;
 	}
@@ -221,23 +221,23 @@
 	    margin-left: 0;
 	    margin-right: 0;
 	}
-	.blog-grd-item {
+	.blog-grd {
 	    width: 100%;
 	    padding: 0 0 40px;
 	}
-	.blog-grd-item-img{
+	.blog-grd-img{
 		height: 200px;
 	}
-	.blogGrdSlider .blog-grd-item{
+	.blogGrdSlider .blog-grd{
 		display: none;
 	}
-	.blogGrdSlider .blog-grd-item:first-child{
+	.blogGrdSlider .blog-grd:first-child{
 		display: block;
 	}
-	.blogGrdSlider.slick-initialized .blog-grd-item{
+	.blogGrdSlider.slick-initialized .blog-grd{
 		display: block;
 	}
-	.blog-grd-item-inr{
+	.blog-grd-inr{
 		max-width: 375px;
 		width: 100%;
 		margin-left: auto;
@@ -252,7 +252,7 @@
 	.destination-fea-img {
 	    height: 550px;
 	}
-	.blog-grd-item-img{
+	.blog-grd-img{
 		height: 180px;
 	}
 }
