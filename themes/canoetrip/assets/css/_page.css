@@ -291,6 +291,7 @@
 
 .breadcrumb-sec{
 	padding-bottom: 70px;
+	overflow: hidden;
 }
 .breadcrumb-cntlr{
 	padding-top: 20px;
