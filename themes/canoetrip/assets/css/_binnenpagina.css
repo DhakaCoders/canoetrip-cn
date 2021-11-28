@@ -669,17 +669,7 @@ hr {
 .dfp-testimonial-grid-cntlr .testimonial-grd-des-title {
     margin-bottom: 7px!important;
 }
-.dfp-testimonial-grid-cntlr .testimonial-grd-des-inr p{
-	text-align: left;
-	font-weight: 300;
-	font-size: 24px;
-	line-height: 1.5;
-}
-.dfp-testimonial-grid-cntlr .testimonial-grd-des-inr {
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #f8f8f8;
-}
+
 .testimonial-grd-btn-inr{
 	display: flex;
 	justify-content: space-between;
@@ -1041,6 +1031,17 @@ hr {
 	}
 	.fl-dft-lftimg-rgtdes-lft {
 	    height: 330px;
+	}
+	.dfp-testimonial-grid-cntlr .testimonial-grd-des-inr {
+	    padding-bottom: 30px;
+	    margin-bottom: 30px;
+	    border-bottom: 2px solid #f8f8f8;
+	}
+	.dfp-testimonial-grid-cntlr .testimonial-grd-des-inr p{
+		text-align: left;
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 1.5;
 	}
 }
 
