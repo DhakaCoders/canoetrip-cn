@@ -571,7 +571,7 @@ hr {
 .dfp-blog-grid-cntlr .blog-grd-des-title{
 	margin-bottom: 25px!important;
 }
-.dfp-blog-grid-cntlr .blog-grd-item-img-des-inr {
+.dfp-blog-sec-cntlr .blog-grd-img-des-inr {
 	flex-direction: column;
 }
 .dfp-blog-grid-cntlr .blog-grd-item-des p{
