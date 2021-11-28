@@ -751,6 +751,10 @@ hr {
 	.dfp-included-sec-module .included-sec {
 	    margin-bottom: 60px;
 	}
+	.dfp-phasellus-grd-cntlr {
+	    padding-top: 18px;
+	    padding-bottom: 17px;
+	}
 
 }
 
@@ -879,7 +883,7 @@ hr {
 		height:48px;
 	}
 	.default-page-con{
-		padding-bottom: 30px;
+		padding-bottom: 40px;
 	}
 	.dfp-tbl-wrap{
 		margin-bottom: 0;
@@ -1052,9 +1056,19 @@ hr {
 		font-size: 24px;
 		line-height: 1.5;
 	}
+	.dfp-testimonial-grid-cntlr .testimonial-grd-inr{
+		align-items: flex-start;
+	}
+	.dfp-testimonial-grid-cntlr .testimonial-grd-img-ctlr{
+		width: 60%;
+	}
 }
 
-
+@media(max-width: 639px){
+	.dfp-testimonial-grid-cntlr .testimonial-grd-img-ctlr {
+	    width: 100%;
+	}
+}
 @media(max-width: 575px){
 	.default-page-con p, .dfp-text-module p{
 		text-align: center;
