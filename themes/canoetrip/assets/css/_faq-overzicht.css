@@ -49,4 +49,15 @@
 	.overzicht-fag-sec.canoetrip-fag-sec{
 		padding-bottom: 70px;
 	}
+	.fag-overzicht-btn ul{
+		margin: 0 -15px;
+	}
+	.fag-overzicht-btn ul li{
+		padding: 0 15px;
+	}
+}
+@media(max-width: 767px){
+	.cntrp-fag-title{
+		line-height: 1.2;
+	}
 }
