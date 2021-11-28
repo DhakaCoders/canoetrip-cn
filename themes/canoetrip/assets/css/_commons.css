@@ -62,7 +62,7 @@ textarea{
 }
 ::selection {
   color: #fff;
-  background: #512C36;
+  background: #46C691;
 }
 /*-- app gap use pattern --*/
 /*data-xxs = 575
@@ -131,7 +131,7 @@ Containers
 	width: 100%;
 }
 .container{
-	max-width: 1200px;
+	max-width: 1170px;
 	width: 100%;
 }
 .container-md{

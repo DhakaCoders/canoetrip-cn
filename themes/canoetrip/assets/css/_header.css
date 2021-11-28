@@ -8,7 +8,7 @@ header.header{
 
 .hdr-menu{
 	margin-left: auto;
-	padding-right: 34px;
+	padding-right: 26px;
 	padding-top: 3px;
 }
 
@@ -36,7 +36,7 @@ nav.main-nav > ul > li{
 nav.main-nav > ul > li > a{
 	display: inline-block;
 	vertical-align: baseline;
-	font-size: 19px;
+	font-size: 18px;
 	color: #3C6C54;
 	letter-spacing: -0.02em;
 	text-decoration: none;
@@ -55,17 +55,14 @@ nav.main-nav > ul > li.menu-item-has-children > a{
 }
 
 nav.main-nav > ul > li.menu-item-has-children > a:before {
-    content: "\f107";
+    content: "";
     position: absolute;
     right: 0;
-    color: #3C6C54;
-    font-size: 20px;
-    line-height: 1;
-    top: 4px;
-    font-family: 'Font Awesome\ 5 Free';
-    font-style: normal;
-    font-weight: 600;
-    text-decoration: inherit;
+    top: 8px;
+    background-image: url('../images/hdr-lang-arrow.svg');
+	background-repeat: no-repeat!important;
+	height: 8px;
+	width: 12px;
     transition: all 0.5s;
     -ms-transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -76,7 +73,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover > a:before{
     -ms-transform: rotate(-180deg);
     -webkit-transform: rotate(-180deg);
     -o-transform: rotate(-180deg);
-    color: #46C691;
+    background-image: url('../images/hdr-lang-arrow-hover.svg');
 }
 
 nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
@@ -212,8 +209,8 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 	background-size: contain!important;
     padding-right: 0;
     position: absolute;
-    top: 12px;
-    right: 5px;
+    top: 13px;
+    right: 8px;
     z-index: 21;
     transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -224,6 +221,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 	-ms-transform: rotate(-180deg);
 	-webkit-transform: rotate(-180deg);
 	-o-transform: rotate(-180deg);
+	background-image: url('../images/hdr-lang-arrow-hover.svg');
 }
 .fl-lang ul li a:hover{
 	color: #46C691;
