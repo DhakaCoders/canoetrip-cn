@@ -217,6 +217,20 @@
 	position: relative;
 }
 
+.destination-ctlr .destination-sec{
+	padding: 10px 0 90px;
+}
+
+.destination-grd.active .destination-grd-inr{
+	border: 4px solid #46C691;
+	border-radius: 4px;
+}
+.destination-grd.active .destination-grd-img-ctlr,
+.destination-grd.active .has-inline-bg .destination-grd-img{
+	border-radius: 0;
+}
+
+
 .destination-rgt-img{
 	position: absolute;
 	right: 0;
