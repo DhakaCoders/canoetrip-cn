@@ -271,7 +271,6 @@
 }
 .working-grd-img{
 	height: 194px;
-	border-radius: 5px;
 	transition: .5s;
 	-ms-transition: .5s;
 	-webkit-transition: .5s;
@@ -280,6 +279,7 @@
 	width: 34%;
 	position: relative;
 	overflow: hidden;
+	border-radius: 5px;
 }
 .working-grid-desc{
 	width: 66%;
