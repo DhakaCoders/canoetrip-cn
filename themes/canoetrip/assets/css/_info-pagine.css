@@ -26,9 +26,9 @@
 	display: none;
 }
 
-.info-page-intro-sec .destination-date span, 
-.info-page-intro-sec .destination-from span, 
-.info-page-intro-sec .destination-price span{
+.info-page-intro-sec .destination-date strong, 
+.info-page-intro-sec .destination-from strong, 
+.info-page-intro-sec .destination-price strong{
 	color: #444440;
 }
 
