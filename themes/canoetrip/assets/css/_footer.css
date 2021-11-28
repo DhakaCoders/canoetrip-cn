@@ -4,6 +4,9 @@
 .ftr-top-bdr{
 	border-top: 6px solid rgba(68, 68, 65, 0.04);
 }
+body.page-404 .footer-cntlr{
+	padding-top: 5px;
+}
 .footer-cntlr{
 	padding-top: 65px;
 }
