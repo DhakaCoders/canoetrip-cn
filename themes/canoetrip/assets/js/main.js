@@ -286,7 +286,7 @@ $('.cntrp-faq-accordion-hdr').on('click', function(){
 // if (windowWidth <= 767){
 //   if( $('.BtmGallerySlider').length ){
 //     $('.BtmGallerySlider').slick({
-//       dots: false,
+//       dots: true,
 //       arrows: false,
 //       infinite: false,
 //       autoplay: true,
