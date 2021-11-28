@@ -1,11 +1,5 @@
-.block-848{
-	max-width: 848px;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
-.block-1285{
-	max-width: 1285px;
+.block-800{
+	max-width: 800px;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -635,7 +629,7 @@ hr {
     padding-top: 30px;
     padding-bottom: 45px;
 }
-.dfp-phasellus-grd-cntlr .phasellus-grd-item{
+.dfp-phasellus-grd-cntlr .phasellus-grd{
 	width: 25%;
 }
 .dfp-phasellus-grd-cntlr {
@@ -835,7 +829,7 @@ hr {
 	.dfp-tbl-wrap {
 	    padding-top: 30px;
 	}
-	.dfp-phasellus-grd-cntlr .phasellus-grd-item {
+	.dfp-phasellus-grd-cntlr .phasellus-grd {
 	    width: 33.333%;
 	}
 	.dfp-phasellus-grd-cntlr{
