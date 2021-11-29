@@ -494,6 +494,8 @@
 
 .client-sec .sec-entry-hdr-title{
 	text-transform: lowercase;
+	font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
 }
 
 
@@ -769,5 +771,14 @@
 	}
 	.destination-ctlr .destination-sec {
 	    padding-bottom: 20px;
+	}
+	.hm-bnr-title{
+		font-size: 47px!important;
+	}
+}
+
+@media(max-width: 359px){
+	.hm-bnr-title{
+		font-size: 40px!important;
 	}
 }
