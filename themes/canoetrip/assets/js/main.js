@@ -267,7 +267,7 @@ if( $('.xs-page-entry-menu').length ){
 
 /* start of Momin */
 
-if(windowWidth <= 639){
+if(windowWidth <= 575){
     $('.teamGridSlider').slick({
       dots: true,
       infinite: true,
