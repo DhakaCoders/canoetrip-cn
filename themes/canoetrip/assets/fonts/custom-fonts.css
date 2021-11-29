@@ -1,12 +1,13 @@
 
+
 @font-face {
-    font-family: 'Bourton-Regular';
-    src: url('Bourton-Regular/Bourton-Regular.eot');
-    src: url('Bourton-Regular/Bourton-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Bourton-Regular/Bourton-Regular.woff2') format('woff2'),
-        url('Bourton-Regular/Bourton-Regular.woff') format('woff'),
-        url('Bourton-Regular/Bourton-Regular.ttf') format('truetype'),
-        url('Bourton-Regular/Bourton-Regular.svg#Bourton-Regular') format('svg');
+    font-family: 'Bourton-Base';
+    src: url('BourtonBase/BourtonBase.eot');
+    src: url('BourtonBase/BourtonBase.eot?#iefix') format('embedded-opentype'),
+        url('BourtonBase/BourtonBase.woff2') format('woff2'),
+        url('BourtonBase/BourtonBase.woff') format('woff'),
+        url('BourtonBase/BourtonBase.ttf') format('truetype'),
+        url('BourtonBase/BourtonBase.svg#BourtonBase') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
