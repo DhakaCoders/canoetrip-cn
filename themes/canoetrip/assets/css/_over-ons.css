@@ -397,6 +397,10 @@
 	.cta-module-grid-cntlr{
 		padding: 35px 0;
 	}
+	.cta-module-grid-lft-img img{
+		max-width: 390px;
+		padding-left: 50px;
+	}
 	.working-grid-sec{
 		padding-top: 70px;
 		padding-bottom: 60px;
