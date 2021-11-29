@@ -237,6 +237,7 @@
 .cta-module-grid-lft-img {
   width: 50%;
   padding-right: 50px;
+  padding-left: 20px;
 }
 .cta-module-grid-lft-img img {
   max-width: 490px;
@@ -397,9 +398,11 @@
 	.cta-module-grid-cntlr{
 		padding: 35px 0;
 	}
+	.cta-module-grid-lft-img{
+		padding-left: 50px;
+	}
 	.cta-module-grid-lft-img img{
 		max-width: 390px;
-		padding-left: 50px;
 	}
 	.working-grid-sec{
 		padding-top: 70px;
@@ -558,6 +561,7 @@
 		margin: 0 auto;
 		padding-bottom: 30px;
 		padding-right: 0;
+		padding-left: 0;
 	}
 	.cta-module-grid-rgt-desc{
 		max-width: 420px;
