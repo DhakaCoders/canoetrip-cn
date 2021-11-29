@@ -19,7 +19,7 @@
 		padding-bottom: 100px;
 	}
 	.page-404-cntent-wrap .page-bedankt-con-img i img{
-		width: 400px;
+		width: 450px;
 	}
 }
 @media(max-width: 991px){
@@ -27,11 +27,14 @@
 		padding-bottom: 90px;
 	}
 	.page-404-cntent-wrap .page-bedankt-con-img i img{
-		width: 375px;
+		width: 400px;
 	}
 }
 @media(max-width: 767px){
 	.page-404-cntent-wrap .page-bedankt-con-img i img{
 		width: 350px;
+	}
+	.page-404-cntent-wrap .page-404-content-cntlr{
+		padding-bottom: 80px;
 	}
 }
