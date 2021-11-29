@@ -115,6 +115,16 @@
 	position: relative;
 }
 
+.hm-over-ons-sec .ov-intro-featured-btm-lft-img-inr{
+	z-index: 3;
+	position: relative;
+}
+
+.hm-over-ons-sec .ov-intro-featured-top-rgt-img{
+	box-shadow: -9px 3px 28px 5px rgb(0 0 0 / 19%);
+	-webkit-box-shadow: -9px 3px 28px 5px rgb(0 0 0 / 19%);
+}
+
 .hm-over-ons-pos-img{
 	position: absolute;
 	top: 0;
