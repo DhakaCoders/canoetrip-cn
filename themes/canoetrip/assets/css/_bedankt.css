@@ -1,6 +1,6 @@
 .page-bedankt-cntent-cntlr{
 	padding-top: 30px;
-	padding-bottom: 110px;
+	padding-bottom: 45px;
 }
 .page-bedankt-cntent-cntlr-innr{
 	max-width: 852px;
@@ -17,7 +17,7 @@
 	padding-bottom: 25px;
 }
 .page-bedankt-con-desc p{
-	font-size: 24px;
+	font-size: 22px;
 }
 .page-bedankt-con-desc p:last-child{
 	margin-bottom: 0;
@@ -32,7 +32,7 @@
 	vertical-align: baseline;
 }
 .page-bedankt-con-img i img{
-	width: 300px;
+	width: 285px;
 	height: auto;
 }
 .page-bedankt-con-menu-cntlr ul{
@@ -55,10 +55,11 @@
 }
 @media(max-width: 1199px){
 	.page-bedankt-con-img i img{
-		width: 271px;
+		width: 250px;
 	}
 	.page-bedankt-cntent-cntlr{
 		padding-top: 20px;
+		padding-bottom: 40px;
 	}
 	.page-bedankt-con-title{
 		margin-bottom: 20px;
@@ -69,11 +70,13 @@
 	.page-bedankt-con-menu-cntlr{
 		padding-bottom: 20px;
 	}
+	.page-bedankt-con-desc p{
+		font-size: 20px;
+	}
 }
 @media(max-width: 991px){
-	.page-bedankt-con-img i{
-		width: 250px;
-		height: auto;
+	.page-bedankt-con-img i img{
+		 width: 220px;
 	}
 	.page-bedankt-con-menu-cntlr ul{
 		margin: 0 48px;
@@ -82,7 +85,7 @@
 		padding: 0 48px;
 	}
 	.page-bedankt-con-desc{
-		padding-bottom: 35px;
+		padding-bottom: 25px;
 	}
 	.page-bedankt-con-title{
 		margin-bottom: 10px;
@@ -90,7 +93,8 @@
 }
 @media(max-width: 767px){
 	.page-bedankt-cntent-cntlr{
-		padding: 100px 0;
+		padding-top: 60px;
+		padding-bottom: 50px;
 	}
 	.page-bedankt-con-menu-cntlr ul{
 		margin: 0 -22px;
@@ -98,34 +102,39 @@
 	.page-bedankt-con-menu-cntlr ul li{
 		padding: 0 22px;
 	}
+	.page-bedankt-con-desc p{
+		font-size: 18px;
+	}
 }
 @media(max-width: 575px){
 	.page-bedankt-cntent-cntlr{
-		padding-top: 56px;
-		padding-bottom: 63px;
+		padding-top: 50px;
+		padding-bottom: 30px;
 	}
 	.page-bedankt-con-img{
 		padding-bottom: 20px;
 	}
-	.page-bedankt-con-img i{
-		width: 90px!important;
+	.page-bedankt-con-img i img{
+		width: 185px
 	}
 	.page-bedankt-con-title{
-		margin-bottom: 5px;
+		margin-bottom: 15px;
 	}
 	.page-bedankt-con-img{
-		padding-bottom: 30px;
+		padding-bottom: 25px;
 	}
 	.page-bedankt-con-desc{
-		padding-bottom: 45px;
+		padding-bottom: 35px;
 	}
 	.page-bedankt-con-menu-cntlr ul{
 		margin: 0px;
 	}
+	.page-bedankt-con-desc p{
+		font-size: 17px;
+	}
 	.page-bedankt-con-menu-cntlr ul li{
 		width: 100%;
-		padding: 0 0 36px;
-		margin-bottom: 35px;
+		padding: 0 0 25px;
 	}
 	.page-bedankt-con-menu-cntlr ul li:last-child{
 		padding-bottom: 0;
