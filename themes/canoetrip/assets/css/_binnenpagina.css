@@ -685,13 +685,17 @@ hr {
 .dfp-info-pagine-fea-cntlr .info-pagine-fea{
 	padding-top: 0;
 }
+
+
+#nieuws-details .btm-gallery{
+	margin-bottom: 60px;
+}
+
+
+
+
 /*responsive*/
 
-@media(max-width: 1699px){
-
-
-
-}
 
 
 @media(max-width: 1199px){
