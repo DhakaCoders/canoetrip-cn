@@ -1,6 +1,4 @@
-.footer-wrp{
 
-}
 .ftr-top-bdr{
 	border-top: 6px solid rgba(68, 68, 65, 0.04);
 }
@@ -198,9 +196,6 @@ body.page-404 .footer-cntlr{
 	color: #46C691;
 	text-decoration: none;
 }
-.ftr-trip-logo{
-
-}
 .ftr-trip-logo ul{
 	display: flex;
 	align-items: center;
@@ -227,7 +222,6 @@ body.page-404 .footer-cntlr{
 	-webkit-transform: scale(1.1);
 	-o-transform: scale(1.1);
 }
-
 .footer-mdl{
 	display: flex;
 	align-items: center;
@@ -249,9 +243,6 @@ body.page-404 .footer-cntlr{
 .footer-mdl strong{
 	padding-right: 55px;
 	font-weight: 400;
-}
-.ftr-concept-logo{
-
 }
 .ftr-concept-logo ul{
 	display: flex;
@@ -282,9 +273,6 @@ body.page-404 .footer-cntlr{
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 42px 0;
-}
-.ftr-copyright{
-
 }
 .ftr-copyright p{
 	margin-bottom: 0;
@@ -341,9 +329,6 @@ body.page-404 .footer-cntlr{
 .ftr-btm-menu ul li a:hover{
 	color: #46C691;
 }
-.develop-by{
-
-}
 .develop-by p{
 	margin-bottom: 0;
 	line-height: 1.1;
@@ -358,16 +343,8 @@ body.page-404 .footer-cntlr{
 .develop-by p a:hover{
 	color: #46C691;
 }
-
-.ftr-xs-btns{
-
-}
 .ftr-xs-btn{
 	margin-bottom: 10px;
-}
-/*responsive*/
-@media(max-width: 1399px){
-
 }
 @media(max-width: 1299px){
 	.ftr-socials{
@@ -497,7 +474,6 @@ body.page-404 .footer-cntlr{
 		text-align: center;
 		margin-bottom: 17px;
 	}
-
 	.ftr-btm-menu{
 		width: 100%;
 		margin-bottom: 25px;
@@ -518,12 +494,6 @@ body.page-404 .footer-cntlr{
 	.ftr-top-bdr{
 		border-top: 9px solid rgba(68, 68, 65, 0.04);
 	}
-}
-@media(max-width: 767px){
-	
-}
-@media(max-width: 639px){
-	
 }
 @media(max-width: 479px){
 	.ftr-trip-logo ul,
