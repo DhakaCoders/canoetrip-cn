@@ -472,7 +472,7 @@ body.allWork {
 	    top: 0;
 	    right: 0;
 	    left: 0;
-	    z-index: 5;
+	    z-index: 99;
 	   	text-align: center;
 	    padding: 30px 20px;
 	    background: #fff;
