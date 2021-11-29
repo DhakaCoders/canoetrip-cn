@@ -333,6 +333,7 @@
 .xs-wgd-title a{
 	display: inline-block;
 	text-decoration: none;
+	color: #444440;
 }
 .wgd-title a:hover{
 	color: #3C6C54;
