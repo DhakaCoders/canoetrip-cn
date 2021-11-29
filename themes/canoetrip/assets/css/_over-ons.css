@@ -55,7 +55,9 @@
 	right: 5px;
 	z-index: 2;
 }
-.over-ons-line-img {
+.over-ons-line-img1,
+.over-ons-line-img2,
+.over-ons-line-img3 {
     padding-bottom: 4px;
 }
 .over-ons-intro-sec .page-entry-hdr{
@@ -88,6 +90,7 @@
 
 .team-grid-col-innr{
 	position: relative;
+	z-index: 9;
 }
 .team-grd-img-cntlr{
 	position: relative;
@@ -405,7 +408,7 @@
 		max-width: 40px;
 	}
 	.over-ons-bears-sec{
-		padding-top: 60px;
+		padding-top: 55px;
 		padding-bottom: 30px;
 	}
 	.cta-module-grid-cntlr{
