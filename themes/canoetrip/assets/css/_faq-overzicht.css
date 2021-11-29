@@ -23,7 +23,6 @@
 	line-height: 1;
 	margin-bottom: 20px;
 }
-
 .fag-overzicht-btn ul li a{
 	text-transform: uppercase;
 	display: inline-block;
@@ -38,8 +37,6 @@
 .fag-overzicht-btn ul li.active a{
 	color: #46C691;
 }
-
-/*responsive*/
 @media(max-width: 1199px){
 	.overzicht-fag-sec.canoetrip-fag-sec{
 		padding-bottom: 80px;
