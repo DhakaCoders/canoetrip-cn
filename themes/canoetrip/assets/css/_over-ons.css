@@ -36,7 +36,7 @@
 	position: relative;
 }
 .over-ons-intro-xs-img{
-	height: 373px;
+	height: 400px;
 	border-radius: 5px;
 }
 .overons-intro-featured-img-inr{
@@ -637,6 +637,9 @@
 	.over-ons-intro-sec{
 		padding-bottom: 10px;
 	}
+	.over-ons-intro-xs-img{
+		height: 350px;
+	}
 	.over-ons-bears-sec{
 		padding-bottom: 20px;
 	}
@@ -725,6 +728,9 @@
 	}
 }
 @media(max-width: 479px){
+	.over-ons-intro-xs-img{
+		height: 320px;
+	}
 	.ov-ons-des-btn .fl-tc-btn{
 		min-width: 100%;
 	}
