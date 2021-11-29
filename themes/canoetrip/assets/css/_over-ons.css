@@ -491,6 +491,9 @@
 	.tgd-title{
 		margin-bottom: 10px;
 	}
+	.team-grd-img{
+		height: 330px	;
+	}
 	.cta-module-grid-cntlr{
 		padding: 30px 0;
 	}
@@ -565,6 +568,7 @@
 	.team-grid-sec .sec-entry-hdr{
 		padding-bottom: 15px;
 	}
+
 	.over-ons-bears-sec{
 		padding-top: 15px;
 	}
@@ -734,9 +738,8 @@
 	.ov-ons-des-btn .fl-tc-btn{
 		min-width: 100%;
 	}
-	.cta-module-grid-lft-img img{
-		max-width: 111px;
-		width: 100%;
+	.cta-module-grid-lft-img{
+		max-width: 200px;
 	}
 	.cta-module-grd-btn .fl-tc-btn{
 		min-width: 100%;
