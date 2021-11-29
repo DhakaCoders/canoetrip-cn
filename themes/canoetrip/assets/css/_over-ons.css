@@ -99,6 +99,108 @@
     65%  { transform: translate(0, 20px); }
     to   { transform: translate(0, 0px); }    
 }
+.over-ons-line-img1 {
+   bottom:10%;
+   position:absolute;
+   -webkit-animation:linear infinite;
+   -webkit-animation-name:run;
+   -webkit-animation-duration:5s;
+}
+
+@-webkit-keyframes run  {
+   0% {
+      left:0;
+      -webkit-transform:rotateY(0deg);
+   }
+   
+   50% {
+      left:12%;
+      -webkit-transform:rotateY(0deg);
+   }
+   
+  /* 51% {
+      -webkit-transform:rotateY(180deg);
+   }
+   
+   99% {
+      left:0;
+      -webkit-transform:rotateY(0deg);
+   }*/
+   
+   100% {
+      left:0;
+      -webkit-transform:rotateY(0deg);
+   }
+
+}
+.over-ons-line-img2 {
+   bottom:30%;
+   position:absolute;
+   -webkit-animation:linear infinite;
+   -webkit-animation-name:run;
+   -webkit-animation-duration:5s;
+}
+
+@-webkit-keyframes run  {
+   0% {
+      left:0;
+      -webkit-transform:rotateY(0deg);
+   }
+   
+   50% {
+      left:20%;
+      -webkit-transform:rotateY(0deg);
+   }
+   
+  /* 51% {
+      -webkit-transform:rotateY(180deg);
+   }
+   
+   99% {
+      left:0;
+      -webkit-transform:rotateY(0deg);
+   }*/
+   
+   100% {
+      left:0;
+      -webkit-transform:rotateY(0deg);
+   }
+
+}
+.over-ons-line-img3 {
+   bottom:60%;
+   position:absolute;
+   -webkit-animation:linear infinite;
+   -webkit-animation-name:run;
+   -webkit-animation-duration:5s;
+}
+
+@-webkit-keyframes run  {
+   0% {
+      left:0;
+      -webkit-transform:rotateY(0deg);
+   }
+   
+   50% {
+      left:12%;
+      -webkit-transform:rotateY(0deg);
+   }
+   
+  /* 51% {
+      -webkit-transform:rotateY(180deg);
+   }
+   
+   99% {
+      left:0;
+      -webkit-transform:rotateY(0deg);
+   }*/
+   
+   100% {
+      left:0;
+      -webkit-transform:rotateY(0deg);
+   }
+
+}
 .team-grid-sec .sec-entry-hdr{
 	padding-bottom: 25px;
 }
@@ -362,7 +464,7 @@
 	color: #444440;
 }
 .wgd-title a:hover{
-	color: #3C6C54;
+	color: #46C691;
 }
 .work-grd-btn .fl-tc-btn{
 	min-width: 250px;
