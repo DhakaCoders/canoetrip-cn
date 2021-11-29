@@ -24,8 +24,7 @@
 	line-height: 1.4;
 }
 .page-bedankt-con-title{
-	color: #4F7F35;
-	margin-bottom: 25px;
+	margin-bottom: 18px;
 }
 .page-bedankt-con-img i{
 	display: inline-block;
@@ -43,12 +42,6 @@
 }
 .page-bedankt-con-menu-cntlr ul li{
 	padding: 0 70px;
-}
-.page-bedankt-con-menu-cntlr ul li a{
-	color: #46c791;
-	font-size: 16px;
-	display: inline-block;
-	vertical-align: baseline;
 }
 .page-bedankt-con-btn .fl-tc-btn{
 	min-width: 230px;
