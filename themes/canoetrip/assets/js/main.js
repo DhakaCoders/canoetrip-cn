@@ -2,8 +2,6 @@
 var windowWidth = $(window).width();
 var windowWidth_1920 = $('.page-body-cntlr').width();
 
-/*Google Map Style*/
-var CustomMapStyles  = [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
 
 $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
@@ -159,35 +157,6 @@ if( $('.responsive-slider').length ){
     });
 }
 
-
-var swiper = new Swiper('.catagorySlider', {
-    slidesPerView: 1,
-    loop: true,
-    navigation: {
-      nextEl: '.catagorySlider-arrows .swiper-button-next',
-      prevEl: '.catagorySlider-arrows .swiper-button-prev',
-    },
-    breakpoints: {
-       639: {
-        slidesPerView: 2,
-        spaceBetween: 0,
-      },
-      991: {
-        slidesPerView: 3,
-        spaceBetween: 0,
-      },
-      1199: {
-        loop: false,
-        slidesPerView: 4,
-        spaceBetween: 0,
-      },
-      1920: {
-        loop: false,
-        slidesPerView: 4,
-        spaceBetween: 0,
-      },
-    }
-  });
 
 if( $('#mapID').length ){
 var latitude = $('#mapID').data('latitude');
