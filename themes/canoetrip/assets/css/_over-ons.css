@@ -93,7 +93,7 @@
 	position: relative;
 }
 .team-grd-img{
-	height: 360px;
+	height: 330px;
 	border-radius: 5px;
 }
 .team-grid-items{
@@ -162,6 +162,10 @@
 .team-grd-sml-img i{
 	display: inline-block;
 	vertical-align: baseline;
+}
+.team-grd-sml-img i img{
+	max-width: 42px;
+	width: 100%;
 }
 .team-grd-desc{
 	text-align: center;
@@ -332,6 +336,7 @@
 }
 .work-grd-btn .fl-tc-btn{
 	min-width: 250px;
+	text-transform: initial;
 }
 .wgd-desc{
 	padding-bottom: 1px;
@@ -355,10 +360,20 @@
 @media(max-width: 1499px){
 	.working-grd-sec-lft-ab-img{
 		width: 120px;
-		margin-top: -60px;
+		margin-top: 60px;
 	}
 }
-
+@media(max-width: 1399px){
+	.working-grd-sec-lft-ab-img{
+		width: 120px;
+		margin-top: 0;
+	}
+}
+@media(max-width: 1299px){
+	.working-grd-sec-lft-ab-img{
+		margin-top: -50px
+	}
+}
 
 @media(max-width: 1199px){
 	.over-ons-intro-sec{
@@ -385,11 +400,10 @@
 		padding: 0 10px 40px;
 	}
 	.team-grd-img{
-		height: 320px;
+		height: 310px;
 	}
 	.team-grd-sml-img i img{
-		width: 43px;
-		height: auto;
+		max-width: 40px;
 	}
 	.over-ons-bears-sec{
 		padding-top: 60px;
