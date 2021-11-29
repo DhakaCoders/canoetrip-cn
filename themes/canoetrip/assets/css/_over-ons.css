@@ -77,9 +77,28 @@
 .overons-intro-desc-cntlr ul{
 	padding-left: 0;
 }
-
-
-
+.UpdownAnimate{
+	animation-name: clfloating;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes clfloating {
+    from { transform: translate(0, 0px); }
+    65%  { transform: translate(0, 10px); }
+    to   { transform: translate(0, 0px); }    
+}
+.UpdownAnimate2{
+		animation-name: UpdownAnimate2;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes UpdownAnimate2 {
+    from { transform: translate(0, 0px); }
+    65%  { transform: translate(0, 20px); }
+    to   { transform: translate(0, 0px); }    
+}
 .team-grid-sec .sec-entry-hdr{
 	padding-bottom: 25px;
 }
