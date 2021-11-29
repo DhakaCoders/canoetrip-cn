@@ -12,8 +12,3 @@ Text Domain: clipfresh
 */
 
 @import url('assets/css/main.css');
-.team-grd-bg-inr{
-    height: 100%;
-    width: 100%;
-    overflow-y: scroll;
-}
