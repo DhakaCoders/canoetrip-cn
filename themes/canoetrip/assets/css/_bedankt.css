@@ -101,7 +101,7 @@
 }
 @media(max-width: 575px){
 	.page-bedankt-cntent-cntlr{
-		padding-top: 40px;
+		padding-top: 4	0px;
 		padding-bottom: 30px;
 	}
 	.page-bedankt-con-img{
@@ -120,7 +120,7 @@
 		padding-bottom: 25px;
 	}
 	.page-bedankt-con-menu-cntlr{
-		padding-bottom: 30px;
+		padding-bottom: 40px;
 	}
 	.page-bedankt-con-menu-cntlr ul{
 		margin: 0px;
