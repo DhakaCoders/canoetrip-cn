@@ -116,7 +116,7 @@
   bottom: 0;
   background: #3C6C54;;
   color: #DEEDE6;
-  padding: 20px 31px;
+  padding: 20px 0;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -136,6 +136,7 @@
     height: 100%;
     width: 100%;
     overflow-y: scroll;
+    padding: 0 31px;
 }
 .team-grid-col-innr:hover .team-grd-bg{
 	opacity: 1;
