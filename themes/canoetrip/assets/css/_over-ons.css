@@ -353,8 +353,8 @@
 /*start-responsive*/
 @media(max-width: 1699px){
 	.team-grid-rgt-btm-img{
-		width: 240px;
-    margin-top: -130px;
+		width: 200px;
+    margin-top: -120px;;
 	}
 	.working-grd-sec-lft-ab-img{
 		width: 135px;
@@ -403,7 +403,7 @@
 		padding: 0 10px 40px;
 	}
 	.team-grd-img{
-		height: 310px;
+		height: 280px;
 	}
 	.team-grd-sml-img i img{
 		max-width: 40px;
@@ -456,15 +456,15 @@
 
 @media(max-width: 991px){
 	.ov-intro-featured-top-rgt-img-inr{
-		height: 420px;
-		padding-left: 85px;
+		height: 350px;
+		padding-left: 80px;
 	}
 	.ov-intro-featured-btm-lft-img-inr{
 		max-width: 300px;
-		height: 280px;
+		height: 300px;
 	}
 	.overons-intro-desc-cntlr{
-		padding-left: 50px;
+		padding-left: 40px;
 	}
 	.over-ons-line-img-ctlr{
 		right: -15px;
@@ -734,7 +734,7 @@
 	.ov-ons-des-btn .fl-tc-btn{
 		min-width: 100%;
 	}
-	.cta-module-grid-lft-img{
+	.cta-module-grid-lft-img img{
 		max-width: 111px;
 		width: 100%;
 	}
