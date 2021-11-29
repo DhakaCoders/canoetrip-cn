@@ -19,7 +19,6 @@
   <link rel="stylesheet" type="text/css" href="assets/fancybox3/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">
-  <link rel="stylesheet" type="text/css" href="assets/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="assets/select2/select2.min.css">
   <link rel="stylesheet" type="text/css" href="assets/flatpickr/flatpickr.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -349,7 +348,7 @@
   <!-- end of header -->
 
 
-  <section class="breadcrumb-sec">
+  <section class="breadcrumb-sec hide-sm">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -1314,10 +1313,12 @@
                             <div class="inline-bg team-grd-img" style="background-image: url('assets/images/team-grid-img.jpg');"></div>
                              <div class="team-grd-sml-img"><i><img src="assets/images/grid-colourful-img.png"></i></div>
                              <div class="team-grd-bg">
-                               <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae.</p>
-                               <p>Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
+                              <div class="team-grd-bg-inr">
                                 <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae.</p>
-                               <p>Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
+                                <p>Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
+                                <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae.</p>
+                                <p>Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
+                              </div>
                              </div>
                           </div>
                           <div class="team-grd-desc">
@@ -1722,7 +1723,7 @@
   </section>
 
 
-  <footer class="footer-wrp ftr-top-bdr">
+  <footer class="footer-wrp">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -1733,6 +1734,9 @@
                   <a href="#">
                     <img src="assets/images/ftr-logo.svg" alt="">
                   </a>
+                </div>
+                <div class="ftr-col-travel show-md">
+                  <p><strong>The Canoe Trip is a <a target="_blank" href="#">Travelbase</a> concept.</strong></p>
                 </div>
                 <div class="ftr-socials">
                   <ul class="reset-list">
@@ -1768,6 +1772,14 @@
                     <li><a href="#">Over ons</a></li>
                   </ul>
                 </div>
+                <div class="ftr-xs-btns show-md">
+                  <div class="ftr-xs-btn">
+                    <a class="fl-tc-btn" href="#">Nu boeken</a>
+                  </div>
+                  <div class="ftr-xs-btn">
+                    <a class="fl-tc-btn tc-transparent-btn" href="#">Mijn boeking</a>
+                  </div>
+                </div>
               </div>
               <div class="ftr-col ftr-col-03">
                 <h6 class="ftr-col-title fl-h6">Contacteer ons</h6>
@@ -1798,9 +1810,9 @@
                 </div>
               </div>
               <div class="ftr-col ftr-col-04">
-                <h6 class="ftr-col-title fl-h6">Over Ons</h6>
-                <div class="ftr-col-travel">
-                  <p>The Canoe Trip is a <a target="_blank" href="#">Travelbase</a> concept.</p>
+                <h6 class="ftr-col-title fl-h6 hide-md">Over Ons</h6>
+                <div class="ftr-col-travel hide-md">
+                  <p><strong>The Canoe Trip is a <a target="_blank" href="#">Travelbase</a> concept.</strong></p>
                 </div>
                 <div class="ftr-col-desc">
                   <p>Travelbase is lid van de United Federation of Travel Agents Associations (UFTAA) via het lidmaatschap bij de Vlaamse Vereniging voor Reisbureaus (VVR). Als reiziger ben je op die manier 100% beschermd tegen financiële insolvabiliteit via MS Amlin Verzekeringen.
@@ -1840,7 +1852,7 @@
               </div>
             </div>
             <div class="footer-mdl">
-              <span>Onze andere concepten</span>
+              <strong>Onze andere concepten</strong>
               <div class="ftr-concept-logo">
                 <ul class="reset-list">
                   <li>
@@ -1901,7 +1913,7 @@
         </div>
       </div>
     </div> 
-  </footer>
+  </footer>  
   
 
 </div>
@@ -1913,8 +1925,6 @@
 <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 <script src="assets/fancybox3/dist/jquery.fancybox.min.js"></script>
 <script src="assets/slick.slider/slick.js"></script>
-<script src="assets/swiper/swiper-bundle.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaRQsAJCZyyD6MbCg0jB_0sdLGEOxt97Y"></script>
 <script src="assets/js/jquery.matchHeight-min.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/wow.min.js"></script>

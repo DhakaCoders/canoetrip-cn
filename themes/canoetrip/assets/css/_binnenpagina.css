@@ -387,6 +387,7 @@ Gallery design
 	font-size: 16px;
 	line-height: 22px;
 	color: #444440;
+	text-transform: capitalize;
 }
 .table-dsc table thead tr th,
 .table-dsc table tbody tr td{
@@ -1163,6 +1164,7 @@ hr {
 	}
 	.dfp-btn-module-ctlr ul li a {
 	    min-width: 144px;
+	    text-transform: uppercase;
 	}
 	.dfp-btn-module-ctlr ul li {
 	    width: initial;
@@ -1177,6 +1179,10 @@ hr {
 	}
 	.fl-dft-lftimg-rgtdes-lft {
 	    height: 290px;
+	}
+
+	.dfp-faq-module .cntrp-faq-accordion-desc p{
+		text-align: left;
 	}
 
 }
@@ -1217,6 +1223,6 @@ hr {
     	padding-right: 6px;
 	}
 	.dfp-btn-module-ctlr ul li a {
-	    min-width: 135px;
+	    min-width: 100%;
 	}
 }
