@@ -186,6 +186,12 @@
 	.destination-fea-sec {
 	    padding-bottom: 80px;
 	}
+	.blog-grds{
+		max-width: 750px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.blog-grd {
 	    width:	50%;
 	    padding: 0 12px 25px;
@@ -259,6 +265,9 @@
 	}
 	#destination-fea-sec .cntrp-faq-accordion{
 		text-align: left;
+	}
+	.blog-grds{
+		max-width: 100%;
 	}
 }
 

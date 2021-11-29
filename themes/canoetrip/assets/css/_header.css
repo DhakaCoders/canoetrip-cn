@@ -273,7 +273,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 
 .hamburgar-cntlr{
 	position: fixed;
-	bottom: 0;
+	bottom: -4px;
 	left: 0;
 	width: 115px;
 	height: 115px;
