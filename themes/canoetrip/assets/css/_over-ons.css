@@ -567,6 +567,9 @@
 	.over-ons-bears-sec{
 		padding-top: 15px;
 	}
+	.ov-ons-des-btn .fl-tc-btn{
+		min-width: 185px;
+	}
 	.cta-module-grid-cntlr{
 		display: block;
 		padding: 50px 0;
@@ -689,11 +692,6 @@
 	.working-grids-cntlr ul{
 		margin: 0;
 	}
-	.working-grids-cntlr ul li{
-		max-width: 304px;
-		margin: 0 auto;
-		padding: 0 0 38px;
-	}
 	.working-grid-item{
 		display: block;
 	}
@@ -723,6 +721,9 @@
 	}
 }
 @media(max-width: 479px){
+	.ov-ons-des-btn .fl-tc-btn{
+		min-width: 100%;
+	}
 	.overons-intro-featured-img,.overons-intro-desc-cntlr{
 		max-width: 306px;
 	}
@@ -730,6 +731,12 @@
 		max-width: 111px;
 		width: 100%;
 	}
+	.working-grid-item{
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 0 38px;
+	}
+
 }
 @media(max-width: 359px){
 	.ov-ons-des-btn .fl-tc-btn{
