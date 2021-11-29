@@ -494,6 +494,9 @@ body.page-404 .footer-cntlr{
 	.ftr-top-bdr{
 		border-top: 9px solid rgba(68, 68, 65, 0.04);
 	}
+	.ftr-xs-btn .fl-tc-btn{
+		min-width: 210px;
+	}
 }
 @media(max-width: 479px){
 	.ftr-trip-logo ul,
