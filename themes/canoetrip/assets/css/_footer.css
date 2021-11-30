@@ -501,8 +501,6 @@ body.page-404 .footer-cntlr{
 	.ftr-xs-btn .fl-tc-btn{
 		min-width: 210px;
 	}
-}
-@media(max-width: 767px){
 	.ftr-col-title{
 		font-size: 20px!important;
 	}
