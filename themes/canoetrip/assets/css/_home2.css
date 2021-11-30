@@ -198,9 +198,9 @@
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
-	transition: all 0.8s;
-	-ms-transition: all 0.8s;
-	-webkit-transition: all 0.8s;
+/*	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;*/
 	margin-top: -2px;
 }
 .cntrp-fag-btn a:hover{
