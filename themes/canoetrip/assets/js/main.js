@@ -315,7 +315,7 @@ if(windowWidth <= 575){
     function bannerheight(){
       var windowWidth = $(window).width();
       var windowHeight = $(window).height();
-      var winHeight = (windowHeight + 50);
+      var winHeight = (windowHeight + 100);
       var headerHeight = $('.header').height();
       var hdrHeight = (headerHeight + 40);
       var bnrHeight = (winHeight - hdrHeight);
