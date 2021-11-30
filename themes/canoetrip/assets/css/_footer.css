@@ -140,20 +140,20 @@ body.page-404 .footer-cntlr{
     align-items: center;
     justify-content: center;
     min-width: 100%;
-    color: #46C691;
+    color: #3C6C54;
     background: transparent;
     font-size: 15px;
     line-height: 1.1;
     text-align: center;
     padding: 13px 20px;
     font-weight: 600;
-    border: 2px solid #46C691;
+    border: 2px solid #3C6C54;
     border-radius: 4px;
     text-decoration: none;
     position: relative;
 }
 .ftr-btn a:hover{
-	background: #46C691;
+	background: #3C6C54;
 	color: #fff;
 }
 .ftr-btn a:hover i svg{
