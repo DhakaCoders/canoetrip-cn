@@ -45,6 +45,7 @@
 	display: block;
 	letter-spacing: -0.02em;
 	text-transform: uppercase;
+	font-family: 'Bourton-Base';
 }
 
 .dfp-text-module{
@@ -879,6 +880,7 @@ hr {
 	}
 	.dfp-promo-module-title {
 	    margin-bottom: 28px;
+	    padding: 0 10px;
 	}
 	.dfp-plate-one-img-bx {
 	    margin-bottom: 32px;
@@ -1070,6 +1072,16 @@ hr {
 	.dfp-testimonial-grid-cntlr .testimonial-grd-img-ctlr{
 		width: 60%;
 	}
+	.dfp-full-width-img-module .full-img img,
+	.dfp-full-img-module .full-img img{
+		display: none;
+	}
+	.dfp-full-width-img-module .full-img div,
+	.dfp-full-img-module .full-img div{
+		height: 279px;
+		width: 100%;
+		display: block;
+	}
 }
 
 @media(max-width: 639px){
@@ -1152,16 +1164,6 @@ hr {
 	.half-item-gallery.has-inline-bg .gallery-icon-img {
 	    height: 220px;
 	}
-	.dfp-full-width-img-module .full-img img,
-	.dfp-full-img-module .full-img img{
-		display: none;
-	}
-	.dfp-full-width-img-module .full-img img,
-	.dfp-full-img-module .full-img div{
-		height: 279px;
-		width: 100%;
-		display: block;
-	}
 	.dfp-btn-module-ctlr ul li a {
 	    min-width: 144px;
 	    text-transform: uppercase;
@@ -1213,6 +1215,9 @@ hr {
 }
 
 @media(max-width: 359px){
+	.dfp-promo-module-title {
+	    padding: 0;
+	}
 	.dfp-btn-module .dfp-btn-module-ctlr ul {
 		margin-left: -6px;
     	margin-right: -6px;
