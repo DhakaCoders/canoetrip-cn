@@ -152,7 +152,7 @@
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
-	margin-top: 1px;
+	margin-top: -3px;
 }
 .active .cntrp-faq-accordion-title:after{
 	transition: all 0.5s;
