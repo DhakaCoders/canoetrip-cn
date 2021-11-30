@@ -32,6 +32,7 @@
 	letter-spacing: -0.02em;
 	color: #444440;
 	text-decoration: none;
+	font-family: 'Bourton-Base';
 }
 .fag-overzicht-btn ul li a:hover,
 .fag-overzicht-btn ul li.active a{
