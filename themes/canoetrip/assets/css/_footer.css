@@ -68,7 +68,7 @@ body.page-404 .footer-cntlr{
 	max-width: 132px;
 }
 .ftr-socials{
-	padding-left: 25px;
+	padding-left: 20px;
 }
 .ftr-socials ul{
 	display: flex;
@@ -113,6 +113,7 @@ body.page-404 .footer-cntlr{
 	line-height: 1;
 	letter-spacing: -0.02em;
 	color: #444440;
+	font-family: 'Bourton-Base';
 	text-transform: uppercase;
 	text-decoration: none;
 }
@@ -140,20 +141,20 @@ body.page-404 .footer-cntlr{
     align-items: center;
     justify-content: center;
     min-width: 100%;
-    color: #46C691;
+    color: #3C6C54;
     background: transparent;
     font-size: 15px;
     line-height: 1.1;
     text-align: center;
     padding: 13px 20px;
     font-weight: 600;
-    border: 2px solid #46C691;
+    border: 2px solid #3C6C54;
     border-radius: 4px;
     text-decoration: none;
     position: relative;
 }
 .ftr-btn a:hover{
-	background: #46C691;
+	background: #3C6C54;
 	color: #fff;
 }
 .ftr-btn a:hover i svg{
@@ -366,6 +367,9 @@ body.page-404 .footer-cntlr{
 	}
 }
 @media(max-width: 991px){
+	.footer-wrp{
+		overflow: hidden;
+	}
 	.ftr-col{
 		max-width: 100%;
 		text-align: center;
@@ -373,7 +377,7 @@ body.page-404 .footer-cntlr{
 	}
 	.ftr-col-01{
 		padding-bottom: 28px;
-		margin-bottom: 50px;
+		margin-bottom: 45px;
 		position: relative;
 	}
 	.ftr-col-01:after{
@@ -400,7 +404,7 @@ body.page-404 .footer-cntlr{
 		line-height: 1.6;
 	}
 	.ftr-menu ul{
-		margin: 0 -17px;
+		margin: -17px 0;
 	}
 	.ftr-menu ul li{
 		padding: 17px 0;
@@ -496,6 +500,9 @@ body.page-404 .footer-cntlr{
 	}
 	.ftr-xs-btn .fl-tc-btn{
 		min-width: 210px;
+	}
+	.ftr-col-title{
+		font-size: 20px!important;
 	}
 }
 @media(max-width: 479px){
