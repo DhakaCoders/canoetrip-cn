@@ -477,8 +477,11 @@
 	margin-bottom: 18px;
 }
 
+.over-ons-con-cntlr .cta-module-grd-title{
+	color: #DEEDE6;
+}
 
-/*start-responsive*/
+
 @media(max-width: 1699px){
 	.team-grid-rgt-btm-img{
 		width: 200px;

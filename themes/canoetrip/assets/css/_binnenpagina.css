@@ -92,10 +92,18 @@ Gallery design
 .has-inline-bg .gallery-icon-img{
 	height: 264px;
 	display: block;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
 }
 .gallery-icon {
     border-radius: 3px;
     overflow: hidden;
+}
+.gallery-icon:hover .gallery-icon-img{
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
 }
 .has-inline-bg .gallery-item img{
 	display: none;
@@ -647,6 +655,9 @@ hr {
 }
 .dfp-canoetrip-fag-wrap .cntrp-fag ul li{
 	padding: 0!important;
+}
+.dfp-canoetrip-fag-wrap .cntrp-faq-accordion-title:hover{
+	color: #46C691;
 }
 .dfp-info-pagine-fea-cntlr {
     padding-top: 30px;
