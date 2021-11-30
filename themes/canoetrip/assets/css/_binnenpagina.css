@@ -656,6 +656,9 @@ hr {
 .dfp-canoetrip-fag-wrap .cntrp-fag ul li{
 	padding: 0!important;
 }
+.dfp-canoetrip-fag-wrap .cntrp-faq-accordion-title:hover{
+	color: #46C691;
+}
 .dfp-info-pagine-fea-cntlr {
     padding-top: 30px;
     padding-bottom: 45px;
