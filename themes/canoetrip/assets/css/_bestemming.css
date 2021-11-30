@@ -121,6 +121,9 @@
 .blog-grd-des-title{
 	color: #444440;
 }
+.blog-grd-des-inr{
+	padding-bottom: 1px;
+}
 .blog-grd-des-title a{
 	color: #444440;
 	text-decoration: none;
