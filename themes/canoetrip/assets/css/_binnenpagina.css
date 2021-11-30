@@ -363,6 +363,14 @@ Gallery design
 .table-dsc table tbody tr td:first-child span{
 	font-weight: 700;
 	border-bottom: none;
+	font-family: 'Titillium Web', sans-serif;
+	color: #444440;
+}
+.table-dsc table tbody tr td:nth-child(2) span,
+.table-dsc table tbody tr td:nth-child(3) span{
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 400;
+	color: #444440;
 }
 .table-dsc table thead tr th:first-child,
 .table-dsc table tbody tr td:first-child{
@@ -389,6 +397,8 @@ Gallery design
 	line-height: 22px;
 	color: #444440;
 	text-transform: capitalize;
+	font-family: 'Tajawal', sans-serif;
+	color: #4C5D5B;
 }
 .table-dsc table thead tr th,
 .table-dsc table tbody tr td{
@@ -404,6 +414,13 @@ Gallery design
 	font-weight: 700;
 }
 
+.table-dsc table thead tr th:first-child span,
+.table-dsc table thead tr th:nth-child(2) span,
+.table-dsc table thead tr th:nth-child(3) span{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 14px;
+	color: #444440;
+}
 
 .table-dsc table tbody{
 	border-top: 0;
@@ -416,6 +433,7 @@ Gallery design
 	font-weight: 400;
 	line-height: 19.6px;
 	color: #444440;
+	font-family: 'Tajawal', sans-serif;
 }
 .table-dsc table span{
 	display: block;
