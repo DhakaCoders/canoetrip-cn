@@ -150,7 +150,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 }
 .fl-lang-cntlr{
 	position: relative;
-	min-height: 40px;
+	min-height: 58px;
 	padding-left: 5px;
 	min-width: 60px;
 }
@@ -189,7 +189,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 	background-size: contain!important;
     padding-right: 0;
     position: absolute;
-    top: 10px;
+    top: 18px;
     right: 8px;
     z-index: 21;
     transition: all 0.5s;
@@ -210,7 +210,9 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 	position: absolute;
 	left: 0;
 	right: 0;
-	z-index: 20;	
+	z-index: 20;
+	padding-top: 9px;	
+	border-radius: 4px;
 }
 .fl-lang-cntlr:hover{
 	overflow: initial;
