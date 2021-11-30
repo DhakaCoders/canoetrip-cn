@@ -177,6 +177,9 @@
 	top: 0;
 	opacity: 0.3;
 }
+.info-pagine-blog .sec-entry-hdr-title{
+	color: #444440;
+}
 @media(max-width: 1199px){
 	.info-page-feature-img.has-inline-bg {
 	    height: 680px;
