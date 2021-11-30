@@ -378,6 +378,29 @@
 		width: 30px;
 		height: 30px;
 	}
+	.hm-socials-gallery-sec{
+		overflow: hidden;
+	}
+	.hm-socials-gallery{
+		overflow-x: scroll;
+	    overflow-y: hidden;
+	    white-space: nowrap;
+	    padding-bottom: 20px;
+	}
+	.hm-socials-gallery-item{
+		width: 150%;
+	}
+	.hm-socials-gallery::-webkit-scrollbar-track {
+	  	background: #F8F8F8;
+	  	margin: 0 20px!important;
+	}
+	.hm-socials-gallery::-webkit-scrollbar {
+	  	height: 4px;
+	}
+	.hm-socials-gallery::-webkit-scrollbar-thumb {
+	  	background: #46C691;
+	  	width: 58px!important;
+	}
 }
 @media(max-width: 639px){
 	.cntrp-fag{
