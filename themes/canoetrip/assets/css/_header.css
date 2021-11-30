@@ -106,7 +106,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:last-child{
 	border-bottom: 0;
 }
 nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a {
-    font-size: 18px;
+    font-size: 16.5px;
     display: block;
     padding: 10px 17px;
     text-decoration: none;
@@ -210,7 +210,6 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 	position: absolute;
 	left: 0;
 	right: 0;
-	border-radius: 8px;
 	z-index: 20;	
 }
 .fl-lang-cntlr:hover{
@@ -222,6 +221,11 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 	opacity: 1!important;
 	padding-top: 0;
 	padding-right: 22px;
+}
+.fl-lang-cntlr:hover ul{
+	background: #fff;
+	-webkit-box-shadow: 0 2px 12px 0 rgb(0 0 0 / 15%);
+	box-shadow: 0 2px 12px 0 rgb(0 0 0 / 15%);
 }
 .hdr-btns{
 	margin-top: -2px;
