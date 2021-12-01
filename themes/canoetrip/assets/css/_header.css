@@ -308,10 +308,6 @@ body.allWork .hamburger-icon span:nth-child(2){
     content: none;
     display: none;
 }
-.allWork .bdoverlay {
-    z-index: 98;
-    opacity: 1;
-}
 .bdoverlay {
     background: rgba(0, 0, 0, 0.8);
     position: fixed;
@@ -329,27 +325,46 @@ body.allWork {
     overflow: hidden!important;
 }
 .allWork .xs-mobile-menu {
-    right: 0;
+	display: block;
     opacity: 1;
-    z-index: 99;
-    width: 100%;
 }
 .xs-mobile-menu {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 0;
     bottom: 0;
-    background: #fff;
-    width: 0;
+    background: transparent;
+    width: 100%;
     z-index: 99;
     opacity: 0;
-    -ms-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+    -ms-transition: opacity 0.3s 0.5s;
+    -webkit-transition: opacity 0.3s 0.5s;
+    transition: opacity 0.3s 0.5s;
     padding: 20px 0 40px;
     height: 100%;
     max-width: 375px;
     width: 100%;
+    display: none;
+}
+.hamburgar-cntlr + .bg-cover {
+    height: 120px;
+    width: 120px;
+    display: block;
+    border-radius: 50%;
+    background: #fff;
+    position: fixed;
+    left: -41px;
+    bottom: -43px;
+    background: #FFF;
+    border-radius: 50% 50% 50% 50%;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+    cursor: pointer;
+    z-index: 6;
+}
+.allWork .hamburgar-cntlr + .bg-cover {
+    box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+    border-radius: 0;
 }
 @media(max-width: 1199px){
 	.hdr-menu{
@@ -439,7 +454,7 @@ body.allWork {
 	    z-index: 99;
 	   	text-align: center;
 	    padding: 30px 20px;
-	    background: #fff;
+	    background: transparent;
 	}
 	.xs-menu {
 	    height: 100%;
