@@ -469,6 +469,8 @@ ol li:before{
 	display: none;
 }
 
+
+
 @media(max-width: 1199px){
 	.breadcrumb-sec{
 		padding-bottom: 50px;
