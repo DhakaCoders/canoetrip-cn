@@ -1,6 +1,7 @@
 <?php 
 get_header(); 
 $blogID = get_option( 'page_for_posts' );
+$term_obj = get_queried_object();
 ?>
   <section class="breadcrumb-sec hide-sm">
     <div class="container">
@@ -13,8 +14,13 @@ $blogID = get_option( 'page_for_posts' );
                   <span class="item"><?php _e('Home', 'canoetrip'); ?></span>
                 </a>
               </li>
+              <li>
+                <a href="<?php echo esc_url(home_url($blogID)); ?>">
+                  <span><?php echo get_the_title($blogID); ?></span>
+                </a>
+              </li>
               <li class="active">
-                <span><?php echo get_the_title($blogID); ?></span>
+                <span><?php echo $term_obj->name; ?></span>
               </li>
             </ul>
           </div>
@@ -22,18 +28,18 @@ $blogID = get_option( 'page_for_posts' );
       </div>
     </div>
   </section>
-<?php 
-$terms = get_terms( 'category', array(
-    'hide_empty' => false,
-) );
-?>
+  <?php 
+  $terms = get_terms( 'category', array(
+      'hide_empty' => false,
+  ) );
+  ?>
   <section class="blog-sec">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="blog-sec-inr">
             <div class="sec-entry-hdr">
-              <h2 class="fl-h2 sec-entry-hdr-title"><?php echo get_the_title($blogID); ?></h2>
+              <h2 class="fl-h2 sec-entry-hdr-title"><?php echo $term_obj->name; ?></h2>
             </div>
             <?php if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){ ?>
             <div class="xs-page-entry-menu show-sm">
@@ -42,7 +48,7 @@ $terms = get_terms( 'category', array(
                   <a href="#"><?php _e('Categorie', 'canoetrip'); ?></a>
                   <ul class="reset-list page-entry-sub-menu">
                     <?php foreach($terms as $term){ ?>
-                      <li><a href="<?php echo esc_url( get_term_link( $term ) ); ?>"><?php echo $term->name; ?></a></li>
+                      <li<?php echo $term_obj->term_id == $term->term_id?' class="active"':''; ?>><a href="<?php echo esc_url( get_term_link( $term ) ); ?>"><?php echo $term->name; ?></a></li>
                     <?php } ?>
                   </ul>
                 </li>
