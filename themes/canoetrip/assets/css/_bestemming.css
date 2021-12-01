@@ -136,6 +136,18 @@
 	-ms-transform: scale(1.05);
 	transform: scale(1.05);
 }
+.destination-items .destination-item{
+	display: none;
+}
+.destination-items .destination-item.active{
+	display: flex;
+}
+.destination-grd .destination-grd-inr{
+	border: 4px transparent;
+}
+.destinationSlider.slick-slider .slick-dots li button{
+	width: 100%;
+}
 @media(max-width: 1199px){
 	.destination-fea-img {
 	    height: 680px;
@@ -241,6 +253,9 @@
 	}
 	.blog-grds{
 		max-width: 100%;
+	}
+	.destination-items .destination-item.active{
+		display: block;
 	}
 }
 @media(max-width: 575px){
