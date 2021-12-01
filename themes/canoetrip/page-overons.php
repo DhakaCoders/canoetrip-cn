@@ -134,7 +134,7 @@ $thisID = get_the_ID();
                      </div>
                   </div>
                   <div class="team-grd-desc">
-                    <h3 class="fl-h4 tgd-title mHc"><?php echo get_the_title($member->ID); ?>,</h4>
+                    <h3 class="fl-h4 tgd-title mHc"><?php echo get_the_title($member->ID); ?></h4>
                     <?php if( !empty($positie) ) printf('<span class="team-grd-designation">%s</span>', $positie); ?>
                     <div class="team-grd-desc-xs">
                       <?php echo wpautop(get_the_excerpt($member->ID)); ?>

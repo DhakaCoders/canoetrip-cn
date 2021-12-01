@@ -1,23 +1,39 @@
 <?php get_header(); ?>
+<?php  
+  $hbanner = get_field('home_banner', HOMEID);
+  if($hbanner):
+  $banner = !empty($hbanner['afbeelding'])? cbv_get_image_src( $hbanner['afbeelding'] ): '';
+?>
   <section class="hm-banner ">
     <div class="hm-banner-bg-black"></div>
+    <?php if( !empty($hbanner['upload_video']) ): ?>
     <div class="hm-video-cntlr">
       <video id="bnr-vdo" autoplay muted loop>
-        <source src="<?php echo THEME_URI; ?>/assets/images/videos/placeholder-video.mp4" type="video/mp4">
-        <source src="<?php echo THEME_URI; ?>/assets/images/videos/placeholder-video.mp4" type="video/mp4">
+        <source src="<?php echo $hbanner['upload_video']; ?>" type="video/mp4">
       </video>
     </div>
-    <div class="hm-banner-bg inline-bg" style="background-image:url(<?php echo THEME_URI; ?>/assets/images/hm-page-bnr.jpg);"></div>
+    <?php endif; ?>
+    <?php if( empty($hbanner['upload_video']) ): ?>
+    <div class="hm-banner-bg inline-bg" style="background-image:url(<?php echo $banner; ?>);"></div>
+    <?php endif; ?>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="hm-banner-des-cntlr">
             <div class="hm-banner-des">
-              <h1 class="hm-bnr-title fl-h1">Get Ready <br> for your next ADVENTURE</h1>
+              <?php if( !empty($hbanner['titel']) ) printf( '<h1 class="hm-bnr-title fl-h1">%s</h1>', $hbanner['titel'] ); ?>
               <div class="hm-bnr-btn">
                 <ul class="reset-list">
-                  <li><a class="fl-tc-btn" href="#">Get Started</a></li>
-                  <li><a class="fl-tc-btn tc-transparent-btn" href="#">Button</a></li>
+                <?php 
+                  $hknop_1 = $hbanner['knop_1'];
+                  $hknop_2 = $hbanner['knop_2'];
+                  if( is_array( $hknop_1 ) &&  !empty( $hknop_1['url'] ) ){
+                      printf('<li><a class="fl-tc-btn" href="%s" target="%s">%s</a></li>', $hknop_1['url'], $hknop_1['target'], $hknop_1['title']); 
+                  }
+                  if( is_array( $hknop_2 ) &&  !empty( $hknop_2['url'] ) ){
+                      printf('<li><a class="fl-tc-btn tc-transparent-btn" href="%s" target="%s">%s</a></li>', $hknop_2['url'], $hknop_2['target'], $hknop_2['title']); 
+                  }
+                ?>
                 </ul>
               </div>
             </div>
@@ -26,7 +42,13 @@
       </div>
     </div>
   </section>
-
+<?php endif; ?>
+<?php
+$showhide_overons = get_field('showhide_overons', HOMEID);
+if($showhide_overons): 
+  $hoverons = get_field('hoverons', HOMEID);
+  if($hoverons):
+?>
   <section class="over-ons-intro-sec hm-over-ons-sec">
     <div class="hm-over-ons-pos-img">
       <img src="<?php echo THEME_URI; ?>/assets/images/hm-over-ons-pos-img.png">
@@ -37,30 +59,37 @@
           <div class="over-ons-intro-sec-cntlr">
             <div class="overons-intro-featured-img">
               <div class="overons-intro-featured-img-inr hide-sm">
+                <?php if(!empty($hoverons['afbeelding_1'])): ?>
                <div class="ov-intro-featured-top-rgt-img-inr">
-                 <div class="ov-intro-featured-top-rgt-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/ov-tp-rgt-img-02.jpg');"></div>
+                 <div class="ov-intro-featured-top-rgt-img inline-bg" style="background-image: url('<?php echo cbv_get_image_src( $hoverons['afbeelding_1'] ); ?>');"></div>
                </div>
+               <?php endif; ?>
+               <?php if(!empty($hoverons['afbeelding_2'])): ?>
                 <div class="ov-intro-featured-btm-lft-img-inr">
-                  <div class="ov-intro-featured-top-lft-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/ov-tp-lft-img-02.jpg');"></div>
+                  <div class="ov-intro-featured-top-lft-img inline-bg" style="background-image: url('<?php echo cbv_get_image_src( $hoverons['afbeelding_2'] ); ?>');"></div>
                 </div>
+                <?php endif; ?>
               </div>
               <div class="over-ons-line-img-ctlr hide-sm">
                <div class="over-ons-line-img1"><img src="<?php echo THEME_URI; ?>/assets/images/over-ons-line-img1.png"></div>
                <div class="over-ons-line-img2"><img src="<?php echo THEME_URI; ?>/assets/images/over-ons-line-img2.png"></div>
                <div class="over-ons-line-img3"><img src="<?php echo THEME_URI; ?>/assets/images/over-ons-line-img3.png"></div>
               </div>
-              <div class="inline-bg over-ons-intro-xs-img show-sm" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/xs-overons-lft-jpg.jpg');"></div>
+              <?php if(!empty($hoverons['mobiel_afbeelding_1'])): ?>
+              <div class="inline-bg over-ons-intro-xs-img show-sm" style="background-image: url('<?php echo cbv_get_image_src( $hoverons['mobiel_afbeelding_1'] ); ?>');"></div>
+              <?php endif; ?>
             </div>
             <div class="overons-intro-desc-cntlr">
               <div class="dft-text-module">
-                <h2 class="fl-h2 overons-intro-desc-title">Donec sapien lorem feugiat sed.</h2>
-                <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
-                <a href="#" class="fl-text-btn">
-                  Find out more
-                  <i><svg class="right-arrow-svg" width="14" height="14" viewBox="0 0 14 14" fill="#46C691">
-                    <use xlink:href="#right-arrow-svg"></use> 
-                  </svg></i>
-                </a>
+                <?php
+                  if( !empty($hoverons['titel']) ) printf( '<h2 class="fl-h2 overons-intro-desc-title">%s</h2>', $hoverons['titel'] );
+                  if( !empty($hoverons['beschrijving']) ) echo wpautop( $hoverons['beschrijving'] );
+                  $onsknop = $hoverons['knop'];
+                  if( is_array( $onsknop ) &&  !empty( $onsknop['url'] ) ){
+                      printf('<a class="fl-text-btn" href="%s" target="%s">%s<i><svg class="right-arrow-svg" width="14" height="14" viewBox="0 0 14 14" fill="#46C691">
+                    <use xlink:href="#right-arrow-svg"></use></svg></i></a>', $onsknop['url'], $onsknop['target'], $onsknop['title']); 
+                  }
+                ?>
               </div>
             </div>
           </div>
@@ -68,88 +97,56 @@
       </div>
     </div>
   </section>
-
+<?php endif; ?>
+<?php endif; ?>
+<?php
+$showhidectas = get_field('showhidectas', HOMEID);
+if($showhidectas): 
+  $hctas = get_field('ctas', HOMEID);
+  if($hctas):
+?>
   <section class="hm-grd-sec">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="hm-grd-sec-inr">
             <div class="hm-grds hmGrdsSlider">
+              <?php 
+              foreach( $hctas as $hcta ): 
+              $hctaknop = $hcta['knop'];
+              ?>
               <div class="hm-grd">
                 <div class="hm-grd-inr">
                   <div class="hm-grd-img-ctlr has-inline-bg">
-                    <a href="#" class="overlay-link"></a>
-                    <div class="hm-grd-img inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/hm-grd-item-img-01.jpg');">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/hm-grd-item-img-01.jpg">
+                  <?php if( !empty($hctaknop) ) printf('<a href="%s" class="overlay-link"></a>',$hctaknop); ?>
+                    <div class="hm-grd-img inline-bg" style="background-image:url('<?php echo !empty($hcta['afbeelding'])?cbv_get_image_src( $hcta['afbeelding'] ):''; ?>');">
+                      <?php echo !empty($hcta['afbeelding'])?cbv_get_image_tag( $hcta['afbeelding'] ):''; ?>
                     </div>
                     <div class="hm-grd-item-img">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/hm-grd-item-img-01.jpg">
+                      <?php echo !empty($hcta['afbeelding'])?cbv_get_image_tag( $hcta['afbeelding'] ):''; ?>
                     </div>
                   </div>
                   <div class="hm-grd-des">
-                    <span>Urna at nisl proin.</span>
-                    <h2 class="hm-grd-des-title fl-h4"><a href="#">Kanoën</a></h2>
+                    <?php if( !empty($hcta['toptitel']) ) printf('<span>%s</span>', $hcta['toptitel']); ?>
+                    <h2 class="hm-grd-des-title fl-h4">
+                      <?php 
+                        if( !empty($hctaknop) ) printf('<a href="%s">', $hctaknop); 
+                        if( !empty($hcta['titel']) ) printf('%s', $hcta['titel']); 
+                        if( !empty($hctaknop) ) printf('</a>'); 
+                      ?>
+                    </h2>
                   </div>
                 </div>
               </div>
-              <div class="hm-grd">
-                <div class="hm-grd-inr">
-                  <div class="hm-grd-img-ctlr has-inline-bg">
-                    <a href="#" class="overlay-link"></a>
-                    <div class="hm-grd-img inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/hm-grd-item-img-02.jpg');">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/hm-grd-item-img-02.jpg">
-                    </div>
-                    <div class="hm-grd-item-img">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/hm-grd-item-img-02.jpg">
-                    </div>
-                  </div>
-                  <div class="hm-grd-des">
-                    <span>Proin sed nulla sed.</span>
-                    <h2 class="hm-grd-des-title fl-h4"><a href="#">Disconnect</a></h2>
-                  </div>
-                </div>
-              </div>
-              <div class="hm-grd">
-                <div class="hm-grd-inr">
-                  <div class="hm-grd-img-ctlr has-inline-bg">
-                    <a href="#" class="overlay-link"></a>
-                    <div class="hm-grd-img inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/hm-grd-item-img-03.jpg');">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/hm-grd-item-img-03.jpg">
-                    </div>
-                    <div class="hm-grd-item-img">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/hm-grd-item-img-01.jpg">
-                    </div>
-                  </div>
-                  <div class="hm-grd-des">
-                    <span>Convallis faucibus.</span>
-                    <h2 class="hm-grd-des-title fl-h4"><a href="#">Into the wild</a></h2>
-                  </div>
-                </div>
-              </div>
-              <div class="hm-grd">
-                <div class="hm-grd-inr">
-                  <div class="hm-grd-img-ctlr has-inline-bg">
-                    <a href="#" class="overlay-link"></a>
-                    <div class="hm-grd-img inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/hm-grd-item-img-04.jpg');">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/hm-grd-item-img-04.jpg">
-                    </div>
-                    <div class="hm-grd-item-img">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/hm-grd-item-img-01.jpg">
-                    </div>
-                  </div>
-                  <div class="hm-grd-des">
-                    <span>Facilisis posuere quis.</span>
-                    <h2 class="hm-grd-des-title fl-h4"><a href="#">Wildkamperen</a></h2>
-                  </div>
-                </div>
-              </div>
+              <?php endforeach; ?>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
+<?php endif; ?>
+<?php endif; ?>
 
   <section class="destination-sec">
     <div class="destination-rgt-img hide-md">
@@ -412,133 +409,169 @@
     </div>
   </section>
 
-
+<?php
+$showhide_partners = get_field('showhide_partners', HOMEID);
+if($showhide_partners): 
+  $partners = get_field('partners', HOMEID);
+  if($partners):
+    $logos = $partners['logos'];
+?>
   <section class="client-sec hide-sm">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="client-sec-inr">
             <div class="sec-entry-hdr">
-              <h2 class="fl-h5 sec-entry-hdr-title">Reisverhalen over ons</h2>
+              <?php if( !empty($partners['titel']) ) printf('<h2 class="fl-h5 sec-entry-hdr-title">%s</h2>', $partners['titel']); ?>
             </div>
+            <?php if( $logos ): ?>
             <div class="client-grds-ctlr">
               <div class="client-grds">
+                <?php foreach( $logos as $logo ): ?>
                 <div class="client-grd">
                   <div class="client-grd-inr">
-                    <a href="#">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/client-logo-01.jpg">
-                    </a>
+                  <?php
+                    if( !empty($logo['knop']) ) printf('<a href="%s">', $logo['knop']);  
+                      if( !empty($logo['logo']) ) echo cbv_get_image_tag($logo['logo']);
+                    if( !empty($logo['knop']) ) printf('</a>'); 
+                  ?>
                   </div>
                 </div>
-                <div class="client-grd">
-                  <div class="client-grd-inr">
-                    <a href="#">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/client-logo-02.jpg">
-                    </a>
-                  </div>
-                </div>
-                <div class="client-grd">
-                  <div class="client-grd-inr">
-                    <a href="#">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/client-logo-03.jpg">
-                    </a>
-                  </div>
-                </div>
-                <div class="client-grd">
-                  <div class="client-grd-inr">
-                    <a href="#">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/client-logo-04.jpg">
-                    </a>
-                  </div>
-                </div>
+                <?php endforeach; ?>
               </div>
             </div>
+            <?php endif; ?>
           </div>
         </div>
       </div>
     </div>
   </section>
-
+<?php endif; ?>
+<?php endif; ?>
+<?php
+$showhide_cta = get_field('showhide_cta', HOMEID);
+if($showhide_cta): 
+  $cta_type = get_field('cta_type', HOMEID);
+  if($cta_type[0] == '1'){
+    $ctasec = get_field('ctasec', HOMEID);
+    if($ctasec):
+?>
   <section class="cta-module-sec">
+    <?php if( !empty($ctasec['upload_video']) ): ?>
     <div class="cta-video-cntlr">
         <video id="cta-vdo" autoplay muted loop>
-          <source src="<?php echo THEME_URI; ?>/assets/images/videos/placeholder-video.mp4" type="video/mp4">
-          <source src="<?php echo THEME_URI; ?>/assets/images/videos/placeholder-video.mp4" type="video/mp4">
+          <source src="<?php echo $ctasec['upload_video']; ?>" type="video/mp4">
         </video>
       </div>
-    <div class="cta-module-bg inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/cta-module-bg.png');"></div>
+      <?php endif; ?>
+      <?php if( empty($ctasec['upload_video']) ): ?>
+    <div class="cta-module-bg inline-bg" style="background-image: url('<?php echo !empty($ctasec['afbeelding'])? cbv_get_image_src( $ctasec['afbeelding'] ): ''; ?>');"></div>
+    <?php endif; ?>
     <div class="cta-module-overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="cta-module-cntlr">
             <div class="cta-module-desc">
-              <h2 class="cta-module-title fl-h2">Join The Canoe Trip</h2>
-              <p>Preregister for The Canoe Trip 2022! You will receive an invitation to subscribe first if you are preregistered. The official registrations will open on Tuesday November 16th at 12h00. </p>
-              <div class="cta-module-btn">
-                <a class="fl-tc-btn" href="#">Book Now</a>
-              </div>
+              <?php 
+                if( !empty($ctasec['titel']) ) printf('<h2 class="cta-module-title fl-h2">%s</h2>', $ctasec['titel']); 
+                if( !empty($ctasec['beschrijving']) ) echo wpautop($ctasec['beschrijving']);
+                $ctaknop1 = $ctasec['knop'];
+                if( is_array( $ctaknop1 ) &&  !empty( $ctaknop1['url'] ) ){
+                    printf('<div class="cta-module-btn"><a class="fl-tc-btn" href="%s" target="%s">%s</a></div>', $ctaknop1['url'], $ctaknop1['target'], $ctaknop1['title']); 
+                }
+              ?>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
+  <?php endif; ?>
+<?php }else{ 
+    $ctasec_2 = get_field('ctasec_2', HOMEID);
+    if($ctasec_2):
+?>
+  <section class="cta-module-grid-sec">
+    <?php if( !empty($ctasec_2['upload_video']) ): ?>
+    <div class="cta-video-cntlr">
+        <video id="cta-vdo" autoplay muted loop>
+          <source src="<?php echo $ctasec_2['upload_video']; ?>" type="video/mp4">
+        </video>
+    </div>
+    <?php endif; ?>
+    <?php if( empty($ctasec_2['upload_video']) ): ?>
+    <div class="cta-module-bg inline-bg" style="background-image: url('<?php echo !empty($ctasec_2['poster_afbeelding'])? cbv_get_image_src( $ctasec_2['poster_afbeelding'] ): ''; ?>');"></div>
+    <?php endif; ?>
+    <div class="cta-module-overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="cta-module-grid-cntlr">
+            <div class="cta-module-grid-lft-img">
+              <?php echo !empty($ctasec_2['dnd_afbeelding'])? cbv_get_image_tag( $ctasec_2['dnd_afbeelding'] ): ''; ?>
+            </div>
+            <div class="cta-module-grid-rgt-desc">
+              <?php if( !empty($ctasec_2['titel']) ) printf( '<h2 class="cta-module-grd-title fl-h2">%s</h2>', $ctasec_2['titel'] ); ?>
+              <?php if( !empty($ctasec_2['upload_file']) ): ?>
+              <div class="cta-module-grd-btn">
+                <a class="fl-tc-btn" href="<?php echo $ctasec_2['upload_file']; ?>" download><?php _e('Download hier de brochure', 'canoetrip'); ?></a>
+              </div>
+              <?php endif; ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <?php endif; ?>
+<?php } ?>
+<?php endif; ?>
+<?php
+$showhide_faq = get_field('showhide_faq', HOMEID);
+if($showhide_faq): 
+  $faq = get_field('faqsec', HOMEID);
+  if($faq):
+    $faqobj = $faq['select_faq'];
+    if( empty($faqobj) ){
+        $faqobj = get_posts( array(
+          'post_type' => 'faq',
+          'posts_per_page'=> 4,
+          'orderby' => 'date',
+          'order'=> 'asc',
+          'suppress_filters' => false
+        ) );  
+    }
+?>
   <section class="canoetrip-fag-sec home-fag-sec">
     <span class="tekening-img hide-md" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/tekening-img.png');"></span>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="canoetrip-fag-cntlr">
-            <h2 class="cntrp-fag-title fl-h2">FAQ</h2>
+            <?php if( !empty($faq['titel']) ) printf('<h2 class="cntrp-fag-title fl-h2">%s</h2>', $faq['titel']); ?>
+            <?php if($faqobj): ?>
             <div class="cntrp-fag">
               <ul class="reset-list">
+              <?php 
+                foreach( $faqobj as $faq_row ) :
+              ?>
                 <li>
                   <div class="cntrp-faq-accordion">
                     <div class="cntrp-faq-accordion-hdr">
-                      <h3 class="cntrp-faq-accordion-title fl-h5">Moet ik direct na de registratie betalen?</h3>
+                      <h3 class="cntrp-faq-accordion-title fl-h5"><?php echo get_the_title($faq_row->ID); ?></h3>
                     </div>
                     <div class="cntrp-faq-accordion-desc">
-                      <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
+                      <?php echo wpautop(get_the_excerpt($faq_row->ID)); ?>
                     </div>
                   </div>
                 </li>
-                <li>
-                  <div class="cntrp-faq-accordion">
-                    <div class="cntrp-faq-accordion-hdr">
-                      <h3 class="cntrp-faq-accordion-title fl-h5">Annuleringsverzekering?</h3>
-                    </div>
-                    <div class="cntrp-faq-accordion-desc">
-                      <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="cntrp-faq-accordion">
-                    <div class="cntrp-faq-accordion-hdr">
-                      <h3 class="cntrp-faq-accordion-title fl-h5">Kunnen kinderen mee op The Canoe Trip?</h3>
-                    </div>
-                    <div class="cntrp-faq-accordion-desc">
-                      <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="cntrp-faq-accordion">
-                    <div class="cntrp-faq-accordion-hdr">
-                      <h3 class="cntrp-faq-accordion-title fl-h5">Kunnen kinderen mee op The Canoe Trip?</h3>
-                    </div>
-                    <div class="cntrp-faq-accordion-desc">
-                      <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
-                    </div>
-                  </div>
-                </li>
+                <?php endforeach; ?>
               </ul>
             </div>
             <div class="cntrp-fag-btn">
-              <a href="#">
-                <span>Bekijk alle FAQ's</span>
+              <a href="<?php echo get_link_by_page_template('page-faq.php'); ?>">
+                <span><?php _e('Bekijk alle FAQ \'s', 'canoetrip'); ?></span>
                 <i>
                   <svg class="right-arrow-icon" width="14" height="14" viewBox="0 0 14 14" fill="#46C691">
                     <use xlink:href="#right-arrow-icon"></use> 
@@ -546,12 +579,14 @@
                 </i>
               </a>
             </div>
+            <?php endif; ?>
           </div>
         </div>
       </div>
     </div>
   </section>
-
+<?php endif; ?>
+<?php endif; ?>
   <section class="hm-socials-gallery-sec">
     <div class="container">
       <div class="row">
