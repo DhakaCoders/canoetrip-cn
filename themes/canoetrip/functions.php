@@ -170,6 +170,14 @@ add_action('do_meta_boxes', 'remove_thumbnail_box');
 function remove_thumbnail_box() {
     remove_meta_box( 'postimagediv','page','side' );
 }
+
+/**
+ * Remove content support from posts.
+*/
+function cbv_wprocs_custom_init() {
+    remove_post_type_support( 'post', 'editor' );
+}
+add_action( 'init', 'cbv_wprocs_custom_init' );
 /**
 Debug->>
 */

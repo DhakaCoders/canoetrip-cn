@@ -1,3 +1,17 @@
+  <?php 
+  $logoObj = get_field('ftlogo', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+
+  $fb_url = get_field('facebook_url', 'options');
+  $inst_url = get_field('instagram_url', 'options');
+  $email = get_field('emailadres', 'options');
+  $ftcont = get_field('footersec', 'options');
+  $copyright_text = get_field('copyright_text', 'options');
+?>
   <footer class="footer-wrp">
     <div class="container">
       <div class="row">
@@ -6,8 +20,8 @@
             <div class="footer-top">
               <div class="ftr-col ftr-col-01">
                 <div class="ftr-logo">
-                  <a href="#">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/ftr-logo.svg" alt="">
+                  <a href="<?php echo esc_url(home_url('/')); ?>">
+                    <?php echo $logo_tag; ?>
                   </a>
                 </div>
                 <div class="ftr-col-travel show-md">
@@ -15,8 +29,9 @@
                 </div>
                 <div class="ftr-socials">
                   <ul class="reset-list">
+                    <?php if( !empty($fb_url) ): ?>
                     <li>
-                      <a target="_blank" href="#">
+                      <a target="_blank" href="<?php echo $fb_url; ?>">
                         <i>
                           <svg class="facebook-icon" width="32" height="32" viewBox="0 0 32 32" fill="#444441">
                             <use xlink:href="#facebook-icon"></use> 
@@ -24,8 +39,10 @@
                         </i>
                       </a>
                     </li>
+                    <?php endif; ?>
+                    <?php if( !empty($inst_url) ): ?>
                     <li>
-                      <a target="_blank" href="#">
+                      <a target="_blank" href="<?php echo $inst_url; ?>">
                         <i>
                           <svg class="instagram-icon" width="32" height="32" viewBox="0 0 32 32" fill="#444441">
                             <use xlink:href="#instagram-icon"></use> 
@@ -33,38 +50,41 @@
                         </i>
                       </a>
                     </li>
+                    <?php endif; ?>
                   </ul>
                 </div>
               </div>
               <div class="ftr-col ftr-col-02">
-                <h6 class="ftr-col-title fl-h6 hide-md">Navigatie</h6>
+                <h6 class="ftr-col-title fl-h6 hide-md"><?php _e('Navigatie', 'canoetrip');?></h6>
                 <div class="ftr-menu">
-                  <ul class="reset-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Bestemmingen</a></li>
-                    <li><a href="#">Praktisch</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Over ons</a></li>
-                  </ul>
+                <?php 
+                  $fmenuOptions = array( 
+                      'theme_location' => 'cbv_fta_menu', 
+                      'menu_class' => 'reset-list',
+                      'container' => '',
+                      'container_class' => ''
+                    );
+                  wp_nav_menu( $fmenuOptions );
+                ?>
                 </div>
                 <div class="ftr-xs-btns show-md">
                   <div class="ftr-xs-btn">
-                    <a class="fl-tc-btn" href="#">Nu boeken</a>
+                    <a class="fl-tc-btn" href="#"><?php _e('Nu boeken', 'canoetrip');?></a>
                   </div>
                   <div class="ftr-xs-btn">
-                    <a class="fl-tc-btn tc-transparent-btn" href="#">Mijn boeking</a>
+                    <a class="fl-tc-btn tc-transparent-btn" href="#"><?php _e('Mijn boeking', 'canoetrip');?></a>
                   </div>
                 </div>
               </div>
               <div class="ftr-col ftr-col-03">
-                <h6 class="ftr-col-title fl-h6">Contacteer ons</h6>
+                <h6 class="ftr-col-title fl-h6"><?php _e('Contacteer ons', 'canoetrip');?></h6>
                 <div class="ftr-col-desc">
-                  <p>We are available via mail, Messenger or Whatsapp. We will do our best to answer you within 24 hours. Our office times are from monday until friday,10 AM - 5PM (CET).</p>
+                  <?php if( !empty($ftcont['cnt_tekst']) ) echo wpautop($ftcont['cnt_tekst']); ?>
                 </div>
                 <div class="ftr-btns">
                   <div class="ftr-btn ftr-messanger-btn">
                     <a href="#">
-                      <span>Send us a message</span>
+                      <span><?php _e('Send us a message', 'canoetrip');?></span>
                       <i>
                         <svg class="messenger-icon" width="24" height="24" viewBox="0 0 24 24" fill="#3C6C54">
                           <use xlink:href="#messenger-icon"></use> 
@@ -72,9 +92,10 @@
                       </i>
                     </a>
                   </div>
+                  <?php if( !empty($email) ): ?>
                   <div class="ftr-btn ftr-mail-btn">
-                    <a href="mailto:info@thecanoetrip.org">
-                      <span>info@thecanoetrip.org</span>
+                    <a href="mailto:<?php echo $email; ?>">
+                      <span><?php echo $email; ?></span>
                       <i>
                         <svg class="ftr-mail-icon" width="24" height="20" viewBox="0 0 24 20" fill="#3C6C54">
                           <use xlink:href="#ftr-mail-icon"></use> 
@@ -82,17 +103,18 @@
                       </i>
                     </a>
                   </div>
+                  <?php endif; ?>
                 </div>
               </div>
               <div class="ftr-col ftr-col-04">
-                <h6 class="ftr-col-title fl-h6 hide-md">Over Ons</h6>
+                <h6 class="ftr-col-title fl-h6 hide-md"><?php _e('Over Ons', 'canoetrip');?></h6>
                 <div class="ftr-col-travel hide-md">
                   <p><strong>The Canoe Trip is a <a target="_blank" href="#">Travelbase</a> concept.</strong></p>
                 </div>
                 <div class="ftr-col-desc">
-                  <p>Travelbase is lid van de United Federation of Travel Agents Associations (UFTAA) via het lidmaatschap bij de Vlaamse Vereniging voor Reisbureaus (VVR). Als reiziger ben je op die manier 100% beschermd tegen financiële insolvabiliteit via MS Amlin Verzekeringen.
-                  <br>Lic. 9689</p>
+                 <?php if( !empty($ftcont['ons_tekst']) ) echo wpautop($ftcont['ons_tekst']); ?>
                 </div>
+                <?php if( !empty($ftcont['ons_galerij']) ): ?>
                 <div class="ftr-trip-logo">
                   <ul class="reset-list">
                     <li>
@@ -124,6 +146,7 @@
                     </li>
                   </ul>
                 </div>
+                <?php endif; ?>
               </div>
             </div>
             <div class="footer-mdl">
@@ -171,17 +194,21 @@
             </div>
             <div class="footer-btm">
               <div class="ftr-copyright">
-                <p>&copy; 2021 Travelbase. All rights reserved.</p>
+                <?php if( !empty( $copyright_text ) ) printf( '%s', $copyright_text); ?>
               </div>
               <div class="ftr-btm-menu">
-                <ul class="reset-list">
-                  <li><a href="#"> General Conditions </a></li>
-                  <li><a href="#">Privacy Policy </a></li>
-                  <li><a href="#">Cookie Policy</a></li>
-                </ul>
+                <?php 
+                  $copyrightmenu = array( 
+                      'theme_location' => 'cbv_copyright_menu', 
+                      'menu_class' => 'reset-list',
+                      'container' => '',
+                      'container_class' => ''
+                    );
+                  wp_nav_menu( $copyrightmenu );
+                ?>
               </div>
               <div class="develop-by">
-                <p>webdesign by conversal <a target="_blank" href="#">Conversal</a></p>
+                <p><?php _e('webdesign by conversal', 'canoetrip');?><a target="_blank" href="#"><?php _e('Conversal', 'canoetrip');?></a></p>
               </div>
             </div>
           </div>
