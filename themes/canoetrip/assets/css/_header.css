@@ -189,7 +189,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 	background-size: contain!important;
     padding-right: 0;
     position: absolute;
-    top: 18px;
+    top: 19px;
     right: 8px;
     z-index: 21;
     transition: all 0.5s;
