@@ -510,6 +510,9 @@ ol li:before{
 	.sec-entry-hdr{
 		padding-bottom: 10px;
 	}
+	.sec-entry-hdr{
+		max-width: 600px;
+	}
 }
 @media(max-width: 575px){
 	.fl-tc-btn{
