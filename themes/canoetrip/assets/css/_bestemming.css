@@ -149,6 +149,12 @@
 .destinationSlider.slick-slider .slick-dots li button{
 	width: 100%;
 }
+.destination-fea-sec .active .cntrp-faq-accordion-title:after{
+	background-image: url(../images/fag-plus-icon.png)!important;
+}
+.destination-fea-sec .cntrp-faq-accordion-hdr.active .cntrp-faq-accordion-title:after{
+	background-image: url(../images/fag-minus-icon.png)!important;
+}
 @media(max-width: 1199px){
 	.destination-fea-img {
 	    height: 680px;
