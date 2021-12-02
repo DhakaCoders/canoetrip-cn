@@ -324,9 +324,9 @@ if(windowWidth <= 575){
       }
     }
     bannerheight();
-    $(window).resize(function(){
+    /*$(window).resize(function(){
       bannerheight();
-    });
+    });*/
 
     if(windowWidth <= 639){
       $('.hmGrdsSlider').slick({
