@@ -485,6 +485,9 @@
 	#destination-fea-sec{
 		padding-top: 70px;
 	}
+	.hm-over-ons-sec {
+	    padding-top: 50px;
+	}
 }
 @media(max-width: 991px){
 	.hm-grd {
@@ -526,6 +529,9 @@
 	}
 	#destination-fea-sec{
 		padding-top: 50px;
+	}
+	.hm-over-ons-sec {
+	    padding-top: 30px;
 	}
 }
 @media(max-width: 767px){
@@ -591,6 +597,12 @@
 		display: inline-block;
 		vertical-align: baseline;
 		margin-left: 2px;
+	}
+	.hm-over-ons-sec {
+	    padding-top: 0;
+	}
+	.testimonial-grd-des-inr p{
+		color: #aaaaa8;
 	}
 }
 @media(max-width: 639px){
@@ -693,6 +705,19 @@
 		padding-bottom: 35px;
 	}
 }
+@media(max-width: 575px){
+	.hm-grd{
+		padding-right: 10px;
+	}
+	.hm-grd-inr, 
+	.destination-grd-inr, 
+	.testimonial-grd{
+		max-width: 100%;
+	}
+	.testimonial-sec .sec-entry-hdr{
+		max-width: 300px;
+	}
+}
 @media(max-width: 479px){
 	.hm-bnr-btn .fl-tc-btn {
 	    min-width: 130px;
@@ -704,9 +729,7 @@
 		margin-left: -20px;
 		margin-right: -20px;
 	}
-	.hm-grd{
-		padding-right: 10px;
-	}
+	
 	#destination-fea-sec{
 		padding-top: 20px;
 	}
