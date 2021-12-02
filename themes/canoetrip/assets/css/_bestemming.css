@@ -258,6 +258,16 @@
 	.destination-items .destination-item.active{
 		display: block;
 	}
+	.blog-grds{
+		margin-left: -20px;
+		margin-right: -20px;
+		max-width: initial;
+		width: auto;
+	}
+	.blog-grd{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 @media(max-width: 575px){
 	.destination-fea-img {
