@@ -587,11 +587,12 @@ Gallery design
 
 
 hr {
-    margin-top: 0;
-    padding-top: 20px;
+    margin-top: 18px;
+    padding-top: 2px;
     margin-bottom: 40px;
     border-top: none;
-    border-bottom: 2px solid #F8F8F8;
+    background: #F8F8F8;
+    opacity: 1;
 }
 .dfp-full-width-img-module .full-img {
     border-radius: 4px 4px 0px 0px;
