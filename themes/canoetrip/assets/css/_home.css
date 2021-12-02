@@ -292,6 +292,9 @@
 	color: #DEEDE6;
 	font-weight: 400;
 }
+.destination-from span{
+	display: none;
+}
 .destination-from{
 	padding-left: 28px;
 	padding-right: 5px;
@@ -583,6 +586,11 @@
 	}
 	.destination-grd{
 		padding-bottom: 25px;
+	}
+	.destination-from span{
+		display: inline-block;
+		vertical-align: baseline;
+		margin-left: 2px;
 	}
 }
 @media(max-width: 639px){
