@@ -407,3 +407,9 @@
 		max-width: 100%;
 	}
 }
+
+@media(max-width: 359px){
+	.cntrp-faq-accordion-title {
+	    font-size: 18px!important;
+	}
+}
