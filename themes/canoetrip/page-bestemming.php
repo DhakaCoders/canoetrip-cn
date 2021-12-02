@@ -505,24 +505,5 @@ if($showhideblog):
   </section>
 <?php endif; ?>
 <?php endif; ?>
-
-  <section class="cta-module-sec">
-    <div class="cta-module-bg inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/cta-module-bg.png');"></div>
-    <div class="cta-module-overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="cta-module-cntlr">
-            <div class="cta-module-desc">
-              <h2 class="cta-module-title fl-h2">Join The Canoe Trip</h2>
-              <p>Preregister for The Canoe Trip 2022! You will receive an invitation to subscribe first if you are preregistered. The official registrations will open on Tuesday November 16th at 12h00. </p>
-              <div class="cta-module-btn">
-                <a class="fl-tc-btn" href="#">Book Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<?php get_template_part('templates/ft', 'cta'); ?>
 <?php get_footer(); ?>
