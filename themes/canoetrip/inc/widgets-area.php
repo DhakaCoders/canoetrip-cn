@@ -2,9 +2,9 @@
 
 function deploy_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar Widget', 'riet' ),
+		'name'          => __( 'Sidebar Widget', 'canoetrip' ),
 		'id'            => 'post-widget',
-		'description'   => __( 'Add widgets here to appear in your blog page.', 'riet' ),
+		'description'   => __( 'Add widgets here to appear in your blog page.', 'canoetrip' ),
 		'before_widget' => '<aside class="search-wrp widget"><div class="sidebar-widget">',
 		'after_widget'  => '</div></aside>',
 		'before_title'  => '<h3>',
