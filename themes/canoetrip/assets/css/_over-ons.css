@@ -746,9 +746,14 @@
 		line-height: 1.38;
 		margin-bottom: 15px;
 	}
+	.wgd-title a, .xs-wgd-title a{
+		font-size: 26px;
+	}
+	.over-ons-intro-xs-img{
+		height: 500px;
+	}
 
 }
-
 @media(max-width: 639px){
 	.team-grid-col{
 		padding: 0 10px 40px;
@@ -769,7 +774,7 @@
 		padding-bottom: 10px;
 	}
 	.over-ons-intro-xs-img{
-		height: 350px;
+		height: 430px;
 	}
 	.over-ons-bears-sec{
 		padding-bottom: 20px;
@@ -877,10 +882,7 @@
 	.working-grid-item{
 		width: 100%;
 	}
-
-}
-@media(max-width: 359px){
-	.ov-ons-des-btn .fl-tc-btn{
-		min-width: 100%;
+	.over-ons-intro-xs-img{
+		height: 380px;
 	}
 }

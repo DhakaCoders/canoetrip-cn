@@ -36,6 +36,7 @@
 }
 .destination-fea-img-des-title{
 	color: #DEEDE6;
+	margin-bottom: 7px;
 }
 .destination-fea-img-des-title a{
 	color: #DEEDE6;
@@ -72,8 +73,8 @@
 }
 .blog-grd-inr{
 	border-radius: 4px;
-	-webkit-box-shadow: 0px 2px 25px 0px #cfcfcf; 
-	box-shadow: 0px 2px 25px 0px #cfcfcf;
+	-webkit-box-shadow: 0px 1px 23px 1px #f1f1f1;
+    box-shadow: 0px 1px 23px 1px #f1f1f1;
 }
 .blog-grd-img-ctlr{
 	position: relative;
@@ -147,6 +148,12 @@
 }
 .destinationSlider.slick-slider .slick-dots li button{
 	width: 100%;
+}
+.destination-fea-sec .active .cntrp-faq-accordion-title:after{
+	background-image: url(../images/fag-plus-icon.png)!important;
+}
+.destination-fea-sec .cntrp-faq-accordion-hdr.active .cntrp-faq-accordion-title:after{
+	background-image: url(../images/fag-minus-icon.png)!important;
 }
 @media(max-width: 1199px){
 	.destination-fea-img {
@@ -256,6 +263,16 @@
 	}
 	.destination-items .destination-item.active{
 		display: block;
+	}
+	.blog-grds{
+		margin-left: -20px;
+		margin-right: -20px;
+		max-width: initial;
+		width: auto;
+	}
+	.blog-grd{
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }
 @media(max-width: 575px){

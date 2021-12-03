@@ -291,6 +291,7 @@ Gallery design
 }
 
 
+
 /*-- left des right img customize---*/
 .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes{
 	padding-top: 0;
@@ -1112,6 +1113,17 @@ hr {
 		width: 100%;
 		display: block;
 	}
+	.destination-grd-des-sub-title{
+		color: #fff!important;
+		margin-bottom: 4px!important;
+	}
+	.dfp-destination-grid-module .destination-from{
+		padding-left: 0;
+	}
+	.dfp-faq-des .dfp-text-module{
+		text-align: center;
+	}
+	
 }
 
 @media(max-width: 639px){
@@ -1215,6 +1227,13 @@ hr {
 
 	.dfp-faq-module .cntrp-faq-accordion-desc p{
 		text-align: left;
+	}
+	.default-page-con .destination-grd-des-inr h1, 
+	.default-page-con .destination-grd-des-inr h2, 
+	.default-page-con .destination-grd-des-inr h3, 
+	.default-page-con .destination-grd-des-inr h4, 
+	.default-page-con .destination-grd-des-inr h5 {
+	    text-align: left!important;
 	}
 
 }

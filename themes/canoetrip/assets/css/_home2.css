@@ -78,6 +78,7 @@
 	position: relative;
 	padding-top: 110px;
 	padding-bottom: 108px;
+	overflow: hidden;
 }
 .tekening-img{
 	position: absolute;
@@ -219,7 +220,7 @@
 	fill: #fff;
 }
 .hm-socials-gallery-sec{
-
+	overflow: hidden;
 }
 .hm-socials-glry-sub-title{
 	margin-bottom: 12px;
@@ -405,5 +406,11 @@
 @media(max-width: 639px){
 	.cntrp-fag{
 		max-width: 100%;
+	}
+}
+
+@media(max-width: 359px){
+	.cntrp-faq-accordion-title {
+	    font-size: 18px!important;
 	}
 }
