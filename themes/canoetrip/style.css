@@ -24,6 +24,6 @@ Text Domain: canoetrip
 	left: 0;
 	z-index: 2;
 }
-.testimonial-grd-img:hover .static{
+.img-animate:hover .static{
 	opacity: 0;
 }
