@@ -367,7 +367,7 @@ if($showhide_faq):
         <div class="col-md-12">
           <div class="info-faq-sec-inr">
             <div class="sec-entry-hdr">
-              <?php if( !empty($faq['titel']) ) printf('<h2 class="fl-h3 sec-entry-hdr-title">%s</h2>', $faq['titel']); ?>
+              <?php if( !empty($faq['titel']) ) printf('<h2 class="fl-h3 sec-entry-hdr-title info-pagina-entry-hdr-title">%s</h2>', $faq['titel']); ?>
             </div>
             <?php if($faqobj): ?>
             <div class="cntrp-fag">

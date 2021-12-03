@@ -114,14 +114,20 @@ if($showhidectas):
               <?php 
               foreach( $hctas as $hcta ): 
               $hctaknop = $hcta['knop'];
+              $is_gif = !empty($hcta['gif_afbeelding'])?' has-gif-img':'';
               ?>
               <div class="hm-grd">
                 <div class="hm-grd-inr">
-                  <div class="hm-grd-img-ctlr has-inline-bg">
+                  <div class="hm-grd-img-ctlr has-inline-bg<?php echo $is_gif; ?>">
                   <?php if( !empty($hctaknop) ) printf('<a href="%s" class="overlay-link"></a>',$hctaknop); ?>
-                    <div class="hm-grd-img inline-bg" style="background-image:url('<?php echo !empty($hcta['afbeelding'])?cbv_get_image_src( $hcta['afbeelding'] ):''; ?>');">
+                    <div class="hm-grd-img static inline-bg" style="background-image:url('<?php echo !empty($hcta['afbeelding'])?cbv_get_image_src( $hcta['afbeelding'] ):''; ?>');">
                       <?php echo !empty($hcta['afbeelding'])?cbv_get_image_tag( $hcta['afbeelding'] ):''; ?>
                     </div>
+                    <?php if( !empty($hcta['afbeelding']) ): ?>
+                    <div class="hm-grd-img active inline-bg" style="background-image:url('<?php echo !empty($hcta['gif_afbeelding'])?cbv_get_image_src( $hcta['gif_afbeelding'] ):''; ?>');">
+                      <?php echo !empty($hcta['gif_afbeelding'])?cbv_get_image_tag( $hcta['gif_afbeelding'] ):''; ?>
+                    </div>
+                    <?php endif; ?>
                     <div class="hm-grd-item-img">
                       <?php echo !empty($hcta['afbeelding'])?cbv_get_image_tag( $hcta['afbeelding'] ):''; ?>
                     </div>

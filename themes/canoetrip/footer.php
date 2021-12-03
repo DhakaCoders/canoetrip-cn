@@ -174,7 +174,7 @@
                 ?>
               </div>
               <div class="develop-by">
-                <p><?php _e('webdesign by conversal', 'canoetrip');?><a target="_blank" href="#"><?php _e('Conversal', 'canoetrip');?></a></p>
+                <p><?php _e('webdesign by conversal', 'canoetrip');?><a target="_blank" href="https://www.conversal.be/website-laten-maken/"><?php _e('Conversal', 'canoetrip');?></a></p>
               </div>
             </div>
           </div>
