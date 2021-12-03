@@ -59,16 +59,17 @@ $overview = get_field('overview', $thisID);
               <div class="info-page-lft-img-rgt-des-rgt-inr">
                 <h2 class="fl-h2 iplm-title"><?php the_title(); ?></h2>
                 <div class="destination-date-price">
-                  <?php if( !empty($overview['datum']) ) printf('<div class="destination-date"><strong>%s</strong></div>', $overview['datum']); ?>
-                  <div class="destination-from">
-                    <i>
-                      <svg class="plan-2-svg" width="18" height="18" viewBox="0 0 18 18" fill="#444440">
-                        <use xlink:href="#plan-2-svg"></use> 
-                      </svg>
-                    </i>
-                    <strong><?php _e('from', 'canoetrip'); ?></strong>
-                  </div>
-                  <?php if( !empty($overview['prijs']) ) printf('<div class="destination-price"><strong>€%s</strong></div>', $overview['prijs']); ?>
+                <?php if( !empty($overview['datum']) ) printf('<div class="destination-date"><strong>%s</strong></div>', $overview['datum']); ?>
+                <?php if( !empty($overview['prijs']) ): ?>
+                <div class="destination-from">
+                  <i>
+                    <svg class="plan-svg" width="18" height="18" viewBox="0 0 18 18" fill="#DEEDE6">
+                      <use xlink:href="#plan-svg"></use> </svg>
+                  </i>
+                  <strong><?php _e('from', 'canoetrip'); ?></strong>
+                </div>
+                <?php printf('<div class="destination-price"><strong>€%s</strong></div>', $overview['prijs']); ?>
+                <?php endif; ?>
                 </div>
                 <?php if( !empty($overview['beschrijving']) ) echo wpautop($overview['beschrijving']); ?>
                 <?php if( $overview['plans'] ): ?>
@@ -93,7 +94,7 @@ $overview = get_field('overview', $thisID);
                 </div>
                 <?php endif; ?>
                 <div class="info-pagine-rgt-des-btn">
-                  <a class="fl-tc-btn" href="#">Book Now</a>
+                  <a class="fl-tc-btn" href="#"><?php _e('Book Now', 'canoetrip'); ?></a>
                 </div>
               </div>
             </div>
@@ -182,9 +183,7 @@ if($showhide_inclusief):
                   <div class="included-grd-item">
                     <div class="included-grd-item-des">
                       <i>
-                        <svg class="included-img-01-svg" width="48" height="42" viewBox="0 0 48 42" fill="#DEEDE6">
-                          <use xlink:href="#included-img-01-svg"></use> 
-                        </svg>
+                        <?php echo !empty( $inc_row['icon'] )?cbv_get_image_tag($inc_row['icon']):''; ?>
                       </i>
                       <?php if( !empty($inc_row['titel']) ) printf( '<h5 class="included-des-title fl-h5">%s</h5>', $inc_row['titel'] ); ?>
                     </div>

@@ -74,6 +74,7 @@ $beschrijving = get_field('beschrijving', $thisID);
                         <h3 class="destination-grd-des-title fl-h3 mHc"><a href="#"><?php the_title(); ?></a></h3>
                         <div class="destination-date-price">
                           <?php if( !empty($overview['datum']) ) printf('<div class="destination-date"><strong>%s</strong></div>', $overview['datum']); ?>
+                          <?php if( !empty($overview['prijs']) ): ?>
                           <div class="destination-from">
                             <i>
                               <svg class="plan-svg" width="18" height="18" viewBox="0 0 18 18" fill="#DEEDE6">
@@ -81,7 +82,8 @@ $beschrijving = get_field('beschrijving', $thisID);
                             </i>
                             <strong><?php _e('from', 'canoetrip'); ?></strong>
                           </div>
-                          <?php if( !empty($overview['prijs']) ) printf('<div class="destination-price"><strong>€%s</strong></div>', $overview['prijs']); ?>
+                          <?php printf('<div class="destination-price"><strong>€%s</strong></div>', $overview['prijs']); ?>
+                          <?php endif; ?>
                         </div>
                         <div class="destination-btn">
                           <a class="fl-text-btn scrollto" href="#" data-to="#destination-fea-sec">
@@ -135,15 +137,17 @@ $beschrijving = get_field('beschrijving', $thisID);
                 <div class="destination-fea-img-des">
                   <h3 class="destination-fea-img-des-title fl-h3"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                   <div class="destination-date-price">
-                    <?php if( !empty($overview['datum']) ) printf('<div class="destination-date"><strong>%s</strong></div>', $overview['datum']); ?>
-                    <div class="destination-from">
-                      <i>
-                        <svg class="plan-svg" width="18" height="18" viewBox="0 0 18 18" fill="#DEEDE6">
-                          <use xlink:href="#plan-svg"></use> </svg>
-                      </i>
-                      <strong><?php _e('from', 'canoetrip'); ?></strong>
-                    </div>
-                    <?php if( !empty($overview['prijs']) ) printf('<div class="destination-price"><strong>€%s</strong></div>', $overview['prijs']); ?>
+                  <?php if( !empty($overview['datum']) ) printf('<div class="destination-date"><strong>%s</strong></div>', $overview['datum']); ?>
+                  <?php if( !empty($overview['prijs']) ): ?>
+                  <div class="destination-from">
+                    <i>
+                      <svg class="plan-svg" width="18" height="18" viewBox="0 0 18 18" fill="#DEEDE6">
+                        <use xlink:href="#plan-svg"></use> </svg>
+                    </i>
+                    <strong><?php _e('from', 'canoetrip'); ?></strong>
+                  </div>
+                  <?php printf('<div class="destination-price"><strong>€%s</strong></div>', $overview['prijs']); ?>
+                  <?php endif; ?>
                   </div>
                 </div>
               </div>
@@ -164,7 +168,7 @@ $beschrijving = get_field('beschrijving', $thisID);
                             <?php if( !empty($feature['titel']) ) printf('<h3 class="cntrp-faq-accordion-title fl-h5">%s</h3>', $feature['titel']); ?>
                           </div>
                           <div class="cntrp-faq-accordion-desc">
-                            <?php if( !empty($feature['beschrijving']) ) echo wpautop($feature['beschrijving']); ?>
+                            <?php if( !empty($feature['tekst']) ) echo wpautop($feature['tekst']); ?>
                           </div>
                         </div>
                       </li>

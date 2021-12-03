@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-	<title>Home</title>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme-color" content="#46C691">
@@ -101,6 +100,8 @@
   }else{
     $logo_tag = '';
   }
+  $fb_url = get_field('facebook_url', 'options');
+  $inst_url = get_field('instagram_url', 'options');
 ?>  
 <div class="page-body-cntlr">
 <?php if( is_front_page() && $topbartekst ): ?>
@@ -172,8 +173,8 @@
                   </div>
                   <div class="hdr-btns">
                     <ul class="reset-list">
-                      <li><a class="fl-tc-btn" href="#">Nu boeken</a></li>
-                      <li><a class="fl-tc-btn tc-transparent-btn" href="#">Mijn boeking</a></li>
+                      <li><a class="fl-tc-btn" href="<?php echo get_permalink(268); ?>"><?php _e('Nu boeken', 'canoetrip'); ?></a></li>
+                      <li><a class="fl-tc-btn tc-transparent-btn" href="<?php echo get_permalink(270); ?>"><?php _e('Mijn boeking', 'canoetrip'); ?></a></li>
                     </ul>
                   </div>
                 </div>
@@ -188,7 +189,9 @@
   <div class="xs-mobile-menu">
     <div class="xs-pop-up-menu-top">
       <div class="logo">
-        <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.png"></a>
+        <a href="<?php echo esc_url(home_url('/')); ?>">
+          <?php echo $logo_tag; ?>
+        </a>
       </div>
     </div>
     <div class="xs-menu">
@@ -222,8 +225,8 @@
           </div>
           <div class="hdr-btns">
             <ul class="reset-list">
-              <li><a class="fl-tc-btn" href="#">Nu boeken</a></li>
-              <li><a class="fl-tc-btn tc-transparent-btn" href="#">Mijn boeking</a></li>
+              <li><a class="fl-tc-btn" href="<?php echo get_permalink(268); ?>"><?php _e('Nu boeken', 'canoetrip'); ?></a></li>
+              <li><a class="fl-tc-btn tc-transparent-btn" href="<?php echo get_permalink(270); ?>"><?php _e('Mijn boeking', 'canoetrip'); ?></a></li>
             </ul>
           </div>
         </div>
@@ -231,8 +234,10 @@
       <div class="xs-hdr-social-media">
         <div class="hdr-social-media">
           <ul class="reset-list">
-            <li><a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a target="_blank" href="#"><i class="fab fa-instagram"></i></a></li>
+            <?php 
+            if( !empty($fb_url) ) printf('<li><a target="_blank" href="%s"><i class="fab fa-facebook-f"></i></a></li>', $fb_url);
+            if( !empty($inst_url) ) printf('<li><a target="_blank" href="%s"><i class="fab fa-instagram"></i></a></li>', $inst_url);
+            ?>
           </ul>
         </div>
       </div>

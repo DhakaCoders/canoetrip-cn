@@ -186,22 +186,60 @@ $thisID = get_the_ID();
   </section>
   <?php endif; ?>
   <?php endif; ?>
-  <?php
-  $showhide_trip = get_field('showhide_trip', $thisID );
-  if($showhide_trip): 
-    $trip = get_field('tripsec', $thisID );
-    if($trip):
-  ?>
-  <section class="cta-module-grid-sec">
-    <?php if( !empty($trip['upload_video']) ): ?>
+<?php
+$showhide_trip = get_field('showhide_trip', $thisID);
+if($showhide_trip): 
+  $cta_type = get_field('cta_type', $thisID);
+  if($cta_type[0] == '1'){
+  $ctasec = get_field('ctasec', $thisID);
+  if($ctasec):
+?>
+  <section class="cta-module-sec">
+    <?php if( !empty($ctasec['upload_video']) ): ?>
     <div class="cta-video-cntlr">
         <video id="cta-vdo" autoplay muted loop>
-          <source src="<?php echo $trip['upload_video']; ?>" type="video/mp4">
+          <source src="<?php echo $ctasec['upload_video']; ?>" type="video/mp4">
+        </video>
+      </div>
+      <?php endif; ?>
+      <?php if( empty($ctasec['upload_video']) ): ?>
+    <div class="cta-module-bg inline-bg" style="background-image: url('<?php echo !empty($ctasec['afbeelding'])? cbv_get_image_src( $ctasec['afbeelding'] ): ''; ?>');"></div>
+    <?php endif; ?>
+    <div class="cta-module-overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="cta-module-cntlr">
+            <div class="cta-module-desc">
+              <?php 
+                if( !empty($ctasec['titel']) ) printf('<h2 class="cta-module-title fl-h2">%s</h2>', $ctasec['titel']); 
+                if( !empty($ctasec['beschrijving']) ) echo wpautop($ctasec['beschrijving']);
+                $ctaknop1 = $ctasec['knop'];
+                if( is_array( $ctaknop1 ) &&  !empty( $ctaknop1['url'] ) ){
+                    printf('<div class="cta-module-btn"><a class="fl-tc-btn" href="%s" target="%s">%s</a></div>', $ctaknop1['url'], $ctaknop1['target'], $ctaknop1['title']); 
+                }
+              ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<?php endif; ?>
+<?php }else{ 
+  $ctasec_2 = get_field('ctasec_2', HOMEID);
+  if($ctasec_2):
+?>
+  <section class="cta-module-grid-sec">
+    <?php if( !empty($ctasec_2['upload_video']) ): ?>
+    <div class="cta-video-cntlr">
+        <video id="cta-vdo" autoplay muted loop>
+          <source src="<?php echo $ctasec_2['upload_video']; ?>" type="video/mp4">
         </video>
     </div>
     <?php endif; ?>
-    <?php if( empty($trip['upload_video']) ): ?>
-    <div class="cta-module-bg inline-bg" style="background-image: url('<?php echo !empty($trip['bg_afbeelding'])? cbv_get_image_src( $trip['bg_afbeelding'] ): ''; ?>');"></div>
+    <?php if( empty($ctasec_2['upload_video']) ): ?>
+    <div class="cta-module-bg inline-bg" style="background-image: url('<?php echo !empty($ctasec_2['poster_afbeelding'])? cbv_get_image_src( $ctasec_2['poster_afbeelding'] ): ''; ?>');"></div>
     <?php endif; ?>
     <div class="cta-module-overlay"></div>
     <div class="container">
@@ -209,13 +247,13 @@ $thisID = get_the_ID();
         <div class="col-md-12">
           <div class="cta-module-grid-cntlr">
             <div class="cta-module-grid-lft-img">
-              <?php echo !empty($trip['poster_afbeelding'])? cbv_get_image_tag( $trip['poster_afbeelding'] ): ''; ?>
+              <?php echo !empty($ctasec_2['dnd_afbeelding'])? cbv_get_image_tag( $ctasec_2['dnd_afbeelding'] ): ''; ?>
             </div>
             <div class="cta-module-grid-rgt-desc">
-              <?php if( !empty($trip['titel']) ) printf( '<h2 class="cta-module-grd-title fl-h2">%s</h2>', $trip['titel'] ); ?>
-              <?php if( !empty($trip['upload_file']) ): ?>
+              <?php if( !empty($ctasec_2['titel']) ) printf( '<h2 class="cta-module-grd-title fl-h2">%s</h2>', $ctasec_2['titel'] ); ?>
+              <?php if( !empty($ctasec_2['upload_file']) ): ?>
               <div class="cta-module-grd-btn">
-                <a class="fl-tc-btn" href="<?php echo $trip['upload_file']; ?>" download><?php _e('Download hier de brochure', 'canoetrip'); ?></a>
+                <a class="fl-tc-btn" href="<?php echo $ctasec_2['upload_file']; ?>" download><?php _e('Download hier de brochure', 'canoetrip'); ?></a>
               </div>
               <?php endif; ?>
             </div>
@@ -225,7 +263,8 @@ $thisID = get_the_ID();
     </div>
   </section>
   <?php endif; ?>
-  <?php endif; ?>
+<?php } ?>
+<?php endif; ?>
   <?php
   $showhide_vacancies = get_field('showhide_vacancies', $thisID );
   if($showhide_vacancies): 
@@ -261,23 +300,23 @@ $thisID = get_the_ID();
                <?php 
                 foreach( $vacancobj as $vacanc ) :
                 $vacancimgID = get_post_thumbnail_id($vacanc->ID);
-                $vacancimg = !empty($vacancimgID)? cbv_get_image_src($vacancimgID): ''; 
-                $link = get_field('link', $vacanc->ID);
+                $vacancimg = !empty($vacancimgID)? cbv_get_image_src($vacancimgID): vacature_placeholder(); 
+                $blabel = get_field('button_label', $vacanc->ID);
               ?>
                 <li>
                   <div class="working-grid-item">
-                    <h3 class="fl-h3 xs-wgd-title mHc1"><a href="#"><?php echo get_the_title($vacanc->ID); ?></a></h3>
+                    <h3 class="fl-h3 xs-wgd-title mHc1"><a href="<?php echo get_the_permalink($vacanc->ID); ?>"><?php echo get_the_title($vacanc->ID); ?></a></h3>
                      <div class="working-grid-img-ctlr">
-                        <a class="overlay-link" href="#"></a>
+                        <a class="overlay-link" href="<?php echo get_the_permalink($vacanc->ID); ?>"></a>
                         <div class="inline-bg working-grd-img" style="background-image: url('<?php echo $vacancimg; ?>');"></div>
                       </div>
                       <div class="working-grid-desc">
-                        <h3 class="fl-h3 wgd-title mHc1"><a href="#"><?php echo get_the_title($vacanc->ID); ?></a></h3>
+                        <h3 class="fl-h3 wgd-title mHc1"><a href="<?php echo get_the_permalink($vacanc->ID); ?>"><?php echo get_the_title($vacanc->ID); ?></a></h3>
                         <div class="wgd-desc mHc2">
                           <?php echo wpautop(get_the_excerpt($vacanc->ID)); ?>
                         </div>
                         <div class="work-grd-btn">
-                          <a class="fl-tc-btn" href="#">Travelbase Vacatures</a>
+                          <a class="fl-tc-btn" href="<?php echo get_the_permalink($vacanc->ID); ?>"><?php echo !empty($blabel)?$blabel:__('Travelbase Vacatures', 'canoetrip'); ?></a>
                         </div>
                      </div>
                     </div>

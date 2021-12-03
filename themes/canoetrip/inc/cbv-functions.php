@@ -210,26 +210,26 @@ function news_placeholder($format = 'src'){
   return '';
 
 }
-function product_placeholder($format = 'src'){
+function bestemming_placeholder($format = 'src'){
   $placehoder = get_field('placeholder', 'options');
   if( !empty($placehoder) ){
       if( $format == 'src' ){
-        $placeholder = !empty($placehoder['product'])? cbv_get_image_src($placehoder['product']):'';
+        $placeholder = !empty($placehoder['bestemming'])? cbv_get_image_src($placehoder['bestemming']):'';
       }else{
-        $placeholder = !empty($placehoder['product'])? cbv_get_image_tag($placehoder['product']):'';
+        $placeholder = !empty($placehoder['bestemming'])? cbv_get_image_tag($placehoder['bestemming']):'';
       }
       return $placeholder;
   }
   return '';
 
 }
-function dienst_placeholder($format = 'src'){
+function vacature_placeholder($format = 'src'){
   $placehoder = get_field('placeholder', 'options');
   if( !empty($placehoder) ){
       if( $format == 'src' ){
-        $placeholder = !empty($placehoder['dienst'])? cbv_get_image_src($placehoder['dienst']):'';
+        $placeholder = !empty($placehoder['vacature'])? cbv_get_image_src($placehoder['vacature']):'';
       }else{
-        $placeholder = !empty($placehoder['dienst'])? cbv_get_image_tag($placehoder['dienst']):'';
+        $placeholder = !empty($placehoder['vacature'])? cbv_get_image_tag($placehoder['vacature']):'';
       }
       return $placeholder;
   }

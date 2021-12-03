@@ -10,6 +10,11 @@
                   <span><?php _e('Home', 'canoetrip'); ?></span>
                 </a>
               </li>
+              <li>
+                <a href="<?php echo esc_url(home_url('vacature')); ?>">
+                  <span><?php _e('Vacature', 'canoetrip'); ?></span>
+                </a>
+              </li>
               <li class="active">
                 <span><?php the_title(); ?></span>
               </li>
@@ -21,9 +26,9 @@
 </section>
 
   <section class="innerpage-con-wrap">
-    <?php if( have_rows('inhoud') ){ ?>
+    <?php if( have_rows('inhoud_vacature') ){ ?>
     <article class="default-page-con"> 
-      <?php while ( have_rows('inhoud') ) : the_row(); ?>
+      <?php while ( have_rows('inhoud_vacature') ) : the_row(); ?>
       <?php 
         if( get_row_layout() == 'introductietekst' ){ 
         $fc_titel = get_sub_field('fc_titel');
