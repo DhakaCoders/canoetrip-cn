@@ -215,7 +215,6 @@ Gallery design
 .fl-dft-lftimg-rgtdes-lft div.inline-bg{
 	height: 100%;
 	width: 100%;
-	display: none;
 }
 .fl-dft-lftimg-rgtdes-lft.has-inline-bg div.inline-bg{
 	display: block;

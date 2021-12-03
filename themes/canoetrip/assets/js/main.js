@@ -313,14 +313,17 @@ if(windowWidth <= 575){
     }
 
     function bannerheight(){
-      var windowWidth = $(window).width();
       var windowHeight = $(window).height();
-      var winHeight = (windowHeight + 100);
-      var headerHeight = $('.header').height();
-      var hdrHeight = (headerHeight + 40);
-      var bnrHeight = (winHeight - hdrHeight);
+      var headerHeight = $('.header').outerHeight();
+      var bnrHeight = windowHeight - headerHeight;
+      var bnrHeight2 = 0;
+      if( bnrHeight < 613 ){
+        bnrHeight2 = 613;
+      }else{
+        bnrHeight2 = bnrHeight;
+      }
       if (windowWidth > 767){
-        $('.hm-banner-des-cntlr').css('height', bnrHeight);
+        $('.hm-banner-des-cntlr').css('height', bnrHeight2);
       }
     }
     bannerheight();
@@ -415,6 +418,7 @@ $('.destination-grds .destination-grd a').on('click', function(e){
   $('.destination-items').find(id).addClass('active');
   goToByScroll('#destination-fea-sec', 0);
 });
+
 
 new WOW().init();
 
