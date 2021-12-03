@@ -193,6 +193,9 @@
 	-ms-transform: scale(1.05);
 	transform: scale(1.05);
 }
+.hm-grd-inr:hover .static{
+	opacity: 0;
+}
 .destination-sec{
 	padding: 50px 0 130px;
 	position: relative;
