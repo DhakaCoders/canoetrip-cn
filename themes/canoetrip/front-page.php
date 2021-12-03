@@ -147,7 +147,22 @@ if($showhidectas):
   </section>
 <?php endif; ?>
 <?php endif; ?>
-
+<?php
+$showhide_bestemming = get_field('showhide_bestemming', HOMEID);
+if($showhide_bestemming): 
+  $bestem = get_field('bestemmingen', HOMEID);
+  if($bestem):
+  $bestemmobj = $bestem['select_bestemming'];
+  if( empty($bestemmobj) ){
+      $bestemmobj = get_posts( array(
+        'post_type' => 'bestemming',
+        'posts_per_page'=> 3,
+        'orderby' => 'date',
+        'order'=> 'desc',
+        'suppress_filters' => false
+      ) );  
+  } 
+?>
   <section class="destination-sec">
     <div class="destination-rgt-img hide-md">
       <img src="<?php echo THEME_URI; ?>/assets/images/destination-rgt-img.png">
@@ -160,42 +175,50 @@ if($showhidectas):
         <div class="col-md-12">
           <div class="destination-sec-inr">
             <div class="sec-entry-hdr">
-              <h2 class="fl-h2 sec-entry-hdr-title">Bestemmingen</h2>
-              <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
+              <?php 
+              if( !empty($bestem['titel']) ) printf('<h2 class="fl-h2 sec-entry-hdr-title">%s</h2>', $bestem['titel']); 
+              if( !empty($bestem['beschrijving']) ) echo wpautop($bestem['beschrijving']); 
+              ?>
             </div>
+            <?php if( $bestemmobj ): ?>
             <div class="destination-grds destinationSlider">
+              <?php 
+              foreach( $bestemmobj as $bestem_row ): 
+                $imgID = get_post_thumbnail_id($bestem_row->ID);
+                $imgsrc = !empty($imgID)? cbv_get_image_src($imgID): bestemming_placeholder();
+                $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): bestemming_placeholder('tag');
+                $overview = get_field('overview', $bestem_row->ID);
+              ?>
               <div class="destination-grd">
                 <div class="destination-grd-inr">
                   <div class="destination-grd-img-ctlr has-inline-bg">
-                    <a href="#" class="overlay-link"></a>
-                    <div class="destination-grd-img inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/destination-img-01.jpg');">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/destination-img-01.jpg">
+                    <a href="<?php echo get_the_permalink($bestem_row->ID); ?>" class="overlay-link"></a>
+                    <div class="destination-grd-img inline-bg" style="background-image:url('<?php echo $imgsrc; ?>');">
+                      <?php echo $imgtag; ?>
                     </div>
                     <div class="destination-grd-item-img">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/destination-img-01.jpg">
+                      <?php echo $imgtag; ?>
                     </div>
                   </div>
                   <div class="destination-grd-des">
                     <div class="destination-grd-des-inr">
-                      <h3 class="destination-grd-des-title fl-h3 mHc"><a href="#">Immeln</a></h3>
+                      <h3 class="destination-grd-des-title fl-h3 mHc"><a href="<?php echo get_the_permalink($bestem_row->ID); ?>"><?php echo get_the_title($bestem_row->ID); ?></a></h3>
                       <div class="destination-date-price">
-                        <div class="destination-date">
-                          <strong>May - Jul</strong>
-                        </div>
+                        <?php if( !empty($overview['datum']) ) printf('<div class="destination-date"><strong>%s</strong></div>', $overview['datum']); ?>
+                        <?php if( !empty($overview['prijs']) ): ?>
                         <div class="destination-from">
                           <i>
                             <svg class="plan-svg" width="18" height="18" viewBox="0 0 18 18" fill="#DEEDE6">
                               <use xlink:href="#plan-svg"></use> </svg>
                           </i>
-                          <strong>from</strong>
+                          <strong><?php _e('from', 'canoetrip'); ?></strong>
                         </div>
-                        <div class="destination-price">
-                          <strong>€799</strong>
-                        </div>
+                        <?php printf('<div class="destination-price"><strong>€%s</strong></div>', $overview['prijs']); ?>
+                        <?php endif; ?>
                       </div>
                       <div class="destination-btn">
-                        <a class="fl-text-btn" href="#">
-                          Find out more
+                        <a class="fl-text-btn" href="<?php echo get_the_permalink($bestem_row->ID); ?>">
+                          <?php _e('Find out more', 'canoetrip'); ?>
                           <i><svg class="right-arrow-svg" width="14" height="14" viewBox="0 0 14 14" fill="#46C691">
                             <use xlink:href="#right-arrow-svg"></use> 
                           </svg></i>
@@ -205,105 +228,32 @@ if($showhidectas):
                   </div>
                 </div>
               </div>
-              <div class="destination-grd">
-                <div class="destination-grd-inr">
-                  <div class="destination-grd-img-ctlr has-inline-bg">
-                    <a href="#" class="overlay-link"></a>
-                    <div class="destination-grd-img inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/destination-img-02.jpg');">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/destination-img-02.jpg">
-                    </div>
-                    <div class="destination-grd-item-img">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/destination-img-02.jpg">
-                    </div>
-                  </div>
-                  <div class="destination-grd-des">
-                    <div class="destination-grd-des-inr">
-                      <h3 class="destination-grd-des-title fl-h3 mHc"><a href="#">Värmland</a></h3>
-                      <div class="destination-date-price">
-                        <div class="destination-date">
-                          <strong>May - Jul</strong>
-                        </div>
-                        <div class="destination-from">
-                          <i>
-                            <svg class="plan-svg" width="18" height="18" viewBox="0 0 18 18" fill="#DEEDE6">
-                              <use xlink:href="#plan-svg"></use> </svg>
-                          </i>
-                          <strong>from</strong>
-                        </div>
-                        <div class="destination-price">
-                          <strong>€799</strong>
-                        </div>
-                      </div>
-                      <div class="destination-btn">
-                        <a class="fl-text-btn" href="#">
-                          Find out more
-                          <i><svg class="right-arrow-svg" width="14" height="14" viewBox="0 0 14 14" fill="#46C691">
-                            <use xlink:href="#right-arrow-svg"></use> 
-                          </svg></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="destination-grd">
-                <div class="destination-grd-inr">
-                  <div class="destination-grd-img-ctlr has-inline-bg">
-                    <a href="#" class="overlay-link"></a>
-                    <div class="destination-grd-img inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/destination-img-03.jpg');">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/destination-img-03.jpg">
-                    </div>
-                    <div class="destination-grd-item-img">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/destination-img-03.jpg">
-                    </div>
-                  </div>
-                  <div class="destination-grd-des">
-                    <div class="destination-grd-des-inr">
-                      <h3 class="destination-grd-des-title fl-h3 mHc"><a href="#">Glaskogen</a></h3>
-                      <div class="destination-date-price">
-                        <div class="destination-date">
-                          <strong>May - Jul</strong>
-                        </div>
-                        <div class="destination-from">
-                          <i>
-                            <svg class="plan-svg" width="18" height="18" viewBox="0 0 18 18" fill="#DEEDE6">
-                              <use xlink:href="#plan-svg"></use> </svg>
-                          </i>
-                          <strong>from</strong>
-                        </div>
-                        <div class="destination-price">
-                          <strong>€799</strong>
-                        </div>
-                      </div>
-                      <div class="destination-btn">
-                        <a class="fl-text-btn" href="#">
-                          Find out more
-                          <i><svg class="right-arrow-svg" width="14" height="14" viewBox="0 0 14 14" fill="#46C691">
-                            <use xlink:href="#right-arrow-svg"></use> 
-                          </svg></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <?php endforeach; ?>
             </div>
             <div class="destination-btm-btn">
-              <a class="fl-tc-btn" href="#">Bestemmingen</a>
+              <a class="fl-tc-btn" href="<?php echo get_link_by_page_template('page-bestemming.php'); ?>"><?php _e('Bestemmingen', 'canoetrip'); ?></a>
             </div>
+            <?php endif; ?>
           </div>
         </div>
       </div>
     </div>
   </section>
-
+<?php endif; ?>
+<?php endif; ?>
+<?php
+$showhide_review = get_field('showhide_review', HOMEID);
+if($showhide_review): 
+  $review = get_field('reviewsec', HOMEID);
+  if($review):
+?>
   <section class="testimonial-sec">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="testimonial-sec-inr">
             <div class="sec-entry-hdr">
-              <h2 class="fl-h2 sec-entry-hdr-title">zij schreven over ons</h2>
+              <?php if( !empty($review['titel']) ) printf('<h2 class="fl-h2 sec-entry-hdr-title">%s</h2>', $review['titel']); ?>
             </div>
             <div class="testimonial-grds testimonialSlider">
               <div class="testimonial-grd-ctlr">
@@ -408,7 +358,8 @@ if($showhidectas):
       </div>
     </div>
   </section>
-
+<?php endif; ?>
+<?php endif; ?>
 <?php
 $showhide_partners = get_field('showhide_partners', HOMEID);
 if($showhide_partners): 

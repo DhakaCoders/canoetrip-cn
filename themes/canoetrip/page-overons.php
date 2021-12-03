@@ -119,14 +119,14 @@ $thisID = get_the_ID();
                 $teamimg = !empty($imgID)? cbv_get_image_src($imgID): ''; 
                 $positie = get_field('positie', $member->ID);
                 $flag = get_field('flag', $member->ID);
-                $flagimg = !empty($flag)? cbv_get_image_src($flag): ''; 
+                $flagimg = !empty($flag)? cbv_get_image_tag($flag): ''; 
                 $link = get_field('link', $member->ID);
               ?>
               <div class="team-grid-col">
                 <div class="team-grid-col-innr">
                   <div class="team-grd-img-cntlr">
                     <div class="inline-bg team-grd-img" style="background-image: url('<?php echo $teamimg; ?>');"></div>
-                     <div class="team-grd-sml-img"><i><img src="<?php echo $flagimg; ?>"></i></div>
+                     <div class="team-grd-sml-img"><i><?php echo $flagimg; ?></i></div>
                      <div class="team-grd-bg">
                        <div class="team-grd-bg-inr">
                          <?php echo wpautop(get_the_excerpt($member->ID)); ?>

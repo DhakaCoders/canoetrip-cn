@@ -25,7 +25,14 @@ $beschrijving = get_field('beschrijving', $thisID);
       </div>
     </div>
   </section>
-
+  <?php 
+    $query = new WP_Query(array(
+      'post_type' => 'bestemming',
+      'posts_per_page'=> 3,
+      'orderby' => 'date',
+      'order'=> 'DESC'
+    ));
+  ?> 
   <div class="destination-ctlr">
     <section class="destination-sec">
       <div class="container">
@@ -38,39 +45,47 @@ $beschrijving = get_field('beschrijving', $thisID);
                 </h2>
                 <?php if( !empty($beschrijving) ) echo wpautop( $beschrijving ); ?>
               </div>
+ 
               <div class="destination-grds destinationSlider">
-                <div class="destination-grd" data-id="immeln">
+                <?php if($query->have_posts()):?>
+                <?php  
+                  $i = 1;
+                  while($query->have_posts()): $query->the_post(); 
+                  global $post;
+                  $imgID = get_post_thumbnail_id(get_the_ID());
+                  $imgsrc = !empty($imgID)? cbv_get_image_src($imgID): bestemming_placeholder();
+                  $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): bestemming_placeholder('tag');
+                  $overview = get_field('overview', get_the_ID());
+
+                ?>
+                <div class="destination-grd<?php echo $i == 2? ' active':''; ?>" data-id="<?php echo $post->post_name; ?>">
                   <div class="destination-grd-inr">
-                    <a href="#immeln" class="overlay-link"></a>
+                    <a href="#<?php echo $post->post_name; ?>" class="overlay-link"></a>
                     <div class="destination-grd-img-ctlr has-inline-bg">
-                      <div class="destination-grd-img inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/destination-img-01.jpg');">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/destination-img-01.jpg">
+                      <div class="destination-grd-img inline-bg" style="background-image:url('<?php echo $imgsrc; ?>');">
+                        <?php echo $imgtag; ?>
                       </div>
                       <div class="destination-grd-item-img">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/destination-img-01.jpg">
+                        <?php echo $imgtag; ?>
                       </div>
                     </div>
                     <div class="destination-grd-des">
                       <div class="destination-grd-des-inr">
-                        <h3 class="destination-grd-des-title fl-h3 mHc"><a href="#">Immeln</a></h3>
+                        <h3 class="destination-grd-des-title fl-h3 mHc"><a href="#"><?php the_title(); ?></a></h3>
                         <div class="destination-date-price">
-                          <div class="destination-date">
-                            <strong>May - Jul</strong>
-                          </div>
+                          <?php if( !empty($overview['datum']) ) printf('<div class="destination-date"><strong>%s</strong></div>', $overview['datum']); ?>
                           <div class="destination-from">
                             <i>
                               <svg class="plan-svg" width="18" height="18" viewBox="0 0 18 18" fill="#DEEDE6">
                                 <use xlink:href="#plan-svg"></use> </svg>
                             </i>
-                            <strong>from</strong>
+                            <strong><?php _e('from', 'canoetrip'); ?></strong>
                           </div>
-                          <div class="destination-price">
-                            <strong>€799</strong>
-                          </div>
+                          <?php if( !empty($overview['prijs']) ) printf('<div class="destination-price"><strong>€%s</strong></div>', $overview['prijs']); ?>
                         </div>
                         <div class="destination-btn">
                           <a class="fl-text-btn scrollto" href="#" data-to="#destination-fea-sec">
-                            Find out more
+                            <?php _e('Find out more', 'canoetrip'); ?>
                             <i><svg class="btm-arrow-svg" width="14" height="14" viewBox="0 0 14 14" fill="#46C691">
                               <use xlink:href="#btm-arrow-svg"></use> 
                             </svg></i>
@@ -80,88 +95,10 @@ $beschrijving = get_field('beschrijving', $thisID);
                     </div>
                   </div>
                 </div>
-                <div class="destination-grd active" data-id="värmland">
-                  <div class="destination-grd-inr">
-                    <a href="#värmland" class="overlay-link"></a>
-                    <div class="destination-grd-img-ctlr has-inline-bg">
-                      <div class="destination-grd-img inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/destination-img-02.jpg');">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/destination-img-02.jpg">
-                      </div>
-                      <div class="destination-grd-item-img">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/destination-img-01.jpg">
-                      </div>
-                    </div>
-                    <div class="destination-grd-des">
-                      <div class="destination-grd-des-inr">
-                        <h3 class="destination-grd-des-title fl-h3 mHc"><a href="#">Värmland</a></h3>
-                        <div class="destination-date-price">
-                          <div class="destination-date">
-                            <strong>May - Jul</strong>
-                          </div>
-                          <div class="destination-from">
-                            <i>
-                              <svg class="plan-svg" width="18" height="18" viewBox="0 0 18 18" fill="#DEEDE6">
-                                <use xlink:href="#plan-svg"></use> </svg>
-                            </i>
-                            <strong>from</strong>
-                          </div>
-                          <div class="destination-price">
-                            <strong>€799</strong>
-                          </div>
-                        </div>
-                        <div class="destination-btn">
-                          <a class="fl-text-btn scrollto" href="#" data-to="#destination-fea-sec">
-                            Find out more
-                            <i><svg class="btm-arrow-svg" width="14" height="14" viewBox="0 0 14 14" fill="#46C691">
-                              <use xlink:href="#btm-arrow-svg"></use> 
-                            </svg></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="destination-grd" data-id="glaskogen">
-                  <div class="destination-grd-inr">
-                    <div class="destination-grd-img-ctlr has-inline-bg">
-                      <a href="#glaskogen" class="overlay-link"></a>
-                      <div class="destination-grd-img inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/destination-img-03.jpg');">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/destination-img-03.jpg">
-                      </div>
-                      <div class="destination-grd-item-img">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/destination-img-03.jpg">
-                      </div>
-                    </div>
-                    <div class="destination-grd-des">
-                      <div class="destination-grd-des-inr">
-                        <h3 class="destination-grd-des-title fl-h3 mHc"><a href="#">Glaskogen</a></h3>
-                        <div class="destination-date-price">
-                          <div class="destination-date">
-                            <strong>May - Jul</strong>
-                          </div>
-                          <div class="destination-from">
-                            <i>
-                              <svg class="plan-svg" width="18" height="18" viewBox="0 0 18 18" fill="#DEEDE6">
-                                <use xlink:href="#plan-svg"></use> </svg>
-                            </i>
-                            <strong>from</strong>
-                          </div>
-                          <div class="destination-price">
-                            <strong>€799</strong>
-                          </div>
-                        </div>
-                        <div class="destination-btn">
-                          <a class="fl-text-btn scrollto" href="#" data-to="#destination-fea-sec">
-                            Find out more
-                            <i><svg class="btm-arrow-svg" width="14" height="14" viewBox="0 0 14 14" fill="#46C691">
-                              <use xlink:href="#btm-arrow-svg"></use> 
-                            </svg></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <?php $i++; endwhile; ?>
+                <?php else: ?>
+                  <div class="notfound"><?php echo no_result_text(); ?></div>
+                <?php endif; wp_reset_postdata(); ?>
               </div>
             </div>
           </div>
@@ -170,7 +107,7 @@ $beschrijving = get_field('beschrijving', $thisID);
     </section>
   </div>
 
-
+<?php if($query->have_posts()):?>
   <section class="destination-fea-sec" id="destination-fea-sec">
     <div class="destination-fea-rgt-img hide-md">
       <img src="<?php echo THEME_URI; ?>/assets/images/destination-rgt-img.png">
@@ -179,260 +116,76 @@ $beschrijving = get_field('beschrijving', $thisID);
       <div class="row">
         <div class="col-md-12">
           <div class="destination-items">
-          <div class="destination-fea-sec-inr destination-item" id="immeln">
+          <?php  
+            $i = 1;
+            while($query->have_posts()): $query->the_post(); 
+            global $post;
+            $imgID = get_post_thumbnail_id(get_the_ID());
+            $imgsrc = !empty($imgID)? cbv_get_image_src($imgID): bestemming_placeholder();
+            $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): bestemming_placeholder('tag');
+            $overview = get_field('overview', get_the_ID());
+            $features = get_field('features', get_the_ID());
+          ?>
+          <div class="destination-fea-sec-inr destination-item<?php echo $i == 2? ' active':''; ?>" id="<?php echo $post->post_name; ?>">
             <div class="destination-fea-lft">
               <div class="destination-fea-img-ctlr">
-                <div class="destination-fea-img inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/destination-fea-img-01.jpg');">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/destination-fea-img-01.jpg">
+                <div class="destination-fea-img inline-bg" style="background-image:url('<?php echo $imgsrc; ?>');">
+                  <?php echo $imgtag; ?>
                 </div>
                 <div class="destination-fea-img-des">
-                  <h3 class="destination-fea-img-des-title fl-h3"><a href="#">IMMELN</a></h3>
+                  <h3 class="destination-fea-img-des-title fl-h3"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                   <div class="destination-date-price">
-                    <div class="destination-date">
-                      <strong>May - Jul</strong>
-                    </div>
+                    <?php if( !empty($overview['datum']) ) printf('<div class="destination-date"><strong>%s</strong></div>', $overview['datum']); ?>
                     <div class="destination-from">
                       <i>
                         <svg class="plan-svg" width="18" height="18" viewBox="0 0 18 18" fill="#DEEDE6">
                           <use xlink:href="#plan-svg"></use> </svg>
                       </i>
-                      <strong>from</strong>
+                      <strong><?php _e('from', 'canoetrip'); ?></strong>
                     </div>
-                    <div class="destination-price">
-                      <strong>€799</strong>
-                    </div>
+                    <?php if( !empty($overview['prijs']) ) printf('<div class="destination-price"><strong>€%s</strong></div>', $overview['prijs']); ?>
                   </div>
                 </div>
               </div>
             </div>
+            
             <div class="destination-fea-rgt">
               <div class="destination-fea-des">
-                <h2 class="destination-fea-des-title fl-h2">IMMELN</h2>
-                <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
-                <p>Tristique enim, faucibus in tempus, sagittis ut. Scelerisque vitae tellus varius facilisis faucibus viverra vitae. In eget ac in vitae ultrices.</p>
+                <h2 class="destination-fea-des-title fl-h2"><?php the_title(); ?></h2>
+                <?php if( !empty($overview['beschrijving']) ) echo wpautop($overview['beschrijving']); ?>
+                <?php if( $features ): ?>
                 <div class="destination-fea-accordion">
                   <div class="cntrp-fag">
                     <ul class="reset-list">
+                      <?php foreach( $features as $feature ): ?>
                       <li>
                         <div class="cntrp-faq-accordion">
                           <div class="cntrp-faq-accordion-hdr">
-                            <h3 class="cntrp-faq-accordion-title fl-h5">How to get there</h3>
+                            <?php if( !empty($feature['titel']) ) printf('<h3 class="cntrp-faq-accordion-title fl-h5">%s</h3>', $feature['titel']); ?>
                           </div>
                           <div class="cntrp-faq-accordion-desc">
-                            <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
+                            <?php if( !empty($feature['beschrijving']) ) echo wpautop($feature['beschrijving']); ?>
                           </div>
                         </div>
                       </li>
-                      <li>
-                        <div class="cntrp-faq-accordion">
-                          <div class="cntrp-faq-accordion-hdr">
-                            <h3 class="cntrp-faq-accordion-title fl-h5">The different routes</h3>
-                          </div>
-                          <div class="cntrp-faq-accordion-desc">
-                            <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="cntrp-faq-accordion">
-                          <div class="cntrp-faq-accordion-hdr">
-                            <h3 class="cntrp-faq-accordion-title fl-h5">Highlights</h3>
-                          </div>
-                          <div class="cntrp-faq-accordion-desc">
-                            <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="cntrp-faq-accordion">
-                          <div class="cntrp-faq-accordion-hdr">
-                            <h3 class="cntrp-faq-accordion-title fl-h5">Pricing</h3>
-                          </div>
-                          <div class="cntrp-faq-accordion-desc">
-                            <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
-                          </div>
-                        </div>
-                      </li>
+                      <?php endforeach; ?>
                     </ul>
                   </div>
                 </div>
+                <?php endif; ?>
                 <div class="destination-fea-btn">
-                  <a class="fl-tc-btn" href="#">Book Now</a>
+                  <a class="fl-tc-btn" href="<?php the_permalink(); ?>"><?php _e('Book Now', 'canoetrip'); ?></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="destination-fea-sec-inr destination-item active" id="värmland">
-            <div class="destination-fea-lft">
-              <div class="destination-fea-img-ctlr">
-                <div class="destination-fea-img inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/destination-fea-img-01.jpg');">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/destination-fea-img-01.jpg">
-                </div>
-                <div class="destination-fea-img-des">
-                  <h3 class="destination-fea-img-des-title fl-h3"><a href="#">Värmland</a></h3>
-                  <div class="destination-date-price">
-                    <div class="destination-date">
-                      <strong>May - Jul</strong>
-                    </div>
-                    <div class="destination-from">
-                      <i>
-                        <svg class="plan-svg" width="18" height="18" viewBox="0 0 18 18" fill="#DEEDE6">
-                          <use xlink:href="#plan-svg"></use> </svg>
-                      </i>
-                      <strong>from</strong>
-                    </div>
-                    <div class="destination-price">
-                      <strong>€799</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="destination-fea-rgt">
-              <div class="destination-fea-des">
-                <h2 class="destination-fea-des-title fl-h2">Värmland</h2>
-                <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
-                <p>Tristique enim, faucibus in tempus, sagittis ut. Scelerisque vitae tellus varius facilisis faucibus viverra vitae. In eget ac in vitae ultrices.</p>
-                <div class="destination-fea-accordion">
-                  <div class="cntrp-fag">
-                    <ul class="reset-list">
-                      <li>
-                        <div class="cntrp-faq-accordion">
-                          <div class="cntrp-faq-accordion-hdr">
-                            <h3 class="cntrp-faq-accordion-title fl-h5">How to get there</h3>
-                          </div>
-                          <div class="cntrp-faq-accordion-desc">
-                            <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="cntrp-faq-accordion">
-                          <div class="cntrp-faq-accordion-hdr">
-                            <h3 class="cntrp-faq-accordion-title fl-h5">The different routes</h3>
-                          </div>
-                          <div class="cntrp-faq-accordion-desc">
-                            <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="cntrp-faq-accordion">
-                          <div class="cntrp-faq-accordion-hdr">
-                            <h3 class="cntrp-faq-accordion-title fl-h5">Highlights</h3>
-                          </div>
-                          <div class="cntrp-faq-accordion-desc">
-                            <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="cntrp-faq-accordion">
-                          <div class="cntrp-faq-accordion-hdr">
-                            <h3 class="cntrp-faq-accordion-title fl-h5">Pricing</h3>
-                          </div>
-                          <div class="cntrp-faq-accordion-desc">
-                            <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="destination-fea-btn">
-                  <a class="fl-tc-btn" href="#">Book Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="destination-fea-sec-inr destination-item" id="glaskogen">
-            <div class="destination-fea-lft">
-              <div class="destination-fea-img-ctlr">
-                <div class="destination-fea-img inline-bg" style="background-image:url('<?php echo THEME_URI; ?>/assets/images/destination-fea-img-01.jpg');">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/destination-fea-img-01.jpg">
-                </div>
-                <div class="destination-fea-img-des">
-                  <h3 class="destination-fea-img-des-title fl-h3"><a href="#">Glaskogen</a></h3>
-                  <div class="destination-date-price">
-                    <div class="destination-date">
-                      <strong>May - Jul</strong>
-                    </div>
-                    <div class="destination-from">
-                      <i>
-                        <svg class="plan-svg" width="18" height="18" viewBox="0 0 18 18" fill="#DEEDE6">
-                          <use xlink:href="#plan-svg"></use> </svg>
-                      </i>
-                      <strong>from</strong>
-                    </div>
-                    <div class="destination-price">
-                      <strong>€799</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="destination-fea-rgt">
-              <div class="destination-fea-des">
-                <h2 class="destination-fea-des-title fl-h2">Glaskogen</h2>
-                <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
-                <p>Tristique enim, faucibus in tempus, sagittis ut. Scelerisque vitae tellus varius facilisis faucibus viverra vitae. In eget ac in vitae ultrices.</p>
-                <div class="destination-fea-accordion">
-                  <div class="cntrp-fag">
-                    <ul class="reset-list">
-                      <li>
-                        <div class="cntrp-faq-accordion">
-                          <div class="cntrp-faq-accordion-hdr">
-                            <h3 class="cntrp-faq-accordion-title fl-h5">How to get there</h3>
-                          </div>
-                          <div class="cntrp-faq-accordion-desc">
-                            <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="cntrp-faq-accordion">
-                          <div class="cntrp-faq-accordion-hdr">
-                            <h3 class="cntrp-faq-accordion-title fl-h5">The different routes</h3>
-                          </div>
-                          <div class="cntrp-faq-accordion-desc">
-                            <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="cntrp-faq-accordion">
-                          <div class="cntrp-faq-accordion-hdr">
-                            <h3 class="cntrp-faq-accordion-title fl-h5">Highlights</h3>
-                          </div>
-                          <div class="cntrp-faq-accordion-desc">
-                            <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="cntrp-faq-accordion">
-                          <div class="cntrp-faq-accordion-hdr">
-                            <h3 class="cntrp-faq-accordion-title fl-h5">Pricing</h3>
-                          </div>
-                          <div class="cntrp-faq-accordion-desc">
-                            <p>Enim et etiam facilisis sit viverra euismod scelerisque magna. Quam dictum vel faucibus elementum nulla nulla nisi, porta vitae. Facilisis nunc, dui imperdiet ut aliquam. Lectus volutpat sed tristique a.</p>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="destination-fea-btn">
-                  <a class="fl-tc-btn" href="#">Book Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <?php $i++; endwhile; ?>
           </div>
         </div>
       </div>
     </div>
   </section>
+<?php endif; wp_reset_postdata(); ?>
 <?php
 $showhideblog = get_field('showhideblog', $thisID);
 if($showhideblog): 
