@@ -12,3 +12,18 @@ Text Domain: canoetrip
 */
 
 @import url('assets/css/main.css');
+
+.testimonial-grd-img{
+	position: relative;
+}
+.static{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+}
+.testimonial-grd-img:hover .static{
+	opacity: 0;
+}
