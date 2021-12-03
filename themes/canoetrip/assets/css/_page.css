@@ -469,7 +469,7 @@ ol li:before{
 	display: none;
 }
 
-.img-animate{
+.has-gif-img{
 	position: relative;
 }
 .static{
@@ -480,7 +480,7 @@ ol li:before{
 	left: 0;
 	z-index: 2;
 }
-.img-animate:hover .static{
+.has-gif-img:hover .static{
 	opacity: 0;
 }
 
