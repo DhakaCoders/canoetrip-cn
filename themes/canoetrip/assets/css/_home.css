@@ -727,6 +727,20 @@
 	.testimonial-sec .sec-entry-hdr{
 		max-width: 300px;
 	}
+	.hm-grds {
+	    margin-left: -20px;
+	    margin-right: -20px;
+	    width: auto;
+	}
+	.testimonial-grds{
+		margin: 0 -20px;
+		width: auto;
+		max-width: initial;
+	}
+	.testimonial-grd{
+		padding: 0 20px;
+		max-width: 90%;
+	}
 }
 @media(max-width: 479px){
 	.hm-bnr-btn .fl-tc-btn {
