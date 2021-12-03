@@ -469,6 +469,21 @@ ol li:before{
 	display: none;
 }
 
+.img-animate{
+	position: relative;
+}
+.static{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+}
+.img-animate:hover .static{
+	opacity: 0;
+}
+
 @media(max-width: 1199px){
 	.breadcrumb-sec{
 		padding-bottom: 50px;
