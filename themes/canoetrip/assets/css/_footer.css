@@ -1,4 +1,6 @@
-
+.footer-wrp{
+	overflow: hidden;
+}
 .ftr-top-bdr{
 	border-top: 6px solid rgba(68, 68, 65, 0.04);
 }
