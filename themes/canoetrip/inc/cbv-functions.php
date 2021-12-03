@@ -242,7 +242,7 @@ function no_result_text(){
   if( !empty($no_results) ){
     $text = $no_results;
   }else{
-    $text = __( 'Geen resultaat', 'terrav' );
+    $text = __( 'Geen resultaat', 'canoetrip' );
   }
   return $text;
 
@@ -260,7 +260,7 @@ function num_format($num){
 }
 function cbv_get_excerpt(){
   global $post;
-  $link = '<a href="'. get_permalink($post->ID) . '">'.__(' ....more', 'terrav').'</a>';
+  $link = '<a href="'. get_permalink($post->ID) . '">'.__(' ....more', 'canoetrip').'</a>';
   $excerpt = explode(' ', get_the_excerpt());
   //array_pop($excerpt);
   $excerpt = implode(" ",$excerpt);

@@ -1,15 +1,15 @@
 <?php
 function cbv_breadcrumbs() {
   /* === OPTIONS === */
-  $text['home']     = __('Home', THEME_NAME); // text for the 'Home' link
-  $text['blog']     = __('Blog', THEME_NAME); // text for the 'Home' link
-  $text['category'] = __('Archive by Category "%s"', THEME_NAME); // text for a category page
-  $text['search']   = __('Search Results for "%s"', THEME_NAME); // text for a search results page
-  $text['tag']      = __('Posts Tagged "%s"', THEME_NAME); // text for a tag page
-  $text['author']   = __('Articles Posted by %s', THEME_NAME); // text for an author page
-  $text['404']      = __('Error 404', THEME_NAME); // text for the 404 page
-  $text['page']     = __('Page %s', THEME_NAME); // text 'Page N'
-  $text['cpage']    = __('Comment Page %s', THEME_NAME); // text 'Comment Page N'
+  $text['home']     = __('Home', 'canoetrip'); // text for the 'Home' link
+  $text['blog']     = __('Blog', 'canoetrip'); // text for the 'Home' link
+  $text['category'] = __('Archive by Category "%s"', 'canoetrip'); // text for a category page
+  $text['search']   = __('Search Results for "%s"', 'canoetrip'); // text for a search results page
+  $text['tag']      = __('Posts Tagged "%s"', 'canoetrip'); // text for a tag page
+  $text['author']   = __('Articles Posted by %s', 'canoetrip'); // text for an author page
+  $text['404']      = __('Error 404', 'canoetrip'); // text for the 404 page
+  $text['page']     = __('Page %s', 'canoetrip'); // text 'Page N'
+  $text['cpage']    = __('Comment Page %s', 'canoetrip'); // text 'Comment Page N'
 
   $wrap_before    = '<ul class="reset-list">'; // the opening wrapper tag
   $wrap_after     = '</ul>'; // the closing wrapper tag
