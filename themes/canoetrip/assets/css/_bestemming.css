@@ -95,6 +95,7 @@
 	position: absolute;
 	left: 20px;
 	bottom: 18px;
+	z-index: 3;
 }
 .blog-grd-img-des-inr{
 	height: 54px;
