@@ -69,9 +69,7 @@ Includes->>
 include_once(THEME_DIR .'/inc/widgets-area.php');
 include_once(THEME_DIR .'/inc/breadcrumbs.php');
 include_once(THEME_DIR .'/inc/cbv-functions.php');
-/**
-ACF Option pages->>
-*/
+
 if( function_exists('acf_add_options_page') ) { 
     
     //parent tab
