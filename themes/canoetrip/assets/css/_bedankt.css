@@ -37,7 +37,7 @@
 .page-bedankt-con-menu-cntlr ul{
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 -70px;
+	margin: 0 ;
 	justify-content: center;
 }
 .page-bedankt-con-menu-cntlr ul li{
@@ -72,7 +72,7 @@
 		 width: 220px;
 	}
 	.page-bedankt-con-menu-cntlr ul{
-		margin: 0 -48px;
+		margin: 0 0;
 	}
 	.page-bedankt-con-menu-cntlr ul li{
 		padding: 0 48px 20px;
