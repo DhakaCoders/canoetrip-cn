@@ -8,7 +8,7 @@ header.header{
 .hdr-menu{
 	margin-left: auto;
 	padding-right: 26px;
-	padding-top: 3px;
+	padding-top: 0;
 }
 .logo{
 	display: inline-block;
@@ -24,10 +24,12 @@ nav.main-nav > ul{
 	flex-wrap: wrap;
 	margin-right: -15px;
 	margin-left: -15px;
+	padding-top: 14px;
 }
 nav.main-nav > ul > li{
 	padding: 0 15px;
 	position: relative;
+	line-height: 1;
 }
 nav.main-nav > ul > li > a{
 	display: inline-block;
@@ -39,6 +41,7 @@ nav.main-nav > ul > li > a{
     padding-bottom: 10px;
     text-transform: uppercase;
     font-family: 'Bourton-Base';
+    line-height: 1;
 }
 nav.main-nav > ul > li.current-menu-item > a,
 nav.main-nav > ul > li > a:hover{
@@ -51,12 +54,13 @@ nav.main-nav > ul > li.menu-item-has-children > a{
 nav.main-nav > ul > li.menu-item-has-children > a:before {
     content: "";
     position: absolute;
-    right: 0;
-    top: 6px;
+    right: 2px;
+    top: 3.5px;
     background-image: url('../images/hdr-lang-arrow.svg');
-	background-repeat: no-repeat!important;
-	height: 8px;
-	width: 12px;
+    background-repeat: no-repeat!important;
+    background-size: contain!important;
+    height: 8px;
+    width: 11px;
     transition: all 0.5s;
     -ms-transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -150,7 +154,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 }
 .fl-lang-cntlr{
 	position: relative;
-	min-height: 58px;
+	min-height: 48px;
 	padding-left: 5px;
 	min-width: 60px;
 }
@@ -172,7 +176,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 	padding-left: 13px;
 }
 .fl-lang ul li a{
-	font-size: 19px;
+	font-size: 18px;
 	line-height: 1;
 	letter-spacing: -0.02em;
 	text-transform: uppercase;
@@ -180,21 +184,21 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 	text-decoration: none;
 	font-family: 'Bourton-Base';
 }
-.fl-lang-cntlr:after{
-	background-image: url('../images/hdr-lang-arrow.svg');
-	background-repeat: no-repeat!important;
-	content: "";
-	width: 12px;
-	height: 8px;
-	background-size: contain!important;
+.fl-lang-cntlr:after {
+    background-image: url('../images/hdr-lang-arrow.svg');
+    background-repeat: no-repeat!important;
+    content: "";
+    width: 11px;
+    height: 8px;
+    background-size: contain!important;
     padding-right: 0;
     position: absolute;
-    top: 19px;
-    right: 8px;
+    top: 21px;
+    right: 12px;
     z-index: 21;
     transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
 }
 .fl-lang-cntlr:hover:after{
 	transform: rotate(-180deg);
@@ -229,15 +233,11 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 	-webkit-box-shadow: 0 2px 12px 0 rgb(0 0 0 / 15%);
 	box-shadow: 0 2px 12px 0 rgb(0 0 0 / 15%);
 }
-.hdr-btns{
-	margin-top: -2px;
-}
 .hdr-btns ul{
 	display: flex;
 	align-items: center;
 	margin-left: -5px;
 	margin-right: -5px;
-	margin-top: -7px;
 }
 .hdr-btns ul li{
 	padding: 0 5px;

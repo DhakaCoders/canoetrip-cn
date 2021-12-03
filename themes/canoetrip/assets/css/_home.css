@@ -103,8 +103,8 @@
 	position: relative;
 }
 .hm-over-ons-sec .ov-intro-featured-top-rgt-img{
-	box-shadow: -9px 3px 28px 5px rgb(0 0 0 / 19%);
-	-webkit-box-shadow: -9px 3px 28px 5px rgb(0 0 0 / 19%);
+	box-shadow: -7px 5px 15px 5px rgb(0 0 0 / 9%);
+	-webkit-box-shadow: -7px 5px 15px 5px rgb(0 0 0 / 9%);
 }
 .hm-over-ons-pos-img{
 	position: absolute;
@@ -114,6 +114,7 @@
 	-ms-transform: translateX(-50%);
 	transform: translateX(-50%);
 	opacity: 0.2;
+	max-width: 390px;
 }
 .hm-grd-sec{
 	padding: 50px 0;
@@ -445,6 +446,13 @@
 	font-family: 'Titillium Web', sans-serif;
     font-weight: 400;
     color: #444440;
+}
+.home .overons-intro-desc-cntlr{
+	padding-top: 0;
+	margin-top: -70px;
+}
+.home .overons-intro-desc-cntlr p{
+	line-height: 1.5;
 }
 @media(max-width: 1199px){
 	.hm-grd-sec-inr {
