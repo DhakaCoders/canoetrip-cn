@@ -390,7 +390,7 @@ body.allWork {
 		min-width: 55px;
 	}
 	.fl-lang-cntlr ul{
-		padding-top: 0;
+		padding-top: 9px;
 	}
 	.fl-lang ul li{
 		padding-left: 7px;
@@ -404,7 +404,7 @@ body.allWork {
 	    padding: 10px 15px;
 	}
 	.fl-lang-cntlr:after{
-		top: 12px;
+		top: 20px;
 		right: 12px;
 	}
 }
