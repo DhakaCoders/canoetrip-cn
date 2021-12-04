@@ -193,16 +193,17 @@ if($showhide_trip):
   if($cta_type[0] == '1'){
   $ctasec = get_field('ctasec', $thisID);
   if($ctasec):
+    $is_cta_video = !empty($ctasec['video_upload'])?' has-vdo':'';
 ?>
-  <section class="cta-module-sec">
-    <?php if( !empty($ctasec['upload_video']) ): ?>
+  <section class="cta-module-sec<?php echo $is_cta_video; ?>">
+    <?php if( !empty($ctasec['video_upload']) ): ?>
     <div class="cta-video-cntlr">
         <video id="cta-vdo" autoplay muted loop>
-          <source src="<?php echo $ctasec['upload_video']; ?>" type="video/mp4">
+          <source src="<?php echo $ctasec['video_upload']; ?>" type="video/mp4">
         </video>
       </div>
       <?php endif; ?>
-      <?php if( empty($ctasec['upload_video']) ): ?>
+      <?php if( empty($ctasec['video_upload']) ): ?>
     <div class="cta-module-bg inline-bg" style="background-image: url('<?php echo !empty($ctasec['afbeelding'])? cbv_get_image_src( $ctasec['afbeelding'] ): ''; ?>');"></div>
     <?php endif; ?>
     <div class="cta-module-overlay"></div>
@@ -227,18 +228,19 @@ if($showhide_trip):
   </section>
 <?php endif; ?>
 <?php }else{ 
-  $ctasec_2 = get_field('ctasec_2', HOMEID);
+  $ctasec_2 = get_field('ctasec_2', $thisID);
   if($ctasec_2):
+    $is_cta_video = !empty($ctasec_2['video_upload'])?' has-vdo':'';
 ?>
-  <section class="cta-module-grid-sec">
-    <?php if( !empty($ctasec_2['upload_video']) ): ?>
+  <section class="cta-module-grid-sec<?php echo $is_cta_video; ?>">
+    <?php if( !empty($ctasec_2['video_upload']) ): ?>
     <div class="cta-video-cntlr">
         <video id="cta-vdo" autoplay muted loop>
-          <source src="<?php echo $ctasec_2['upload_video']; ?>" type="video/mp4">
+          <source src="<?php echo $ctasec_2['video_upload']; ?>" type="video/mp4">
         </video>
     </div>
     <?php endif; ?>
-    <?php if( empty($ctasec_2['upload_video']) ): ?>
+    <?php if( empty($ctasec_2['video_upload']) ): ?>
     <div class="cta-module-bg inline-bg" style="background-image: url('<?php echo !empty($ctasec_2['poster_afbeelding'])? cbv_get_image_src( $ctasec_2['poster_afbeelding'] ): ''; ?>');"></div>
     <?php endif; ?>
     <div class="cta-module-overlay"></div>
