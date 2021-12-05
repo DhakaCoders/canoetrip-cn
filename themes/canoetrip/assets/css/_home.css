@@ -623,6 +623,10 @@
 	.testimonial-grd-des-inr p{
 		color: #aaaaa8;
 	}
+	.home .overons-intro-desc-cntlr {
+	    margin-top: 0;
+	    padding-top: 40px;
+	}
 }
 @media(max-width: 639px){
 	.hm-grds {

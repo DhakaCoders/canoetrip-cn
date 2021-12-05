@@ -10,6 +10,9 @@ $('.navbar-toggle').on('click', function(){
 if( $('.hamburger-icon').length ){
   $('.hamburger-icon').click(function(){
     $('body').toggleClass('allWork');
+    setTimeout(function(){
+      $('body').toggleClass('aSec');
+    }, 1000);
   });
 }
 if(windowWidth <= 991){
