@@ -27,20 +27,18 @@ $thisID = get_the_ID();
       </div>
     </div>
   </section>
-  
 <?php 
 $imgID = get_post_thumbnail_id($thisID);
 $imgsrc = !empty($imgID)? cbv_get_image_src($imgID): bestemming_placeholder();
 $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): bestemming_placeholder('tag');
 $overview = get_field('overview', $thisID);
-
 ?>
   <section class="info-page-intro-sec">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="page-entry-hdr">
-            <h1 class="fl-h2 page-entry-hdr-title">Praktische info</h1>
+            <h1 class="fl-h2 page-entry-hdr-title"><?php _e('Praktische info', 'canoetrip'); ?></h1>
           </div>
         </div>
         <div class="col-md-12">
