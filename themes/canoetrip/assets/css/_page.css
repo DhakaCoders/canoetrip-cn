@@ -21,7 +21,7 @@
 }
 .slick-slider .slick-dots li button{
 	padding: 0;
-	width: 16px;
+	width: 100%;
 	height: 16px;
 }
 
@@ -470,6 +470,21 @@ ol li:before{
 }
 
 
+.has-gif-img{
+	position: relative;
+}
+.static{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+}
+.has-gif-img:hover .static{
+	opacity: 0;
+}
+
 
 @media(max-width: 1199px){
 	.breadcrumb-sec{
@@ -511,6 +526,9 @@ ol li:before{
 	}
 	.sec-entry-hdr{
 		padding-bottom: 10px;
+	}
+	.sec-entry-hdr{
+		max-width: 600px;
 	}
 }
 @media(max-width: 575px){

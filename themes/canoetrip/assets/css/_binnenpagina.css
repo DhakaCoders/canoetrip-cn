@@ -215,7 +215,6 @@ Gallery design
 .fl-dft-lftimg-rgtdes-lft div.inline-bg{
 	height: 100%;
 	width: 100%;
-	display: none;
 }
 .fl-dft-lftimg-rgtdes-lft.has-inline-bg div.inline-bg{
 	display: block;
@@ -289,6 +288,7 @@ Gallery design
 	height: 100%;
 	width: 100%;
 }
+
 
 
 /*-- left des right img customize---*/
@@ -587,11 +587,12 @@ Gallery design
 
 
 hr {
-    margin-top: 0;
-    padding-top: 20px;
+    margin-top: 18px;
+    padding-top: 2px;
     margin-bottom: 40px;
     border-top: none;
-    border-bottom: 2px solid #F8F8F8;
+    background: #F8F8F8;
+    opacity: 1;
 }
 .dfp-full-width-img-module .full-img {
     border-radius: 4px 4px 0px 0px;
@@ -1111,6 +1112,17 @@ hr {
 		width: 100%;
 		display: block;
 	}
+	.destination-grd-des-sub-title{
+		color: #fff!important;
+		margin-bottom: 4px!important;
+	}
+	.dfp-destination-grid-module .destination-from{
+		padding-left: 0;
+	}
+	.dfp-faq-des .dfp-text-module{
+		text-align: center;
+	}
+	
 }
 
 @media(max-width: 639px){
@@ -1214,6 +1226,13 @@ hr {
 
 	.dfp-faq-module .cntrp-faq-accordion-desc p{
 		text-align: left;
+	}
+	.default-page-con .destination-grd-des-inr h1, 
+	.default-page-con .destination-grd-des-inr h2, 
+	.default-page-con .destination-grd-des-inr h3, 
+	.default-page-con .destination-grd-des-inr h4, 
+	.default-page-con .destination-grd-des-inr h5 {
+	    text-align: left!important;
 	}
 
 }

@@ -8,7 +8,7 @@ header.header{
 .hdr-menu{
 	margin-left: auto;
 	padding-right: 26px;
-	padding-top: 3px;
+	padding-top: 0;
 }
 .logo{
 	display: inline-block;
@@ -24,10 +24,12 @@ nav.main-nav > ul{
 	flex-wrap: wrap;
 	margin-right: -15px;
 	margin-left: -15px;
+	padding-top: 14px;
 }
 nav.main-nav > ul > li{
 	padding: 0 15px;
 	position: relative;
+	line-height: 1;
 }
 nav.main-nav > ul > li > a{
 	display: inline-block;
@@ -39,6 +41,7 @@ nav.main-nav > ul > li > a{
     padding-bottom: 10px;
     text-transform: uppercase;
     font-family: 'Bourton-Base';
+    line-height: 1;
 }
 nav.main-nav > ul > li.current-menu-item > a,
 nav.main-nav > ul > li > a:hover{
@@ -51,12 +54,13 @@ nav.main-nav > ul > li.menu-item-has-children > a{
 nav.main-nav > ul > li.menu-item-has-children > a:before {
     content: "";
     position: absolute;
-    right: 0;
-    top: 6px;
+    right: 2px;
+    top: 3.5px;
     background-image: url('../images/hdr-lang-arrow.svg');
-	background-repeat: no-repeat!important;
-	height: 8px;
-	width: 12px;
+    background-repeat: no-repeat!important;
+    background-size: contain!important;
+    height: 8px;
+    width: 11px;
     transition: all 0.5s;
     -ms-transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -150,7 +154,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 }
 .fl-lang-cntlr{
 	position: relative;
-	min-height: 58px;
+	min-height: 48px;
 	padding-left: 5px;
 	min-width: 60px;
 }
@@ -172,7 +176,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 	padding-left: 13px;
 }
 .fl-lang ul li a{
-	font-size: 19px;
+	font-size: 18px;
 	line-height: 1;
 	letter-spacing: -0.02em;
 	text-transform: uppercase;
@@ -180,21 +184,21 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 	text-decoration: none;
 	font-family: 'Bourton-Base';
 }
-.fl-lang-cntlr:after{
-	background-image: url('../images/hdr-lang-arrow.svg');
-	background-repeat: no-repeat!important;
-	content: "";
-	width: 12px;
-	height: 8px;
-	background-size: contain!important;
+.fl-lang-cntlr:after {
+    background-image: url('../images/hdr-lang-arrow.svg');
+    background-repeat: no-repeat!important;
+    content: "";
+    width: 11px;
+    height: 8px;
+    background-size: contain!important;
     padding-right: 0;
     position: absolute;
-    top: 19px;
-    right: 8px;
+    top: 21px;
+    right: 12px;
     z-index: 21;
     transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
 }
 .fl-lang-cntlr:hover:after{
 	transform: rotate(-180deg);
@@ -229,15 +233,11 @@ nav.main-nav > ul > li.menu-item-has-children:hover a{
 	-webkit-box-shadow: 0 2px 12px 0 rgb(0 0 0 / 15%);
 	box-shadow: 0 2px 12px 0 rgb(0 0 0 / 15%);
 }
-.hdr-btns{
-	margin-top: -2px;
-}
 .hdr-btns ul{
 	display: flex;
 	align-items: center;
 	margin-left: -5px;
 	margin-right: -5px;
-	margin-top: -7px;
 }
 .hdr-btns ul li{
 	padding: 0 5px;
@@ -308,10 +308,6 @@ body.allWork .hamburger-icon span:nth-child(2){
     content: none;
     display: none;
 }
-.allWork .bdoverlay {
-    z-index: 98;
-    opacity: 1;
-}
 .bdoverlay {
     background: rgba(0, 0, 0, 0.8);
     position: fixed;
@@ -325,31 +321,8 @@ body.allWork .hamburger-icon span:nth-child(2){
     transition: all 0.3s;
     z-index: -1;
 }
-body.allWork {
-    overflow: hidden!important;
-}
-.allWork .xs-mobile-menu {
-    right: 0;
-    opacity: 1;
-    z-index: 99;
-    width: 100%;
-}
-.xs-mobile-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    bottom: 0;
-    background: #fff;
-    width: 0;
-    z-index: 99;
-    opacity: 0;
-    -ms-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    padding: 20px 0 40px;
-    height: 100%;
-    max-width: 375px;
-    width: 100%;
+.xs-mobile-menu{
+	display: none;
 }
 @media(max-width: 1199px){
 	.hdr-menu{
@@ -375,7 +348,7 @@ body.allWork {
 		min-width: 55px;
 	}
 	.fl-lang-cntlr ul{
-		padding-top: 0;
+		padding-top: 9px;
 	}
 	.fl-lang ul li{
 		padding-left: 7px;
@@ -389,7 +362,7 @@ body.allWork {
 	    padding: 10px 15px;
 	}
 	.fl-lang-cntlr:after{
-		top: 12px;
+		top: 20px;
 		right: 12px;
 	}
 }
@@ -492,7 +465,7 @@ body.allWork {
 	    padding-bottom: 12px;
 	}
 	.hdr-btns .fl-tc-btn {
-	    min-width: 100%;
+	    min-width: 400px;
 	    font-size: 18px;
 	    padding: 10px 10px;
 	    text-transform: initial;
@@ -548,19 +521,72 @@ body.allWork {
 		right: 0;
 		z-index: 9;
 	}
-	.fl-lang-cntlr:after{
-		top: 9px;
-		right: 4px;
+	.fl-lang-cntlr:after {
+	    top: 50%;
+	    right: 4px;
+	    transform: translateY(-50%);
+	}
+	.fl-lang-cntlr:hover:after{
+	    transform: translateY(-50%) rotate(-180deg);
+	    -ms-transform: translateY(-50%) rotate(-180deg);
+	    -webkit-transform: translateY(-50%) rotate(-180deg);
+	    -o-transform: translateY(-50%) rotate(-180deg);
+	}
+	body.allWork {
+	    overflow: hidden!important;
+	}
+	.allWork .xs-mobile-menu {
+		visibility: visible;
+	    opacity: 1;
+	    z-index: 99;
+	}
+	.xs-mobile-menu {
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    background: transparent;
+	    width: 100%;
+	    z-index: -99;
+	    opacity: 0;
+	    -ms-transition: opacity 0.5s 0.7s;
+	    -webkit-transition: opacity 0.5s 0.7s;
+	    transition: opacity 0.5s 0.7s;
+	    padding: 20px 0 40px;
+	    height: 100%;
+	    max-width: 100%;
+	    width: 100%;
+	    visibility: hidden;
+	    display: initial;
+	}
+	.hamburgar-cntlr + .bg-cover {
+	    height: 120px;
+	    width: 120px;
+	    display: block;
+	    border-radius: 50%;
+	    background: #fff;
+	    position: fixed;
+	    left: -41px;
+	    bottom: -43px;
+	    background: #FFF;
+	    border-radius: 50% 50% 50% 50%;
+	    transition: 0.5s ease-in-out;
+	    box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+	    cursor: pointer;
+	    z-index: 6;
+	}
+	.allWork .hamburgar-cntlr + .bg-cover {
+	    box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+	    border-radius: 0;
+	}
+}
+@media(max-width: 575px){
+	.hdr-btns .fl-tc-btn{
+		min-width: 250px;
 	}
 }
 @media(max-width: 400px){
 	.xs-mobile-menu{
 		max-width: 100%;
-	}
-}
-@media(max-width: 479px){
-	.hamburgar-cntlr{
-		height: 100px;
-		width: 100px;
 	}
 }

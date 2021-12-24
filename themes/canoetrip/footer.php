@@ -8,6 +8,7 @@
 
   $fb_url = get_field('facebook_url', 'options');
   $inst_url = get_field('instagram_url', 'options');
+  $messenger = get_field('messenger_url', 'options');
   $email = get_field('emailadres', 'options');
   $ftcont = get_field('footersec', 'options');
   $copyright_text = get_field('copyright_text', 'options');
@@ -25,7 +26,7 @@
                   </a>
                 </div>
                 <div class="ftr-col-travel show-md">
-                  <p><strong>The Canoe Trip is a <a target="_blank" href="#">Travelbase</a> concept.</strong></p>
+                  <?php if( !empty($ftcont['ons_titel']) ) printf('<p><strong>%s</strong></p>', $ftcont['ons_titel']); ?>
                 </div>
                 <div class="ftr-socials">
                   <ul class="reset-list">
@@ -69,10 +70,10 @@
                 </div>
                 <div class="ftr-xs-btns show-md">
                   <div class="ftr-xs-btn">
-                    <a class="fl-tc-btn" href="#"><?php _e('Nu boeken', 'canoetrip');?></a>
+                    <a class="fl-tc-btn" href="<?php echo get_permalink(268); ?>"><?php _e('Nu boeken', 'canoetrip');?></a>
                   </div>
                   <div class="ftr-xs-btn">
-                    <a class="fl-tc-btn tc-transparent-btn" href="#"><?php _e('Mijn boeking', 'canoetrip');?></a>
+                    <a class="fl-tc-btn tc-transparent-btn" href="<?php echo get_permalink(270); ?>"><?php _e('Mijn boeking', 'canoetrip');?></a>
                   </div>
                 </div>
               </div>
@@ -83,7 +84,7 @@
                 </div>
                 <div class="ftr-btns">
                   <div class="ftr-btn ftr-messanger-btn">
-                    <a href="#">
+                    <a href="<?php echo $messenger; ?>">
                       <span><?php _e('Send us a message', 'canoetrip');?></span>
                       <i>
                         <svg class="messenger-icon" width="24" height="24" viewBox="0 0 24 24" fill="#3C6C54">
@@ -109,7 +110,7 @@
               <div class="ftr-col ftr-col-04">
                 <h6 class="ftr-col-title fl-h6 hide-md"><?php _e('Over Ons', 'canoetrip');?></h6>
                 <div class="ftr-col-travel hide-md">
-                  <p><strong>The Canoe Trip is a <a target="_blank" href="#">Travelbase</a> concept.</strong></p>
+                  <?php if( !empty($ftcont['ons_titel']) ) printf('<p><strong>%s</strong></p>', $ftcont['ons_titel']); ?>
                 </div>
                 <div class="ftr-col-desc">
                  <?php if( !empty($ftcont['ons_tekst']) ) echo wpautop($ftcont['ons_tekst']); ?>
@@ -117,81 +118,46 @@
                 <?php if( !empty($ftcont['ons_galerij']) ): ?>
                 <div class="ftr-trip-logo">
                   <ul class="reset-list">
+                    <?php foreach( $ftcont['ons_galerij'] as $ons_gal ): ?>
                     <li>
                       <div class="ftr-trip-logo-item mHc">
                         <i>
-                          <a target="_blank" href="#">
-                            <img src="<?php echo THEME_URI; ?>/assets/images/ftr-trip-logo-01.png" alt="">
+                          <a>
+                            <?php if( !empty($ons_gal) ) echo cbv_get_image_tag($ons_gal); ?>
                           </a>
                         </i>
                       </div>
                     </li>
-                    <li>
-                      <div class="ftr-trip-logo-item mHc">
-                        <i>
-                          <a target="_blank" href="#">
-                            <img src="<?php echo THEME_URI; ?>/assets/images/ftr-trip-logo-02.png" alt="">
-                          </a>
-                        </i>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="ftr-trip-logo-item mHc">
-                        <i>
-                          <a target="_blank" href="#">
-                            <img src="<?php echo THEME_URI; ?>/assets/images/ftr-trip-logo-03.png" alt="">
-                          </a>
-                        </i>
-                      </div>
-                    </li>
+                    <?php endforeach; ?>
                   </ul>
                 </div>
                 <?php endif; ?>
               </div>
             </div>
+            
             <div class="footer-mdl">
-              <strong>Onze andere concepten</strong>
+              <?php if( !empty($ftcont['cons_titel']) ) printf('<strong>%s</strong>', $ftcont['cons_titel']); ?>
+              <?php if( !empty($ftcont['logos']) ): ?>
               <div class="ftr-concept-logo">
                 <ul class="reset-list">
+                  <?php foreach( $ftcont['logos'] as $ftlogo ): ?>
                   <li>
                     <div class="concept-logo-item">
                       <i>
-                        <a target="_blank" href="#">
-                          <img src="<?php echo THEME_URI; ?>/assets/images/concept-logo-01.png" alt="">
-                        </a>
+                        <?php 
+                          if( !empty($ftlogo['knop']) ) printf('<a href="%s" target="_blank">', $ftlogo['knop']);
+                          if( !empty($ftlogo['logo']) ) echo cbv_get_image_tag($ftlogo['logo']);
+                          if( !empty($ftlogo['knop']) ) printf('</a>');
+                        ?> 
                       </i>
                     </div>
                   </li>
-                  <li>
-                    <div class="concept-logo-item">
-                      <i>
-                        <a target="_blank" href="#">
-                          <img src="<?php echo THEME_URI; ?>/assets/images/concept-logo-02.png" alt="">
-                        </a>
-                      </i>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="concept-logo-item">
-                      <i>
-                        <a target="_blank" href="#">
-                          <img src="<?php echo THEME_URI; ?>/assets/images/concept-logo-03.png" alt="">
-                        </a>
-                      </i>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="concept-logo-item">
-                      <i>
-                        <a target="_blank" href="#">
-                          <img src="<?php echo THEME_URI; ?>/assets/images/concept-logo-04.png" alt="">
-                        </a>
-                      </i>
-                    </div>
-                  </li>
+                  <?php endforeach; ?>
                 </ul>
               </div>
+              <?php endif; ?>
             </div>
+            
             <div class="footer-btm">
               <div class="ftr-copyright">
                 <?php if( !empty( $copyright_text ) ) printf( '%s', $copyright_text); ?>
@@ -208,7 +174,7 @@
                 ?>
               </div>
               <div class="develop-by">
-                <p><?php _e('webdesign by conversal', 'canoetrip');?><a target="_blank" href="#"><?php _e('Conversal', 'canoetrip');?></a></p>
+                <p><?php _e('webdesign by conversal', 'canoetrip');?><a target="_blank" href="https://www.conversal.be/website-laten-maken/"><?php _e('Conversal', 'canoetrip');?></a></p>
               </div>
             </div>
           </div>
